@@ -2595,6 +2595,9 @@ div.content-outer {
 a:hover {
   cursor: pointer;
 }
+.center {
+  text-align: center;
+}
 .btn {
   font-family: 'Reenie Beanie', 'Open Sans', Helvetica, Arial, sans-serif;
   font-size: 35px;
