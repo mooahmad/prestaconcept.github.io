@@ -1,0 +1,63 @@
+/* Bundles page
+------------------------------------------------------------ */
+
+.fork-us-outer {
+    background: #e9e9e9;
+    padding: 25px 0px;
+    text-align: center;
+    color: #555;
+
+    h2 {
+        color: #555;
+    }
+    ul {
+        li {
+            list-style-type: none;
+            font-style: italic;
+        }
+    }
+}
+
+.bundle-container {
+    border: 5px solid @lighterPurple;
+    padding: 5px 25px;
+
+    h3 {
+        border-bottom: 1px solid @lighterPurple;
+        color: @purple;
+
+        .download-link {
+            float: right;
+        }
+    }
+
+    .links {
+        padding: 5px 0px;
+
+        a.travis-link {
+            margin-right: 25px;
+            img {
+                vertical-align: top;
+            }
+        }
+    }
+    .description {
+        font-style: italic;
+        text-align: justify;
+    }
+
+    .knpbundles-badge {
+        padding: 15px;
+        text-align: center;
+    }
+
+    &.coming-soon {
+        background: #ddd;
+
+        h3 {
+            color: #555;
+            border-bottom: none;
+            text-align: center;
+        }
+    }
+}
