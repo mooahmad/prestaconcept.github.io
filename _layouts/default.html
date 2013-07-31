@@ -13,7 +13,7 @@
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-    <link href="/assets/css/styles.css?version=20130611" rel="stylesheet" type="text/css" media="all">
+    <link href="/assets/css/styles.css?version=20130731" rel="stylesheet" type="text/css" media="all">
 
     <link rel="shortcut icon" href="/assets/img/favicon.ico">
 
@@ -97,5 +97,20 @@
                 </div>
             </div>
         </div>
+        <script src="http://code.jquery.com/jquery.js"></script>
+        <script src="/assets/bootstrap/js/bootstrap.min.js"></script>
+        <script >
+            !function ($) {
+
+                $(function(){
+                    $('.bs-docs-sidenav').affix({
+                        offset: {
+                            top:  210,
+                            bottom: 270
+                        }
+                    })
+                });
+            }
+        </script>
     </body>
 </html>

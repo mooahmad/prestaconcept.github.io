@@ -1,0 +1,49 @@
+---
+layout: default
+---
+
+<div id="hook-outer">
+    <div id="subheader" class="container">
+        <h1>PrestaCMSCoreBundle</h1>
+        <p class="lead">CMS bundle based on Symfony CMF</p>
+    </div>
+    <div class="navbar">
+        <div class="navbar-inner container">
+            <a class="brand" href="#">Documentation</a>
+            <ul class="nav">
+                <li {% if page.section == 'overview' %}class="active"{% endif %}>
+                    <a href="/presta-cms-core/index.html">Overview</a>
+                </li>
+                <li {% if page.section == 'user-guide' %}class="active"{% endif %}>
+                    <a href="/presta-cms-core/user-guide/index.html">User guide</a>
+                </li>
+                <li {% if page.section == 'developer-guide' %}class="active"{% endif %}>
+                    <a href="/presta-cms-core/developer-guide/index.html">Developer guide</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="content-outer">
+    <div class="content container">
+        <div class="row">
+            <div class="span3 bs-docs-sidebar" data-spy="affix" data-offset-top="210" data-offset-bottom="270">
+                <ul class="nav nav-list bs-docs-sidenav affix">
+                    {% if page.navigation %}
+                        {% for item in page.navigation %}
+                        <li {% if page.navigation_active == item.link %}class="active"{% endif %}>
+                            <a href="./{{ item.link }}" ><i class="icon-chevron-right"></i> {{ item.title }}</a>
+                        </li>
+                        {% endfor %}
+                    {% endif %}
+                </ul>
+            </div>
+            <div class="span9">
+                {{ content }}
+            </div>
+        </div>
+    </div>
+</div>
+
+
