@@ -4,7 +4,6 @@ title: Prestaconcept github page
 navigation_active: features.html
 ---
 
-
 # Features
 
 
@@ -14,6 +13,7 @@ PrestaCMS is made to handle multiple website with different languges.
 
 Each website has its content structure which can be translated into every languages available for the website.
 
+[Website administration demonstration][8]
 
 ## Custom themes with content administration
 
@@ -26,6 +26,7 @@ For example, a footer or header block.
 
 Content is not share between websites so you can have two different websites plug on the same theme but with different content.
 
+[Theme administration demonstration][9]
 
 ## Page administration
 
@@ -38,6 +39,8 @@ Many features are available like :
 - edit SEO data
 - clear the cache
 - add/remove a page
+
+[Page administration demonstration][10]
 
 ## Multilangue
 
@@ -80,6 +83,7 @@ To customize your site you can :
 More details about how to extends PrestaCMS are available in the [developer guide][7].
 
 
+
 [1]: /presta-cms-core/theming-guide/index.html
 [2]: http://symfony.com/doc/current/book/translation.html
 [3]: http://sonata-project.org/bundles/
@@ -87,3 +91,6 @@ More details about how to extends PrestaCMS are available in the [developer guid
 [5]: /presta-cms-core/developer-guide/block.html
 [6]: http://symfony.com/doc/current/cookbook/bundles/inheritance.html
 [7]: /presta-cms-core/developer-guide/extending.html
+[8]: http://sandbox.prestacms.fr/admin/presta/cmscore/website/list
+[9]: http://sandbox.prestacms.fr/admin/cms/theme/edit/creative
+[10]: http://sandbox.prestacms.fr/admin/cms/page/edit?locale=en&_locale=&website=%2Fwebsite%2Fsandbox&id=website%2Fsandbox%2Fmenu%2Fmain%2Fhome
