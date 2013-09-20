@@ -3460,6 +3460,18 @@ div.content-outer {
   padding: 15px;
   text-align: center;
 }
+.bundle-container .knpbundles-badge img {
+  margin-bottom: 10px;
+}
+.bundle-container .bottoms-links {
+  padding: 10px;
+  text-align: center;
+}
+.bundle-container .bottoms-links a {
+  color: #049cdb;
+  font-weight: bold;
+  font-style: italic;
+}
 .bundle-container.coming-soon {
   background: #ddd;
   min-height: 0px;

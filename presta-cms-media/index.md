@@ -20,7 +20,7 @@ navigation:
 [![Latest Stable Version](https://poser.pugx.org/presta/cms-media-bundle/v/stable.png)](https://packagist.org/packages/presta/cms-media-bundle)
 
 [![SensioLabsInsight](https://insight.sensiolabs.com/projects/d4e48cf2-8182-4eae-a7aa-f2c370cffb55/big.png)](https://insight.sensiolabs.com/projects/d4e48cf2-8182-4eae-a7aa-f2c370cffb55)
-
+[![knpbundles.com](http://knpbundles.com/prestaconcept/PrestaCMSMediaBundle/badge)](http://knpbundles.com/prestaconcept/PrestaCMSMediaBundle)
 
 ## Overview
 
