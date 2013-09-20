@@ -28,7 +28,7 @@ PrestaCMSMediaBundle integrates Sonata Media in [PrestaCMS][1].
 
 For a ready to use demonstration of PrestaCMS you should check the [prestacms-sandox available on github][7].
 
-This bundles adds a the following block type to your project :
+This bundles adds the following block type to your project :
 
 -   Media Simple
 -   Media Advanced
@@ -80,7 +80,7 @@ Then you just need to override the template you need.
 
 ### Add settings
 
-If you need to add settings or functionnality, create your own application bundle with the command line above and create your own block.
+If you need to add settings or functionnalities, create your own application bundle with the command line above and create your own block.
 
 Then either you need it as a new block and you should register it as a block service or you just want it to override the default block and you should
 add a parameter for the corresponding block class.
