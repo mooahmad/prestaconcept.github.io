@@ -3,3 +3,174 @@ layout: presta-cms-core-developer-guide
 navigation_active: installation.html
 
 ---
+
+# How to install PrestaCMS
+
+
+## First step
+
+PrestaCMSCore is a Symfony2 bundle so before using it, you need to set up a Symfony2 project.
+A well made [documentation is available on Symfony.com][1].
+
+As content storage is based on SymfonyCMF you have to [choose and set-up a storage layer][2].
+As SymfonyCMF we suggest [PHPCR][3] and [PHPCR-ODM][4] as the ideal basis.
+
+
+## Install PrestaCMS
+
+For a working exemple you can have a look at [PrestaCMS Sandbox][5] which is a demo project of all PrestaCMS features.
+
+### Get the code
+
+Download PrestaCMSCore and its dependencies to the vendor directory of your project.
+
+The easiest way is using composer :
+
+    php composer.phar require presta/cms-core-bundle --no-update
+    php composer.phar update presta/cms-core-bundle
+
+
+### Easy extend it in your application
+
+    php app/console sonata:easy-extends:generate SonataAdminBundle --dest=src
+    php app/console sonata:easy-extends:generate PrestaCMSCoreBundle --dest=src
+
+### Add routing
+
+Update your /app/config/routing.yml file.
+
+If Sonata admin is not configured :
+
+    #Sonata Admin
+    admin:
+        resource: '@SonataAdminBundle/Resources/config/routing/sonata_admin.xml'
+        prefix: /admin
+
+    _sonata_admin:
+        resource: .
+        type: sonata_admin
+        prefix: /admin
+
+PrestaCMS part :
+
+    PrestaCMSCoreBundle:
+        resource: "@PrestaCMSCoreBundle/Resources/config/routing.yml"
+        prefix:   /admin
+
+    tree:
+        resource: "@SonataDoctrinePHPCRAdminBundle/Resources/config/routing/tree.xml"
+
+
+### Add configuration
+
+As a good practice we suggest to make a dedicated file for each new bundle configuration instead of copy paste it
+in the main config.yml
+
+So create a new file /app/config/bundles/presta_cms_core.yml
+
+Here is the code from the sandbox, just adapt it to fit your needs :
+
+    imports:
+        - { resource: '@PrestaCMSThemeBasicBundle/Resources/config/theme/creative.yml' }
+
+    parameters:
+        presta_cms.page.factory.class: Application\Presta\CMSCoreBundle\Factory\PageFactory
+
+    sonata_admin:
+      dashboard:
+          blocks:
+              - { position: right, type: presta_cms.block.dashboard.cms }
+
+    presta_cms_core:
+        default_website: /website/sandbox
+        default_locale: en
+        websites:
+            prestacms-sandbox:
+                path: /website/sandbox
+                hosts:
+                    dev:
+                        en:
+                            locale: en
+                            host: dev-prestacms-sandbox.com
+                        fr:
+                            locale: fr
+                            host: dev-prestacms-sandbox.fr
+                    prod:
+                        en:
+                            locale: en
+                            host: sandbox.prestacms.com
+                        fr:
+                            locale: fr
+                            host:  sandbox.prestacms.fr
+
+
+And import it in you main config.yml file with the main PrestaCMS configuration like this :
+
+    imports:
+        - { resource: '@PrestaCMSCoreBundle/Resources/config/config.yml' }
+        - { resource: bundles/presta_cms_core.yml }
+
+Don't forget to configure other dependencies like sonata-admin, sonata-media...
+
+### Update your Kernel
+
+Next, be sure to enable these bundles in your AppKernel.php file:
+
+    $bundles = array(
+        ...
+        //Sonata
+        new Sonata\BlockBundle\SonataBlockBundle(),
+        new Sonata\jQueryBundle\SonatajQueryBundle(),
+        new Sonata\AdminBundle\SonataAdminBundle(),
+        new Sonata\EasyExtendsBundle\SonataEasyExtendsBundle(),
+        new Knp\Bundle\MenuBundle\KnpMenuBundle(),
+        new Sonata\SeoBundle\SonataSeoBundle(),
+        new Sonata\MediaBundle\SonataMediaBundle(),
+        new Sonata\DoctrineORMAdminBundle\SonataDoctrineORMAdminBundle(),
+        new Sonata\DoctrinePHPCRAdminBundle\SonataDoctrinePHPCRAdminBundle(),
+        new FOS\JsRoutingBundle\FOSJsRoutingBundle(),
+
+        // Doctrine PHPCR
+        new Doctrine\Bundle\PHPCRBundle\DoctrinePHPCRBundle(),
+
+        // CMF bundles
+        new Symfony\Cmf\Bundle\RoutingBundle\CmfRoutingBundle(),
+        new Symfony\Cmf\Bundle\CoreBundle\CmfCoreBundle(),
+        new Symfony\Cmf\Bundle\MenuBundle\CmfMenuBundle(),
+        new Symfony\Cmf\Bundle\ContentBundle\CmfContentBundle(),
+        new Symfony\Cmf\Bundle\TreeBrowserBundle\CmfTreeBrowserBundle(),
+        new Symfony\Cmf\Bundle\BlockBundle\CmfBlockBundle(),
+
+        //PrestaCMS
+        new Presta\CMSCoreBundle\PrestaCMSCoreBundle(),
+        new Presta\CMSMediaBundle\PrestaCMSMediaBundle(),
+        new Presta\CMSThemeBasicBundle\PrestaCMSThemeBasicBundle(),
+
+        //Utils
+        new Doctrine\Bundle\FixturesBundle\DoctrineFixturesBundle()
+
+        //Application bundles
+        new Application\Sonata\AdminBundle\ApplicationSonataAdminBundle(),
+        new Application\Presta\CMSCoreBundle\ApplicationPrestaCMSCoreBundle()
+    );
+
+Now, install the assets from the bundles:
+
+    php app/console assets:install web
+
+Usually when installing new bundles it’s good practice to also delete your cache:
+
+    php app/console cache:clear
+
+
+### Let's code
+
+Now installation step is over, let's continue with [getting started section][6]
+
+
+[1]: http://symfony.com/doc/master/book/installation.html
+[2]: http://symfony.com/doc/master/cmf/cookbook/database/choosing_storage_layer.html
+[3]: http://phpcr.github.io/
+[4]: http://www.doctrine-project.org/projects/phpcr-odm.html
+[5]: https://github.com/prestaconcept/prestacms-sandbox
+[6]: /presta-cms-core/developer-guide/getting-started.html#content
