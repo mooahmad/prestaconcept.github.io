@@ -63,11 +63,155 @@ A link to the corresponding admin listing will be displayed in the page administ
 
 ## Build your first block
 
+Let's create a new block for listing blog post. Blog post have a custom administration done with sonata.
+
+Our bundle will have a title editable and an option to set the number of post to display.
+
+We supposed that are bundle is in src/Presta/Blog and Blog Post CRUD is already done.
+
 ### The service
+
+Create a service class which extends the base one.
+
+As our block is linked to Blog Post we will set the settingRoute to link it, we will also add a preview.
+
+As we need to make query to Post repository, we will use *getAdditionalViewParameters* method to give additional
+parameters to the view.
+
+We need to configure the edit form to add an entry for the number of posts to display and as we need a default number
+we will set it in the *getDefaultSettings()*
+
+So here is how the code looks like :
+
+File : *src/Presta/Blog/Block/Post/ListBlockService.php*
+
+{% highlight php %}
+    <?php
+    namespace Presta\Blog\Block\Post;
+
+    use Sonata\BlockBundle\Model\BlockInterface;
+    use Presta\CMSCoreBundle\Block\BaseBlockService;
+    use Doctrine\ORM\EntityRepository;
+
+    /**
+     * @author Nicolas Bastien <nbastien@prestaconcept.net>
+     */
+    class ListBlockService extends BaseBlockService
+    {
+        /**
+         * @var string
+         */
+        protected $preview = 'bundles/prestablog/theme/sandbox/admin/img/block/blog_post_list.jpg';
+
+        /**
+         * @var string
+         */
+        protected $settingsRoute = 'admin_presta_blog_post_list';
+
+        /**
+         * @var string
+         */
+        protected $template = 'PrestaBlogBundle:Block\Blog\Post:block_list.html.twig';
+
+        /**
+         * @var EntityRepository
+         */
+        protected $repository;
+
+        /**
+         * @param $container
+         */
+        public function setContainer($container)
+        {
+            $this->repository = $container->get('doctrine')->getRepository('PrestaBlogBundle:Blog\Post');
+        }
+
+        /**
+         * {@inheritdoc}
+         */
+        protected function getAdditionalViewParameters(BlockInterface $block)
+        {
+            $settings = array_merge(
+                $this->getDefaultSettings(),
+                $block->getSettings()
+            );
+
+            $settings['posts'] = $this->repository->getActiveList($settings['nb_posts']);
+
+            return $settings;
+        }
+
+        /**
+         * {@inheritdoc}
+         */
+        public function getFormSettings(FormMapper $formMapper, BlockInterface $block)
+        {
+            return array(
+                array('nb_posts', 'integer', array('required' => false, 'label' => $this->trans('form.label_nb_posts')))
+            );
+        }
+
+        /**
+         * {@inheritdoc}
+         */
+        public function getDefaultSettings()
+        {
+            return array(
+                'nb_posts' => 0
+            );
+        }
+    }
+{% endhighlight %}
 
 ### The template
 
+Second part is to build the corresponding template.
+
+As we set the $template variable in the block service, we have to add *PrestaBlogBundle:Block\Blog\Post:block_list.html.twig* file
+
+Every template should extends the default one which adds default structure and ids.
+
+{% highlight php %}
+    { % extends 'PrestaCMSCoreBundle:Block:base_block.html.twig' % }
+
+    { % block block % }
+        <h2>{{ settings.title }}</h2>
+        <ul id="post-list">
+            {% for post in posts %}
+                <li>
+                    <h3>{{ post.tile }}</h3>
+                    <p>{{ post.description }}</p>
+                </li>
+            {% endfor %}
+        </ul>
+    { % endblock % }
+{% endhighlight %}
+
+
 ### Configuration
+
+Now our block is nearly over, we just need to register the new service and to add a special tag for PrestaCMS.
+
+File : /src/Presta/BlogBundle/Resources/config/services.yml
+
+    services:
+        ...
+        #Blocks
+        presta_blog.block.post.list:
+            class: Presta\BlogBundle\Block\Post\ListBlockService
+            parent: presta_cms.block.base
+            tags:
+                - {name: sonata.block}
+                - {name: presta_cms.block}
+            calls:
+                - [ setContainer, [@service_container]]
+
+Tag *presta_cms.block* allow BlockManager to retrieve it and to use it in the available block list.
+
+And some translation for the admin interface : *PrestaCMSCoreBundle.en.yml*
+
+    block.title.presta_blog.block.post.list: Lastest posts
+    block.description.presta_blog.block.post.list: This blocks displays lasted blog posts
 
 
 Let's continue with [block advanced features][5].
