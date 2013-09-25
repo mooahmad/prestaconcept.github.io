@@ -1,0 +1,35 @@
+---
+layout: presta-cms-core-documentation
+title: PrestaCMS extensions
+navigation_active: extensions.html
+
+extensions:
+    - {
+        id: "prestacmsthemebasicbundle",
+        link: "prestaconcept/PrestaCMSThemeBasicBundle",
+        title: "PrestaCMSThemeBasicBundle",
+        description: "Adds basic themes"
+    }
+    - {
+        id: "prestacmsmediabundle",
+        link: "prestaconcept/PrestaCMSMediaBundle",
+        title: "PrestaCMSMediaBundle",
+        description: "This bundle provides media blocks for the PrestaCMS"
+    }
+---
+
+<h1>PrestaCMS extensions</h1>
+
+{% for item in page.extensions %}
+<div class="extension">
+    <img src="/assets/extensions/{{ item.id }}.jpg">
+    <div class="mask">
+        <h2>{{ item.title }}</h2>
+        {% if (item.description) %}
+        <p>{{ item.description }}</p>
+        {% endif %}
+        <a href="https://github.com/{{ item.link }}" class="info">View it on github</a>
+    </div>
+</div>
+{% endfor %}
+
