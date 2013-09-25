@@ -1,0 +1,26 @@
+---
+layout: presta-cms-core-documentation
+title: PrestaCMS showcases
+navigation_active: showcases.html
+showcases:
+    - { id: "prestaconcept", link: "http://www.prestaconcept.net", title: "PrestaConcept", description: "Symfony2 Experts" }
+    - { id: "sandbox", link: "http://sandbox.prestacms.com", title: "Sandbox", description: "PrestaCMS demonstration website" }
+    - { id: "bpeek", link: "http://www.bpeek.com", title: "Bpeek" }
+    - { id: "talan", link: "http://www.talan.fr", title: "Talan" }
+---
+
+<h1>PrestaCMS showcases</h1>
+
+{% for item in page.showcases %}
+    <div class="showcase">
+        <img src="/assets/showcase/{{ item.id }}.jpg">
+        <div class="mask">
+            <h2>{{ item.title }}</h2>
+            {% if (item.description) %}
+                <p>{{ item.description }}</p>
+            {% endif %}
+            <a href="{{ item.link }}" class="info">View project</a>
+        </div>
+    </div>
+{% endfor %}
+
