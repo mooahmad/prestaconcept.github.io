@@ -214,7 +214,7 @@ And some translation for the admin interface : *PrestaCMSCoreBundle.en.yml*
     block.description.presta_blog.block.post.list: This blocks displays lasted blog posts
 
 ---
-Let's continue with [block advanced features][5].
+Let's continue with [block advanced features][4].
 
 [1]: http://symfony.com/doc/master/cmf/bundles/block/index.html
 [2]: http://sonata-project.org/bundles/block/master/doc/index.html
