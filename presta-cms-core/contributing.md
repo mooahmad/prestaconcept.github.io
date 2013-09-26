@@ -10,7 +10,7 @@ PrestaCMS is release as an open source project and every contribution are welcom
 
 ## Code contributions
 
-For consistency purpose, PrestaCMS follow the same the same guidelines and conventions as core Symfony2 and SymfonyCMF.
+For consistency purpose, PrestaCMS follow the same guidelines and conventions as core Symfony2 and SymfonyCMF.
 
 If you'd like to contribute, please read the [Contributing Code][1] part of the documentation.
 If you're submitting a pull request, please follow the guidelines in the [Submitting a Patch][2] section
