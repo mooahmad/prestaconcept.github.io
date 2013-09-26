@@ -21,7 +21,7 @@ PrestaCMS comes with a theming system. For more information about themes, please
 
 Your project can have multiple themes, and you can plug each website on a different one.
 
-You can administrate you content on each theme. Basically a theme content is a content available on every page of your site.
+You can administrate your content on each theme. Basically a theme content is a content available on every page of your site.
 For example, a footer or header block.
 
 Content is not share between websites so you can have two different websites plug on the same theme but with different content.
