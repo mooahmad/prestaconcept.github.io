@@ -6,7 +6,7 @@ navigation_active: our-philosophy.html
 
 # Our philosophy
 
-PrestaCMS has been by professionals for professionals web developers.
+PrestaCMS has been done by professionals for professionals web developers.
 
 Our goal is to provided a CMS layer for Symfony2 projects.
 
