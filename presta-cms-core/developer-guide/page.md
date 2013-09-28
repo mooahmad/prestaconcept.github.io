@@ -56,7 +56,7 @@ use Presta\CMSCoreBundle\Model\Page\PageTypeCMSPage;
 use Presta\CMSCoreBundle\Model\Page\PageTypeInterface;
 
 /**
- * Handle author inforamtion
+ * Handle author information
  *
  * @author Nicolas Bastien <nbastien@prestaconcept.net>
  */
@@ -128,7 +128,7 @@ Now you just need to use your author data in you template.
 ---
 At the end of this section you already now a lot of way to customize your project with PrestaCMS.
 
-But there is even more, let's continue with [Extending PrestaCMS][2].
+&rarr; But there is even more, let's continue with [Extending PrestaCMS][2].
 
 [1]: https://github.com/prestaconcept/PrestaCMSCoreBundle/blob/master/Model/Page/PageTypeInterface.php
 [2]: /presta-cms-core/developer-guide/extending.html#content

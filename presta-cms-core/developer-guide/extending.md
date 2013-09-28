@@ -45,8 +45,8 @@ To do this, just override the factory class name in your configuration :
 In *app/config/bundles/presta_cms_core.yml* or any bundle configuration or service declaration :
 
 {% highlight yaml %}
-    parameters:
-        presta_cms.page.factory.class: Application\Presta\CMSCoreBundle\Factory\PageFactory
+parameters:
+    presta_cms.page.factory.class: Application\Presta\CMSCoreBundle\Factory\PageFactory
 {% endhighlight %}
 
 Now you can create your own factory. Have a look at [the sandbox one][5] for a working example.
@@ -64,7 +64,7 @@ If you need something else, please ask it or make a pull request.
 
 Building a custom theme is a huge topic.
 
-We made a special [theming guide][6] for this.
+&rarr; We made a special [theming guide][6] for this.
 
 ## Override templates
 
@@ -84,7 +84,7 @@ This is the end of developer guide documentation.
 
 Now if you want to go deeper, you should have a look at the documentation of projects we used.
 
-To help your research we made a [Useful documentation page][8].
+&rarr; To help your research we made a [Useful documentation page][8].
 
 [1]: http://symfony.com/doc/current/cookbook/bundles/override.html
 [2]: http://symfony.com/doc/current/cookbook/bundles/inheritance.html

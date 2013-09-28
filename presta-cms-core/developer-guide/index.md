@@ -65,7 +65,7 @@ If you want to master your PrestaCMS application, you really need to check those
 
 
 ---
-Let's continue with [User guide][1] and [Theming guide][2].
+&rarr; Let's continue with [User guide][1] and [Theming guide][2].
 
 [1]: /presta-cms-core/user-guide/index.html
 [2]: /presta-cms-core/theming-guide/index.html

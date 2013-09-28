@@ -11,66 +11,66 @@ navigation_active: docs.html
 
 ![Symfony2](/assets/presta-cms-core/logo/symfony.png)
 
-[Documentation][1]
+[&rarr; Documentation][1]
 
-[Cookbook][2]
+[&rarr; Cookbook][2]
 
 ## SymfonyCMF
 
 ![SymfonyCMF](/assets/presta-cms-core/logo/symfony-cmf.png)
 
-[All the documentation][3]
+[&rarr; All the documentation][3]
 
 ## Sonata-Project
 
 ![Sonata-Project](/assets/presta-cms-core/logo/sonata-project.jpg)
 
-[Admin][4]
+[&rarr; Admin][4]
 
-[Block][5]
+[&rarr; Block][5]
 
 ## Storage layer
 
 ![Doctrine2 PHPCR ODM](/assets/presta-cms-core/logo/doctrine.jpg)
 
-[Doctrine2 PHPCR ODM][6]
+[&rarr; Doctrine2 PHPCR ODM][6]
 
 ## Interface
 
 ![Twitter Bootstrap](/assets/presta-cms-core/logo/twitter-bootstrap.jpg)
 
-[Twitter Bootstrap][7]
+[&rarr; Twitter Bootstrap][7]
 
 ![AngularJS](/assets/presta-cms-core/logo/angularjs.png)
 
-[AngularJS][8]
+[&rarr; AngularJS][8]
 
 ## Testing
 
-[CMF Testing component][9]
+[&rarr; CMF Testing component][9]
 
 ![PHPUnit](/assets/presta-cms-core/logo/phpunit.jpg)
 
-[PHPUnit][10]
+[&rarr; PHPUnit][10]
 
 ![Behat](/assets/presta-cms-core/logo/behat.png)
 
-[Behat][11]
+[&rarr; Behat][11]
 
 ![Travis](/assets/presta-cms-core/logo/travis.png)
 
-[Travis][12]
+[&rarr; Travis][12]
 
 ![SensioLabInsight](/assets/presta-cms-core/logo/sensiolabsinsight.png)
 
-[SensioLabInsight][13]
+[&rarr; SensioLabInsight][13]
 
 
 ## Links
 
 ![Github](/assets/presta-cms-core/logo/github.png)
 
-[PrestaConcept open source bundles][14]
+[&rarr; PrestaConcept open source bundles][14]
 
 
 [1]: http://symfony.com/doc/current/book/index.html

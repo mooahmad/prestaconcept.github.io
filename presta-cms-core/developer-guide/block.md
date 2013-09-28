@@ -86,81 +86,81 @@ So here is how the code looks like :
 File : *src/Presta/Blog/Block/Post/ListBlockService.php*
 
 {% highlight php %}
-    <?php
-    namespace Presta\Blog\Block\Post;
+<?php
+namespace Presta\Blog\Block\Post;
 
-    use Sonata\BlockBundle\Model\BlockInterface;
-    use Presta\CMSCoreBundle\Block\BaseBlockService;
-    use Doctrine\ORM\EntityRepository;
+use Sonata\BlockBundle\Model\BlockInterface;
+use Presta\CMSCoreBundle\Block\BaseBlockService;
+use Doctrine\ORM\EntityRepository;
+
+/**
+ * @author Nicolas Bastien <nbastien@prestaconcept.net>
+ */
+class ListBlockService extends BaseBlockService
+{
+    /**
+     * @var string
+     */
+    protected $preview = 'bundles/prestablog/theme/sandbox/admin/img/block/blog_post_list.jpg';
 
     /**
-     * @author Nicolas Bastien <nbastien@prestaconcept.net>
+     * @var string
      */
-    class ListBlockService extends BaseBlockService
+    protected $settingsRoute = 'admin_presta_blog_post_list';
+
+    /**
+     * @var string
+     */
+    protected $template = 'PrestaBlogBundle:Block\Blog\Post:block_list.html.twig';
+
+    /**
+     * @var EntityRepository
+     */
+    protected $repository;
+
+    /**
+     * @param $container
+     */
+    public function setContainer($container)
     {
-        /**
-         * @var string
-         */
-        protected $preview = 'bundles/prestablog/theme/sandbox/admin/img/block/blog_post_list.jpg';
-
-        /**
-         * @var string
-         */
-        protected $settingsRoute = 'admin_presta_blog_post_list';
-
-        /**
-         * @var string
-         */
-        protected $template = 'PrestaBlogBundle:Block\Blog\Post:block_list.html.twig';
-
-        /**
-         * @var EntityRepository
-         */
-        protected $repository;
-
-        /**
-         * @param $container
-         */
-        public function setContainer($container)
-        {
-            $this->repository = $container->get('doctrine')->getRepository('PrestaBlogBundle:Blog\Post');
-        }
-
-        /**
-         * {@inheritdoc}
-         */
-        protected function getAdditionalViewParameters(BlockInterface $block)
-        {
-            $settings = array_merge(
-                $this->getDefaultSettings(),
-                $block->getSettings()
-            );
-
-            $settings['posts'] = $this->repository->getActiveList($settings['nb_posts']);
-
-            return $settings;
-        }
-
-        /**
-         * {@inheritdoc}
-         */
-        public function getFormSettings(FormMapper $formMapper, BlockInterface $block)
-        {
-            return array(
-                array('nb_posts', 'integer', array('required' => false, 'label' => $this->trans('form.label_nb_posts')))
-            );
-        }
-
-        /**
-         * {@inheritdoc}
-         */
-        public function getDefaultSettings()
-        {
-            return array(
-                'nb_posts' => 0
-            );
-        }
+        $this->repository = $container->get('doctrine')->getRepository('PrestaBlogBundle:Blog\Post');
     }
+
+    /**
+     * {@inheritdoc}
+     */
+    protected function getAdditionalViewParameters(BlockInterface $block)
+    {
+        $settings = array_merge(
+            $this->getDefaultSettings(),
+            $block->getSettings()
+        );
+
+        $settings['posts'] = $this->repository->getActiveList($settings['nb_posts']);
+
+        return $settings;
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function getFormSettings(FormMapper $formMapper, BlockInterface $block)
+    {
+        return array(
+            array('nb_posts', 'integer', array('required' => false, 'label' => $this->trans('form.label_nb_posts')))
+        );
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function getDefaultSettings()
+    {
+        return array(
+            'nb_posts' => 0
+        );
+    }
+}
 {% endhighlight %}
 
 ### The template
@@ -171,20 +171,22 @@ As we set the $template variable in the block service, we have to add *PrestaBlo
 
 Every template should extends the default one which adds default structure and ids.
 
-{% highlight php %}
-    { % extends 'PrestaCMSCoreBundle:Block:base_block.html.twig' % }
+{% highlight html %}
+{% raw %}
+{% extends 'PrestaCMSCoreBundle:Block:base_block.html.twig' %}
 
-    { % block block % }
-        <h2>{{ settings.title }}</h2>
-        <ul id="post-list">
-            {% for post in posts %}
-                <li>
-                    <h3>{{ post.tile }}</h3>
-                    <p>{{ post.description }}</p>
-                </li>
-            {% endfor %}
-        </ul>
-    { % endblock % }
+{% block block %}
+    <h2>{{ settings.title }}</h2>
+    <ul id="post-list">
+        {% for post in posts %}
+            <li>
+                <h3>{{ post.tile }}</h3>
+                <p>{{ post.description }}</p>
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock %}
+{% endraw %}
 {% endhighlight %}
 
 
@@ -194,27 +196,31 @@ Now our block is nearly over, we just need to register the new service and to ad
 
 File : /src/Presta/BlogBundle/Resources/config/services.yml
 
-    services:
-        ...
-        #Blocks
-        presta_blog.block.post.list:
-            class: Presta\BlogBundle\Block\Post\ListBlockService
-            parent: presta_cms.block.base
-            tags:
-                - {name: sonata.block}
-                - {name: presta_cms.block}
-            calls:
-                - [ setContainer, [@service_container]]
+{% highlight yaml %}
+services:
+    ...
+    #Blocks
+    presta_blog.block.post.list:
+        class: Presta\BlogBundle\Block\Post\ListBlockService
+        parent: presta_cms.block.base
+        tags:
+            - {name: sonata.block}
+            - {name: presta_cms.block}
+        calls:
+            - [ setContainer, [@service_container]]
+{% endhighlight %}
 
 Tag *presta_cms.block* allow BlockManager to retrieve it and to use it in the available block list.
 
 And some translation for the admin interface : *PrestaCMSCoreBundle.en.yml*
 
+{% highlight yaml %}
     block.title.presta_blog.block.post.list: Lastest posts
     block.description.presta_blog.block.post.list: This blocks displays lasted blog posts
+{% endhighlight %}
 
 ---
-Let's continue with [block advanced features][4].
+&rarr; Let's continue with [block advanced features][4].
 
 [1]: http://symfony.com/doc/master/cmf/bundles/block/index.html
 [2]: http://sonata-project.org/bundles/block/master/doc/index.html

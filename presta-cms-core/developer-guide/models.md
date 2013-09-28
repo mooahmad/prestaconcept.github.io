@@ -32,6 +32,9 @@ Let's say we want to add a link to a media, stored with Sonata Media. Our block 
 look like this :
 
 {% highlight php %}
+<?php
+class MyBlockService extends BaseModelBlockService
+{
     /**
      * {@inheritdoc}
      */
@@ -51,20 +54,25 @@ look like this :
             'media'  => null
         );
     }
+}
 {% endhighlight %}
 
 Now you can use it in your template like this :
 
-{% highlight php %}
-    { % extends 'PrestaCMSCoreBundle:Block:base_block.html.twig' % }
+{% highlight html %}
+{% raw %}
 
-    { % block block %}
-        { % if (settings.media) % }
-            <div class="cms-block-media-container">
-                { % media settings.media, small % }
-            </div>
-        { % endif % }
-    { % endblock % }
+{% extends 'PrestaCMSCoreBundle:Block:base_block.html.twig' %}
+
+{% block block %}
+    {% if (settings.media) %}
+        <div class="cms-block-media-container">
+            {% media settings.media, small %}
+        </div>
+    {% endif %}
+{% endblock %}
+
+{% endraw %}
 {% endhighlight %}
 
 
@@ -77,6 +85,10 @@ We just have another method to use : *getContentModelFields()*
 Let's say you want to add a link to a page stored in PrestaCMS. Your block will look like this :
 
 {% highlight php %}
+<?php
+
+class MyBlockService extends BaseModelBlockService
+{
     /**
      * {@inheritdoc}
      */
@@ -94,18 +106,19 @@ Let's say you want to add a link to a page stored in PrestaCMS. Your block will 
             'link_destination'  => null
         );
     }
+}
 {% endhighlight %}
 
 Now you can use it in your template like this :
 
-{% highlight php %}
-    { % if (settings.link_destination|length) % }
-        <div class="cms-block-link-container">
-            <a href="{ % if (block.isAdminMode) % }#{ % else % }{{ path(settings.link_destination) }}{ % endif % }">
-                My link to a page
-            </a>
-        </div>
-    { % endif % }
+{% highlight html %}
+{ % if (settings.link_destination|length) % }
+    <div class="cms-block-link-container">
+        <a href="{ % if (block.isAdminMode) % }#{ % else % }{{ path(settings.link_destination) }}{ % endif % }">
+            My link to a page
+        </a>
+    </div>
+{ % endif % }
 {% endhighlight %}
 
 This example also show you how to use the *block.isAdminMode* method.
@@ -117,7 +130,7 @@ Usually this lost administrator easily so we just remove the real links in admin
 ---
 Congratulation, now you're mastering block system.
 
-Let's go deeper and [discovering Pages][3].
+&rarr; Let's go deeper and [discovering Pages][3].
 
 [1]: /presta-cms-core/developer-guide/block.html#content
 [2]: https://github.com/prestaconcept/PrestaCMSCoreBundle/blob/master/Block/BaseModelBlockService.php

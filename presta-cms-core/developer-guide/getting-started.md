@@ -90,7 +90,8 @@ the routing and page template structure (ie: zone and blocks).
 As this is u need to understand how PrestaCMS works before building your data, we suggest you to follow next section
 of this guide before [coding your fixtures][9].
 
-Let's continue with the [block system][10].
+---
+&rarr; Let's continue with the [block system][10].
 
 
 [1]: https://github.com/prestaconcept/PrestaCMSMediaBundle

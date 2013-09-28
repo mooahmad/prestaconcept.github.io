@@ -41,25 +41,28 @@ Update your /app/config/routing.yml file.
 
 If Sonata admin is not configured :
 
-    #Sonata Admin
-    admin:
-        resource: '@SonataAdminBundle/Resources/config/routing/sonata_admin.xml'
-        prefix: /admin
+{% highlight yaml %}
+#Sonata Admin
+admin:
+    resource: '@SonataAdminBundle/Resources/config/routing/sonata_admin.xml'
+    prefix: /admin
 
-    _sonata_admin:
-        resource: .
-        type: sonata_admin
-        prefix: /admin
+_sonata_admin:
+    resource: .
+    type: sonata_admin
+    prefix: /admin
+{% endhighlight %}
 
 PrestaCMS part :
 
-    PrestaCMSCoreBundle:
-        resource: "@PrestaCMSCoreBundle/Resources/config/routing.yml"
-        prefix:   /admin
+{% highlight yaml %}
+PrestaCMSCoreBundle:
+    resource: "@PrestaCMSCoreBundle/Resources/config/routing.yml"
+    prefix:   /admin
 
-    tree:
-        resource: "@SonataDoctrinePHPCRAdminBundle/Resources/config/routing/tree.xml"
-
+tree:
+    resource: "@SonataDoctrinePHPCRAdminBundle/Resources/config/routing/tree.xml"
+{% endhighlight %}
 
 ### Add configuration
 
@@ -70,45 +73,48 @@ So create a new file /app/config/bundles/presta_cms_core.yml
 
 Here is the code from the sandbox, just adapt it to fit your needs :
 
-    imports:
-        - { resource: '@PrestaCMSThemeBasicBundle/Resources/config/theme/creative.yml' }
+{% highlight yaml %}
+imports:
+    - { resource: '@PrestaCMSThemeBasicBundle/Resources/config/theme/creative.yml' }
 
-    parameters:
-        presta_cms.page.factory.class: Application\Presta\CMSCoreBundle\Factory\PageFactory
+parameters:
+    presta_cms.page.factory.class: Application\Presta\CMSCoreBundle\Factory\PageFactory
 
-    sonata_admin:
-      dashboard:
-          blocks:
-              - { position: right, type: presta_cms.block.dashboard.cms }
+sonata_admin:
+  dashboard:
+      blocks:
+          - { position: right, type: presta_cms.block.dashboard.cms }
 
-    presta_cms_core:
-        default_website: /website/sandbox
-        default_locale: en
-        websites:
-            prestacms-sandbox:
-                path: /website/sandbox
-                hosts:
-                    dev:
-                        en:
-                            locale: en
-                            host: dev-prestacms-sandbox.com
-                        fr:
-                            locale: fr
-                            host: dev-prestacms-sandbox.fr
-                    prod:
-                        en:
-                            locale: en
-                            host: sandbox.prestacms.com
-                        fr:
-                            locale: fr
-                            host:  sandbox.prestacms.fr
-
+presta_cms_core:
+    default_website: /website/sandbox
+    default_locale: en
+    websites:
+        prestacms-sandbox:
+            path: /website/sandbox
+            hosts:
+                dev:
+                    en:
+                        locale: en
+                        host: dev-prestacms-sandbox.com
+                    fr:
+                        locale: fr
+                        host: dev-prestacms-sandbox.fr
+                prod:
+                    en:
+                        locale: en
+                        host: sandbox.prestacms.com
+                    fr:
+                        locale: fr
+                        host:  sandbox.prestacms.fr
+{% endhighlight %}
 
 And import it in you main config.yml file with the main PrestaCMS configuration like this :
 
-    imports:
-        - { resource: '@PrestaCMSCoreBundle/Resources/config/config.yml' }
-        - { resource: bundles/presta_cms_core.yml }
+{% highlight yaml %}
+imports:
+    - { resource: '@PrestaCMSCoreBundle/Resources/config/config.yml' }
+    - { resource: bundles/presta_cms_core.yml }
+{% endhighlight %}
 
 Don't forget to configure other dependencies like sonata-admin, sonata-media...
 
@@ -116,43 +122,52 @@ Don't forget to configure other dependencies like sonata-admin, sonata-media...
 
 Next, be sure to enable these bundles in your AppKernel.php file:
 
-    $bundles = array(
-        ...
-        //Sonata
-        new Sonata\BlockBundle\SonataBlockBundle(),
-        new Sonata\jQueryBundle\SonatajQueryBundle(),
-        new Sonata\AdminBundle\SonataAdminBundle(),
-        new Sonata\EasyExtendsBundle\SonataEasyExtendsBundle(),
-        new Knp\Bundle\MenuBundle\KnpMenuBundle(),
-        new Sonata\SeoBundle\SonataSeoBundle(),
-        new Sonata\MediaBundle\SonataMediaBundle(),
-        new Sonata\DoctrineORMAdminBundle\SonataDoctrineORMAdminBundle(),
-        new Sonata\DoctrinePHPCRAdminBundle\SonataDoctrinePHPCRAdminBundle(),
-        new FOS\JsRoutingBundle\FOSJsRoutingBundle(),
+{% highlight php %}
+<?php
+class AppKernel extends Kernel
+{
+    public function registerBundles()
+    {
+        $bundles = array(
+            ...
+            //Sonata
+            new Sonata\BlockBundle\SonataBlockBundle(),
+            new Sonata\jQueryBundle\SonatajQueryBundle(),
+            new Sonata\AdminBundle\SonataAdminBundle(),
+            new Sonata\EasyExtendsBundle\SonataEasyExtendsBundle(),
+            new Knp\Bundle\MenuBundle\KnpMenuBundle(),
+            new Sonata\SeoBundle\SonataSeoBundle(),
+            new Sonata\MediaBundle\SonataMediaBundle(),
+            new Sonata\DoctrineORMAdminBundle\SonataDoctrineORMAdminBundle(),
+            new Sonata\DoctrinePHPCRAdminBundle\SonataDoctrinePHPCRAdminBundle(),
+            new FOS\JsRoutingBundle\FOSJsRoutingBundle(),
 
-        // Doctrine PHPCR
-        new Doctrine\Bundle\PHPCRBundle\DoctrinePHPCRBundle(),
+            // Doctrine PHPCR
+            new Doctrine\Bundle\PHPCRBundle\DoctrinePHPCRBundle(),
 
-        // CMF bundles
-        new Symfony\Cmf\Bundle\RoutingBundle\CmfRoutingBundle(),
-        new Symfony\Cmf\Bundle\CoreBundle\CmfCoreBundle(),
-        new Symfony\Cmf\Bundle\MenuBundle\CmfMenuBundle(),
-        new Symfony\Cmf\Bundle\ContentBundle\CmfContentBundle(),
-        new Symfony\Cmf\Bundle\TreeBrowserBundle\CmfTreeBrowserBundle(),
-        new Symfony\Cmf\Bundle\BlockBundle\CmfBlockBundle(),
+            // CMF bundles
+            new Symfony\Cmf\Bundle\RoutingBundle\CmfRoutingBundle(),
+            new Symfony\Cmf\Bundle\CoreBundle\CmfCoreBundle(),
+            new Symfony\Cmf\Bundle\MenuBundle\CmfMenuBundle(),
+            new Symfony\Cmf\Bundle\ContentBundle\CmfContentBundle(),
+            new Symfony\Cmf\Bundle\TreeBrowserBundle\CmfTreeBrowserBundle(),
+            new Symfony\Cmf\Bundle\BlockBundle\CmfBlockBundle(),
 
-        //PrestaCMS
-        new Presta\CMSCoreBundle\PrestaCMSCoreBundle(),
-        new Presta\CMSMediaBundle\PrestaCMSMediaBundle(),
-        new Presta\CMSThemeBasicBundle\PrestaCMSThemeBasicBundle(),
+            //PrestaCMS
+            new Presta\CMSCoreBundle\PrestaCMSCoreBundle(),
+            new Presta\CMSMediaBundle\PrestaCMSMediaBundle(),
+            new Presta\CMSThemeBasicBundle\PrestaCMSThemeBasicBundle(),
 
-        //Utils
-        new Doctrine\Bundle\FixturesBundle\DoctrineFixturesBundle()
+            //Utils
+            new Doctrine\Bundle\FixturesBundle\DoctrineFixturesBundle()
 
-        //Application bundles
-        new Application\Sonata\AdminBundle\ApplicationSonataAdminBundle(),
-        new Application\Presta\CMSCoreBundle\ApplicationPrestaCMSCoreBundle()
-    );
+            //Application bundles
+            new Application\Sonata\AdminBundle\ApplicationSonataAdminBundle(),
+            new Application\Presta\CMSCoreBundle\ApplicationPrestaCMSCoreBundle()
+        );
+    }
+}
+{% endhighlight %}
 
 Now, install the assets from the bundles:
 
@@ -165,7 +180,7 @@ Usually when installing new bundles it’s good practice to also delete your cac
 
 ### Let's code
 
-Now installation step is over, let's continue with [getting started section][6]
+&rarr; Now installation step is over, let's continue with [getting started section][6]
 
 
 [1]: http://symfony.com/doc/master/book/installation.html
