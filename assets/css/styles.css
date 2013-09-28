@@ -1550,7 +1550,7 @@ input[type="submit"].btn.btn-mini {
   *z-index: 2;
 }
 .navbar-inner {
-  min-height: 40px;
+  min-height: 50px;
   padding-left: 20px;
   padding-right: 20px;
   background-color: #fafafa;
@@ -1589,7 +1589,7 @@ input[type="submit"].btn.btn-mini {
 .navbar .brand {
   float: left;
   display: block;
-  padding: 10px 20px 10px;
+  padding: 15px 20px 15px;
   margin-left: -20px;
   font-size: 20px;
   font-weight: 200;
@@ -1602,7 +1602,7 @@ input[type="submit"].btn.btn-mini {
 }
 .navbar-text {
   margin-bottom: 0;
-  line-height: 40px;
+  line-height: 50px;
   color: #777777;
 }
 .navbar-link {
@@ -1613,14 +1613,14 @@ input[type="submit"].btn.btn-mini {
   color: #333333;
 }
 .navbar .divider-vertical {
-  height: 40px;
+  height: 50px;
   margin: 0 9px;
   border-left: 1px solid #f2f2f2;
   border-right: 1px solid #ffffff;
 }
 .navbar .btn,
 .navbar .btn-group {
-  margin-top: 5px;
+  margin-top: 10px;
 }
 .navbar .btn-group .btn,
 .navbar .input-prepend .btn,
@@ -1646,7 +1646,7 @@ input[type="submit"].btn.btn-mini {
 .navbar-form select,
 .navbar-form .radio,
 .navbar-form .checkbox {
-  margin-top: 5px;
+  margin-top: 10px;
 }
 .navbar-form input,
 .navbar-form select,
@@ -1671,7 +1671,7 @@ input[type="submit"].btn.btn-mini {
 .navbar-search {
   position: relative;
   float: left;
-  margin-top: 5px;
+  margin-top: 10px;
   margin-bottom: 0;
 }
 .navbar-search .search-query {
@@ -1755,7 +1755,7 @@ input[type="submit"].btn.btn-mini {
 }
 .navbar .nav > li > a {
   float: none;
-  padding: 10px 15px 10px;
+  padding: 15px 15px 15px;
   color: #777777;
   text-decoration: none;
   text-shadow: 0 1px 0 #ffffff;
@@ -3377,13 +3377,24 @@ header nav li:last-child a {
   background: url('/assets/img/layout/prestaconcept-header.png') no-repeat bottom left transparent;
 }
 #hook-outer #hook h1 {
+  margin-top: 50px;
+  text-align: right;
+}
+#hook-outer h1 {
   color: #fff;
   text-shadow: 0px 1px 5px #000000;
-  margin-top: 50px;
+  margin-top: 20px;
   margin-right: 35px;
   font-size: 50px;
-  text-align: right;
   font-weight: normal;
+}
+#hook-outer p {
+  font-family: 'Reenie Beanie', 'Open Sans', Helvetica, Arial, sans-serif;
+  color: #fff;
+  text-shadow: 0px 1px 5px #000000;
+  font-style: italic;
+  margin-left: 75px;
+  font-size: 30px;
 }
 #hook-outer .navbar {
   margin-bottom: 0px;
