@@ -16,21 +16,21 @@ for all its content structure.
 
 PrestaCMS use configuration to load websites.
 
-Each websites can have different languages and different environment (staging), each one bind to a given url.
-That means that you have to configure the locale, environment and website foreach urls.
+Each website can have different languages and different environment (staging), each one bind to a given url.
+That means that you have to configure the locale, environment and website for each urls.
 
 ### Page
 
 Each page of your site handle by PrestaCMS correspond to a Page model.
 
-Page model can have different types, PrestaCMS core basic type is called 'cms_type'. This divided the page into "Zone"
+Page model can have different types, PrestaCMS core basic type is called 'cms_type'. Page is divided into "Zone"
 and each zone can store a collection of blocks.
 
 Page use templates to define their zone and block structure.
 
 PrestaCMS core defines basic blocks : Simple, Sitemap, PageChildren and Breadcrumb.
 
-The block system is based on [sonata-block][1], you can define new block types to customise your site. You can have a look
+The block system is based on [sonata-block][1], you can define new block types to customize your site. You can have a look
 at [PrestaCMSMediaBundle][2] to have examples of block using media entities.
 
 PrestaCMS page type system make it easy to customize. You can create new types of page and declare new tabs for administrate it.
@@ -60,7 +60,7 @@ So if you follow, in that case we have :
 
 -   one website : /website/sandbox
 -   one page : /website/sandbox/page/about
--   but two routes
+-   two routes (one by language)
 
 ### Theme
 
@@ -74,16 +74,15 @@ It allows you to centralize designer and web integrator codes and to provide mul
 - the second one is to centralize content which is present on all your site.
 For example a footer or header block.
 
-Themes have a dedicated administration.
+Themes have a dedicated administration area.
 
 You can find more information about themes in the [Theming guide][8].
-
 
 ### Fixtures
 
 As you can see PrestaCMS use several models to render a website.
 
-Most of the time professionals websites have defined structure and type of page.
+Most of the time, professionals websites have defined structure and type of page.
 That's why we never start from an empty website and begin with greating fixtures to build the page structure, the menus,
 the routing and page template structure (ie: zone and blocks).
 
