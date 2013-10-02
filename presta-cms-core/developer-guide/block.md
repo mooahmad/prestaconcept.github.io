@@ -8,18 +8,18 @@ navigation_active: block.html
 
 ## Overview
 
-PrestaCms content in managed trought blocks. Every pages and theme are divided in zones which contains blocks of different types.
+PrestaCms content is managed through blocks. Every pages and theme are divided in zones which contains blocks of different types.
 
 Block system is based on [CMFBlockBundle][1] which extends [SonataBlockBundle][2].
 
-Before going further, we suggest you read the [SonataBlockBundle][2] documentation which explain a lot of useful step.
+Before going further, we suggest you read the [SonataBlockBundle][2] documentation which explain a lot of useful things.
 
 
 ## Block types
 
 PrestaCMSCore handle basic block types :
 
--   Simple : A simple block contains a title, a text, a link to another CMS page.
+-   Simple : A simple block contains a title, a text and a link to another CMS page.
 
 ![Simple block](/assets/presta-cms-core/blocks/block-simple.jpg)
 
@@ -28,24 +28,24 @@ PrestaCMSCore handle basic block types :
 ![Sitemap block](/assets/presta-cms-core/blocks/block-sitemap.jpg)
 
 -   Container : A container allow you to format page rendering.
-Multiple format are available : 50/50, 1/3 - 2/3.... Containers can contain any kind of other blocks.
+Multiple format are available : 50/50, 1/3 - 2/3, ... Containers can contain any kind of other blocks.
 
 ![Container block](/assets/presta-cms-core/blocks/block-container.jpg)
 
--   Page children : this blocks display a list of page children with a title and a description. It is usually used for
-step pages
+-   Page children : this block display a list of page children with a title and a description. It is usually used for
+landing pages.
 
 ![Page children block](/assets/presta-cms-core/blocks/block-page-children.jpg)
 
 
 Other bundle can easily add more block types to your application, for example you can have a look at [PrestaCMSMediaBundle][5]
-which adds different blocks to render medias.
+which adds special blocks to render medias.
 
 
 ## Block base service
 
-If you have read the [SonataBlockBundle][2] documentation you should now that two main elements of a block are a template
-and a service class responsible of rendering the block.
+If you have read the [SonataBlockBundle][2] documentation you know that the two main elements of a block are template
+and service class (responsible of rendering the block).
 
 Common block features have been centralized in [BaseBlockService][3] so every new block service should extend it.
 
@@ -55,17 +55,17 @@ Common block features have been centralized in [BaseBlockService][3] so every ne
 -   provide the **translator**
 -   automatically load the **template**
 -   **preview** : block which used javascript or complex css features to render should provide a preview image to display it
-in the administration screen. For example a carousel.
+in the administration screen (for example carousel).
 -   **settingsRoute** : block which displays application entities (for example blog posts) should provide a settingsRoute which
 is the sonata admin code of the entities listing.
-A link to the corresponding admin listing will be displayed in the page administration.
+A link to the corresponding admin list will be displayed in the page administration.
 
 
 ## Build your first block
 
 Let's create a new block for listing blog post. Blog post have a custom administration done with sonata.
 
-Our bundle will have a title editable and an option to set the number of post to display.
+Our bundle will have an editable title and an option to set the number of post to display.
 
 We supposed that your bundle is in src/Presta/Blog and Blog Post CRUD is already done.
 
@@ -73,7 +73,7 @@ We supposed that your bundle is in src/Presta/Blog and Blog Post CRUD is already
 
 Create a service class which extends the base one.
 
-As our block is linked to Blog Post we will set the settingRoute to link it, we will also add a preview.
+As our block is linked to Blog Post, we will set the settingRoute to link it, we will also add a preview.
 
 As we need to make query to Post repository, we will use *getAdditionalViewParameters* method to give additional
 parameters to the view.
@@ -167,7 +167,7 @@ class ListBlockService extends BaseBlockService
 
 Second part is to build the corresponding template.
 
-As we set the $template variable in the block service, we have to add *PrestaBlogBundle:Block\Blog\Post:block_list.html.twig* file
+As we set the $template variable in the block service, we have to add *PrestaBlogBundle:Block\Blog\Post:block_list.html.twig* file.
 
 Every template should extends the default one which adds default structure and ids.
 
@@ -215,7 +215,7 @@ Tag *presta_cms.block* allow BlockManager to retrieve it and to use it in the av
 And some translation for the admin interface : *PrestaCMSCoreBundle.en.yml*
 
 {% highlight yaml %}
-    block.title.presta_blog.block.post.list: Lastest posts
+    block.title.presta_blog.block.post.list: Latest posts
     block.description.presta_blog.block.post.list: This blocks displays lasted blog posts
 {% endhighlight %}
 
