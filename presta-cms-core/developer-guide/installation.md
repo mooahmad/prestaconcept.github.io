@@ -9,7 +9,7 @@ navigation_active: installation.html
 
 ## First step
 
-PrestaCMSCore is a Symfony2 bundle so before using it, you need to set up a Symfony2 project.
+PrestaCMSCore is a Symfony2 bundle so before using it, you need to set-up a Symfony2 project.
 A well made [documentation is available on Symfony.com][1].
 
 As content storage is based on SymfonyCMF you have to [choose and set-up a storage layer][2].
@@ -18,13 +18,13 @@ As SymfonyCMF we suggest [PHPCR][3] and [PHPCR-ODM][4] as the ideal basis.
 
 ## Install PrestaCMS
 
-For a working exemple you can have a look at [PrestaCMS Sandbox][5] which is a demo project of all PrestaCMS features.
+For a working example you can have a look at [PrestaCMS Sandbox][5] which is the demo project of PrestaCMS.
 
 ### Get the code
 
-Download PrestaCMSCore and its dependencies to the vendor directory of your project.
+Download PrestaCMSCore and its dependencies and put into the vendor directory of your project.
 
-The easiest way is using composer :
+The easiest way is to use composer :
 
     php composer.phar require presta/cms-core-bundle --no-update
     php composer.phar update presta/cms-core-bundle
@@ -66,8 +66,8 @@ tree:
 
 ### Add configuration
 
-As a good practice we suggest to make a dedicated file for each new bundle configuration instead of copy paste it
-in the main config.yml
+As a good practice, we suggest to make a dedicated configuration file for each new bundle (instead of copy/paste it
+in the main config.yml)
 
 So create a new file /app/config/bundles/presta_cms_core.yml
 
@@ -108,7 +108,7 @@ presta_cms_core:
                         host:  sandbox.prestacms.fr
 {% endhighlight %}
 
-And import it in you main config.yml file with the main PrestaCMS configuration like this :
+And import PrestaCMS configuration in /app/config/config.yml like this :
 
 {% highlight yaml %}
 imports:
@@ -120,7 +120,7 @@ Don't forget to configure other dependencies like sonata-admin, sonata-media...
 
 ### Update your Kernel
 
-Next, be sure to enable these bundles in your AppKernel.php file:
+Next, be sure to enable these bundles in your /app/AppKernel.php file:
 
 {% highlight php %}
 <?php
@@ -173,7 +173,7 @@ Now, install the assets from the bundles:
 
     php app/console assets:install web
 
-Usually when installing new bundles it’s good practice to also delete your cache:
+It’s a good practice to also delete your cache when installing new bundles:
 
     php app/console cache:clear
 
