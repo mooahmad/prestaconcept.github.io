@@ -9,14 +9,14 @@ Welcome on PrestaCMS developer guide.
 
 This will show you how to code with PrestaCMS.
 
-If you are a end user or a designer, you should check [User guide][1] and [Theming guide][2].
+If you are an end user or a designer, you should check [User guide][1] and [Theming guide][2].
 
 ## [Installation][3]
 
 [Installation][3] section will explain you how to set-up a project with PrestaCMSCoreBundle, getting the code,
 configuration...
 
-For a working example you can have a look at [PrestaCMS Sandbox][4] which is a demo project of all PrestaCMS features.
+For a working example you can have a look at [PrestaCMS Sandbox][4] which is the demo project of PrestaCMS.
 
 ## [Getting started][5]
 
@@ -28,16 +28,16 @@ PrestaCMS content is managed with a block structure.
 
 The main part of the development will be to build custom block to fit your needs.
 
-So learning [how to make custom block][6] is really an important topic.
+So learning [how to make custom block][6] which is really an important topic.
 
 ## [Working with models][7]
 
-For a professional website you will quickly need to go a step further and add other kind of thing like :
+For a professional website, you will quickly need to go a step further and add other kind of thing like :
 
 -   media
 -   description of a product entity
 -   picture of a user in a comment block
--    …
+-   ...
 
 So you need a way to [link your block to your custom models][7].
 
@@ -45,7 +45,7 @@ So you need a way to [link your block to your custom models][7].
 
 As every CMS site is about "content", building your site structure is really important.
 
-[Making fixtures][8] section will show you to set-up you how to
+[Making fixtures][8] section will show you how to set-up.
 
 ## [Page types][9]
 
