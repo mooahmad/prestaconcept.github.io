@@ -49,3 +49,7 @@ Thanks to
 **Lead Developer** : [@nicolas-bastien](https://github.com/nicolas-bastien)
 
 Released under the MIT License
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/prestaconcept/prestaconcept.github.io/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
