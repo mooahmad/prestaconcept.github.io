@@ -17,14 +17,14 @@ Now for a professional website you will quickly need to go a step further and ad
 -   media
 -   description of a product entity
 -   picture of a user in a comment block
--   ...
+-   ''...''
 
 So you need a way to link your block to your custom models.
 
 
 ## ORM Models
 
-To make your life easier we add useful a base class [BaseModelBlockService][2] to add usefull methods to handle models.
+To make your life easier we add a useful base class [BaseModelBlockService][2] to add useful methods to handle models.
 
 All you need to do is to extends this base class and to override *getModelFields()* method.
 
