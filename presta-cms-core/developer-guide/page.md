@@ -90,14 +90,14 @@ class PageTypeAuthorCMSPage extends PageTypeCMSPage implements PageTypeInterface
      */
     public function getEditTabData($tab, Page $page)
     {
-        if ($tab == 'author) {
+        if ($tab == 'author') {
             return array(
-                'name'       => $page->getAuthorName(),
-                'description => $page->getAuthorDescription()
+                'name'          => $page->getAuthorName(),
+                'description'   => $page->getAuthorDescription()
             );
         }
 
-        return $parent::getEditTabData($tab, Page $page);
+        return $parent::getEditTabData($tab, $page);
     }
 
     /**
@@ -105,7 +105,7 @@ class PageTypeAuthorCMSPage extends PageTypeCMSPage implements PageTypeInterface
      */
     public function getEditTabTemplate($tab)
     {
-        if ($tab == 'author) {
+        if ($tab == 'author') {
             //don't forget to create this template with corresponding form inside
             return 'MyBundle:Admin/Page/CMSPage:tab_author.html.twig';
         }
