@@ -10,7 +10,7 @@ navigation_active: block.html
 
 PrestaCms content in managed trought blocks. Every pages and theme are divided in zones which contains blocks of different types.
 
-Block system in based on [CMFBlockBundle][1] which extends [SonataBlockBundle][2].
+Block system is based on [CMFBlockBundle][1] which extends [SonataBlockBundle][2].
 
 Before going further, we suggest you read the [SonataBlockBundle][2] documentation which explain a lot of useful step.
 
@@ -67,7 +67,7 @@ Let's create a new block for listing blog post. Blog post have a custom administ
 
 Our bundle will have a title editable and an option to set the number of post to display.
 
-We supposed that are bundle is in src/Presta/Blog and Blog Post CRUD is already done.
+We supposed that your bundle is in src/Presta/Blog and Blog Post CRUD is already done.
 
 ### The service
 
