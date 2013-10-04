@@ -17,7 +17,7 @@ Now for a professional website you will quickly need to go a step further and ad
 -   media
 -   description of a product entity
 -   picture of a user in a comment block
--   ''...''
+-   ...
 
 So you need a way to link your block to your custom models.
 
