@@ -87,7 +87,7 @@ Most of the time professionals websites have defined structure and type of page.
 That's why we never start from an empty website and begin with greating fixtures to build the page structure, the menus,
 the routing and page template structure (ie: zone and blocks).
 
-As this is u need to understand how PrestaCMS works before building your data, we suggest you to follow next section
+As this is you need to understand how PrestaCMS works before building your data, we suggest you to follow next section
 of this guide before [coding your fixtures][9].
 
 ---
