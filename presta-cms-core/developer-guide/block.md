@@ -21,22 +21,29 @@ PrestaCMSCore handle basic block types :
 
 -   Simple : A simple block contains a title, a text and a link to another CMS page.
 
-![Simple block](/assets/presta-cms-core/blocks/block-simple.jpg)
+<p class="center" markdown="1">
+    ![Simple block](/assets/presta-cms-core/blocks/block-simple.jpg)
+</p>
 
 -   Sitemap : Sitemap block render a navigation under a defined root page. It can be used for a footer or sidebar navigation.
 
-![Sitemap block](/assets/presta-cms-core/blocks/block-sitemap.jpg)
+<p class="center" markdown="1">
+    ![Sitemap block](/assets/presta-cms-core/blocks/block-sitemap.jpg)
+</p>
 
 -   Container : A container allow you to format page rendering.
 Multiple format are available : 50/50, 1/3 - 2/3, ... Containers can contain any kind of other blocks.
 
-![Container block](/assets/presta-cms-core/blocks/block-container.jpg)
+<p class="center" markdown="1">
+    ![Container block](/assets/presta-cms-core/blocks/block-container.jpg)
+</p>
 
 -   Page children : this block display a list of page children with a title and a description. It is usually used for
 landing pages.
 
-![Page children block](/assets/presta-cms-core/blocks/block-page-children.jpg)
-
+<p class="center" markdown="1">
+    ![Page children block](/assets/presta-cms-core/blocks/block-page-children.jpg)
+</p>
 
 Other bundle can easily add more block types to your application, for example you can have a look at [PrestaCMSMediaBundle][5]
 which adds special blocks to render medias.

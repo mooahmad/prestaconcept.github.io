@@ -3480,6 +3480,18 @@ div.content-outer {
   background: url("/assets/img/layout/header-shadow.png") no-repeat scroll top center #ffffff;
   padding: 50px 0px;
 }
+div.content-outer .content .doc-content p.center {
+  text-align: center;
+}
+div.content-outer .content .doc-content p.center img {
+  margin: 10px auto;
+  background: #eee;
+  padding: 5px;
+  border: 1px solid #d4d4d4;
+  -webkit-box-shadow: 0 13px 5px -10px #aaaaaa;
+  -moz-box-shadow: 0 13px 5px -10px #aaaaaa;
+  box-shadow: 0 13px 5px -10px #aaaaaa;
+}
 /* Bundles page
 ------------------------------------------------------------ */
 .fork-us-outer {
@@ -3625,6 +3637,164 @@ pre {
   overflow-x: auto;
   word-break: inherit;
   word-wrap: inherit;
+}
+div.content-outer .content .showcase {
+  height: 160px;
+  position: relative;
+  margin-bottom: 20px;
+}
+div.content-outer .content .showcase:first-child,
+div.content-outer .content .showcase:nth-child(n+4) {
+  margin-left: 0;
+}
+div.content-outer .content .showcase:nth-child(3) {
+  margin-right: 0;
+}
+div.content-outer .content .showcase img {
+  -webkit-transition: all 0.4s ease-in-out 0.5s;
+  -moz-transition: all 0.4s ease-in-out 0.5s;
+  -o-transition: all 0.4s ease-in-out 0.5s;
+  transition: all 0.4s ease-in-out 0.5s;
+  padding: 0px;
+  border: none;
+  margin: 0px;
+}
+div.content-outer .content .showcase span {
+  bottom: -15px;
+  font-family: 'Reenie Beanie', 'Open Sans', Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  color: #FFFFFF;
+  font-size: 35px;
+  position: absolute;
+  right: 15px;
+  text-shadow: 3px 2px 3px #000000;
+  line-height: 150%;
+  -webkit-transition: all 0.2s ease-in-out 0.2s;
+  -moz-transition: all 0.2s ease-in-out 0.2s;
+  -o-transition: all 0.2s ease-in-out 0.2s;
+  transition: all 0.2s ease-in-out 0.2s;
+}
+div.content-outer .content .showcase .mask {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  overflow: hidden;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in 0.4s;
+  -moz-transition: all 0.4s ease-in 0.4s;
+  -o-transition: all 0.4s ease-in 0.4s;
+  transition: all 0.4s ease-in 0.4s;
+  background-color: rgba(0, 0, 0, 0.6);
+  text-shadow: none;
+}
+div.content-outer .content .showcase .mask h2 {
+  font-family: 'Reenie Beanie', 'Open Sans', Helvetica, Arial, sans-serif;
+  color: #FFFFFF;
+  font-size: 35px;
+  padding-top: 20px;
+  text-align: center;
+  font-weight: 400;
+  opacity: 0;
+  -webkit-transform: scale(10);
+  -moz-transform: scale(10);
+  -ms-transform: scale(10);
+  -o-transform: scale(10);
+  transform: scale(10);
+  -webkit-transform: translate(0px, -20px);
+  -moz-transform: translate(0px, -20px);
+  -ms-transform: translate(0px, -20px);
+  -o-transform: translate(0px, -20px);
+  transform: translate(0px, -20px);
+  -webkit-transition: all 0.4s ease-in-out 0.3s;
+  -moz-transition: all 0.4s ease-in-out 0.3s;
+  -o-transition: all 0.4s ease-in-out 0.3s;
+  transition: all 0.4s ease-in-out 0.3s;
+}
+div.content-outer .content .showcase .mask p {
+  text-align: center;
+  color: #fff;
+  font-style: italic;
+  text-shadow: 0px 1px 5px #000000;
+  -webkit-transform: translate(0px, 100px);
+  -moz-transform: translate(0px, 100px);
+  -ms-transform: translate(0px, 100px);
+  -o-transform: translate(0px, 100px);
+  transform: translate(0px, 100px);
+  -webkit-transition: all 0.3s ease-in-out 0.2s;
+  -moz-transition: all 0.3s ease-in-out 0.2s;
+  -o-transition: all 0.3s ease-in-out 0.2s;
+  transition: all 0.3s ease-in-out 0.2s;
+}
+div.content-outer .content .showcase .mask p.info {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #049cdb;
+  margin-top: 5px;
+  -webkit-transform: translateY(100px);
+  -moz-transform: translateY(100px);
+  -ms-transform: translateY(100px);
+  -o-transform: translateY(100px);
+  transform: translateY(100px);
+  -webkit-transition: all 0.3s ease-in-out 0.1s;
+  -moz-transition: all 0.3s ease-in-out 0.1s;
+  -o-transition: all 0.3s ease-in-out 0.1s;
+  transition: all 0.3s ease-in-out 0.1s;
+}
+div.content-outer .content .showcase:hover span {
+  opacity: 0;
+}
+div.content-outer .content .showcase:hover img {
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+div.content-outer .content .showcase:hover .mask {
+  opacity: 1;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+  text-decoration: none;
+}
+div.content-outer .content .showcase:hover .mask h2 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition-delay: 0.1s;
+  -moz-transition-delay: 0.1s;
+  -o-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+}
+div.content-outer .content .showcase:hover .mask p {
+  opacity: 1;
+  -webkit-transform: translate(0px, 0px);
+  -moz-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  -o-transform: translate(0px, 0px);
+  transform: translate(0px, 0px);
+  -webkit-transition-delay: 0.2s;
+  -moz-transition-delay: 0.2s;
+  -o-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+div.content-outer .content .showcase:hover .mask p.info {
+  opacity: 1;
+  -webkit-transform: translate(0px, 0px);
+  -moz-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  -o-transform: translate(0px, 0px);
+  transform: translate(0px, 0px);
+  -webkit-transition-delay: 0.3s;
+  -moz-transition-delay: 0.3s;
+  -o-transition-delay: 0.3s;
+  transition-delay: 0.3s;
 }
 /* Custom variables
 ------------------------------------------------------------ */

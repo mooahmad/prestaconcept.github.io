@@ -11,16 +11,19 @@ showcases:
 
 <h1>PrestaCMS showcases</h1>
 
+<div>
 {% for item in page.showcases %}
-    <div class="showcase">
+    <div class="showcase span3">
         <img src="/assets/showcase/{{ item.id }}.jpg">
-        <div class="mask">
+        <a class="mask" href="{{ item.link }}" >
             <h2>{{ item.title }}</h2>
             {% if (item.description) %}
                 <p>{{ item.description }}</p>
             {% endif %}
-            <a href="{{ item.link }}" class="info">View project</a>
-        </div>
+            <p class="info">View project</p>
+        </a>
+        <span>{{ item.title }}</span>
     </div>
 {% endfor %}
+</div>
 
