@@ -14,6 +14,13 @@
 @lightPurple: #bb7289;
 @lighterPurple: #bdb6ba;
 
+.scale-rotate(@ratio, @degrees) {
+    -webkit-transform: scale(@ratio) rotate(@degrees);
+    -moz-transform: scale(@ratio) rotate(@degrees);
+    -ms-transform: scale(@ratio) rotate(@degrees);
+    -o-transform: scale(@ratio) rotate(@degrees);
+    transform: scale(@ratio) rotate(@degrees);
+}
 
 /* Utils
 ------------------------------------------------------------ */
