@@ -11,7 +11,7 @@ navigation_active: help-support.html
 
 First take a look at the documentation. We will do our best to improve it as PrestaCMS features grows.
 
-Documentation is divided into guides to help people based on there role.
+Documentation is divided into guides to help people based on their roles.
 
 - [Developer guide][1]
 - [Theming guide][2]
