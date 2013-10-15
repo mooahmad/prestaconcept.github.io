@@ -11,7 +11,7 @@ navigation_active: technologies.html
 
 PrestaCMS is a bundle for the great [Symfony2 PHP Framework][1].
 
-So it will easily fit in your Symfony2 projects version 2.2 or upper.
+So it will easily fit in your 2.2 or upper Symfony2 version projects.
 
 
 ## SymfonyCMF
@@ -25,20 +25,20 @@ So all CMF features will be available in PrestaCMS.
 
 ## Sonata-Project
 
-PrestaCMS based all its administration system on [Sonata-Project][4] which have some of the most used Symfony2 bundle.
+PrestaCMS based all its administration system on [Sonata-Project][4] which have some of the most used Symfony2 bundles.
 
 It's well documented and have a great community behind.
 
 ## AngularJS
 
-To enhance our admin interface we integrate [AngularJS][5] which is a JavaScript MVW Framework.
+To enhance our admin interface we integrated [AngularJS][5] which is a JavaScript MVW Framework.
 
 
 ## Continuous integration / Code quality
 
-Here at PrestaConcept we do our best to make quality. That why PrestaCMS is plug on [Travis][6] for continuous integration.
+Here at PrestaConcept we do our best to make quality. That why PrestaCMS is plugged on [Travis][6] for continuous integration.
 
-Code is tested with [PHPUnit][7], The [CMF testing component][8] and soon [Behat][9] for the administration interface.
+Code is tested with [PHPUnit][7], the [CMF testing component][8] and soon [Behat][9] for the administration interface.
 
 Code is parsed with PHPCodeSniffer on PSR2.
 
