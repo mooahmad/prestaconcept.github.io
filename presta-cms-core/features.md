@@ -9,7 +9,7 @@ navigation_active: features.html
 
 ## Multiple websites
 
-PrestaCMS is made to handle multiple website with different languges.
+PrestaCMS is made to handle multiple website with different languages.
 
 Each website has its content structure which can be translated into every languages available for the website.
 
