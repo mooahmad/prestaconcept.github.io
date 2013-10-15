@@ -26,7 +26,7 @@ navigation:
 
 PrestaCMSMediaBundle integrates Sonata Media in [PrestaCMS][1].
 
-For a ready to use demonstration of PrestaCMS you should check the [prestacms-sandox available on github][7].
+For a ready to use demonstration of PrestaCMS, you should check the [prestacms-sandox available on github][7].
 
 This bundles adds the following block type to your project :
 
@@ -36,15 +36,15 @@ This bundles adds the following block type to your project :
 -   Gallery Advanced
 -   Carousel
 
-Feel free to use it, extends it or take it as an example for your own block.
+Feel free to use it, extend it or take it as an example for your own block.
 
 ## Media and Media advanced
 
-This blocks allow you to add a sonata media.
+This block allows you to add a sonata media.
 
-The advanced media adds a title, a content and handle a layout parameter which allow you to have different rendering with the same block.
+The advanced media adds a title, a content and handle a layout parameter which allows you to have different rendering with the same block.
 
-Here is an exemple with Creative theme :
+Here is an example with Creative theme :
 
 <p class="center" markdown="1">
 ![Media advanced](/assets/presta-cms-media/block-media.jpg)
@@ -54,7 +54,7 @@ Here is an exemple with Creative theme :
 
 The same thing for rendering galleries
 
-Here is an exemple with Creative theme :
+Here is an example with Creative theme :
 
 <p class="center" markdown="1">
 ![Gallery advanced](/assets/presta-cms-media/block-gallery.jpg)
@@ -62,15 +62,15 @@ Here is an exemple with Creative theme :
 
 ## Carousel
 
-Carousel block allow you to add carousel based on a Sonata gallery. It contains three type of format : full, medium and small to be easilly integrated in any kind of container.
+Carousel block allows you to add carousel based on a Sonata gallery. It contains three types of format : full, medium and small to be easily integrated in any kind of container.
 
-Here is an exemple with Creative theme :
+Here is an example with Creative theme :
 
 <p class="center" markdown="1">
 ![Carousel](/assets/presta-cms-media/block-carousel.jpg)
 </p>
 
-## Customize it for your project need
+## Customize it for your project needs
 
 ### Change rendering
 
@@ -81,11 +81,11 @@ First use easy-extends to generate your application bundle :
 
     php app/console sonata:easy-extends:generate PrestaCMSMediaBundle --dest=src
 
-Then you just need to override the template you need.
+Then you only need to override the template you need.
 
 ### Add settings
 
-If you need to add settings or functionnalities, create your own application bundle with the command line above and create your own block.
+If you need to add settings or functionalities, create your own application bundle with the command line above and create your own block.
 
 Then either you need it as a new block and you should register it as a block service or you just want it to override the default block and you should
 add a parameter for the corresponding block class.
