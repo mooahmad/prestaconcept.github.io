@@ -6,7 +6,7 @@ navigation_active: contributing.html
 
 # How to contribute to the project
 
-PrestaCMS is release as an open source project and every contribution are welcome and appreciated.
+PrestaCMS is released as an open source project and every contributions are welcome and appreciated.
 
 ## Code contributions
 
