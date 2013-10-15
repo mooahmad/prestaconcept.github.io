@@ -7,7 +7,7 @@ navigation_active: release-process.html
 # PrestaCMS Realease process
 
 
-As PrestaCMS is based on SymfonyCMF which as already a really [great release process][1], we will take it as
+As PrestaCMS is based on SymfonyCMF which has already a really [great release process][1], we will take it as
 a reference.
 
 Please register to our [google group][3] to be aware of new PrestaCMS release and new features.
