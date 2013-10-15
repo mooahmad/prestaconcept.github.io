@@ -30,7 +30,7 @@ It is made to help people starting with PrestaCMS without spending time on desig
 
 It can be a good working example for people who wants to build their own theme.
 
-This bundles provide the following themes :
+This bundles provides the following themes :
 
 -   Creative
 -   ....
@@ -49,9 +49,9 @@ If you want a live demonstration, you can find it working on [PrestaCMS Sandbox]
 
 ## More theme
 
-As PrestaCMS grows more themes will appear.
+As PrestaCMS grows, more themes will appear.
 
-Register to our [google group][3] is you want to follow it.
+Register to our [google group][3] if you want to follow it.
 
 
 [1]: http://getbootstrap.com/2.3.2/
