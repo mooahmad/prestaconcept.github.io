@@ -30,7 +30,7 @@ A basic contact form is available on the "About" page.
 
 This bundle is multiple database layer ready.
 
-Feel free to use it, extends it or take it as an example for your own block.
+Feel free to use it, extend it or take it as an example for your own block.
 
 ## Form
 
@@ -40,7 +40,7 @@ Feel free to use it, extends it or take it as an example for your own block.
 
     ...
 
-## Customize it for your project need
+## Customize it for your project needs
 
 This bundle has been made to be extensible, nearly everything can be overridden.
 
@@ -50,7 +50,7 @@ This bundle has been made to be extensible, nearly everything can be overridden.
 
 ## Ask for help ##
 
-If you need help about this project you can [post a message on our google group][3]
+If you need help about this project, you can [post a message on our google group][3]
 
 ## How to contribute ##
 
