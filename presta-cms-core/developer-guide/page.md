@@ -12,14 +12,14 @@ PrestaCMS has been made to be extensible.
 
 As people may want to find other way to administrate their content, we set up a page type system.
 
-Right now, core only handle CMS type. In version 1.1 we wil add a "Secured CMS" type to handle role and secured site area.
+Right now, core only handle CMS type. In version 1.1 we will add a "Secured CMS" type to handle role and secured site area.
 
 
 ## How it works
 
 A page type class is a model which extends [PageTypeInterface][1].
 
-[PageTypeInterface][1] defines several methods , their goal are to code how your page type should render in front and admin.
+[PageTypeInterface][1] defines several methods. Their goal is to code how your page type should render in front and admin.
 
 ### basic methods
 
@@ -28,7 +28,7 @@ A page type class is a model which extends [PageTypeInterface][1].
 
 ### admin methods
 
-Page administration is compose with tabs, so admin method are used to declare new tabs and corresponding content
+Page administration is composed with tabs, so admin methods are used to declare new tabs and corresponding content:
 
 -   *getEditTabs()* to declare new tabs
 -   *getEditTabData()* to get corresponding tab data
@@ -36,7 +36,7 @@ Page administration is compose with tabs, so admin method are used to declare ne
 
 ### front method
 
-Front is simple just need data to render :
+Front is simple, just need data to render:
 
 -   *getData(Page $page)*
 
@@ -45,7 +45,7 @@ Front is simple just need data to render :
 Making a new page type can be useful to enhanced default CMS type.
 
 For example, let's say you want to add a new tab to add author information. This tab will display a form with author
-name, description....
+name, description...
 
 
 {% highlight php %}
@@ -123,7 +123,7 @@ Add your new service declaration with page type tag :
 </service>
 {% endhighlight %}
 
-Now you just need to use your author data in you template.
+Now, you just need to use your author data in you template.
 
 ---
 At the end of this section you already now a lot of way to customize your project with PrestaCMS.
