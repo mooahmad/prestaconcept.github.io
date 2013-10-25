@@ -18,7 +18,7 @@ when you will have to code real world features and integrate it in your website 
 Before digging into PrestaCMSCore code, you should be comfortable with [Symfony2][1] and have a look
 at [SymfonyCMF][2] and [Sonata-project][3].
 
-As we decide to release it to the community as an open source project, we will pay attention to
+As we decide to release it to the community as an open source project, we will pay attention
 to your feedbacks. So feel free to use it, hack it, extend it... and help us make it better.
 
 Every contributions are welcome and appreciated.
