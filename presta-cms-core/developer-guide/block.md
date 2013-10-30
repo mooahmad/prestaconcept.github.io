@@ -45,6 +45,11 @@ landing pages.
     ![Page children block](/assets/presta-cms-core/blocks/block-page-children.jpg)
 </p>
 
+-   Ajax: Display some ajax content.
+This allows to cache a full page and only refresh the block with ajax.
+You have to include the *Resources/public/js/prestacmscore.js* file in your theme layout to use it.
+An example is available here : [sandbox - Left sidebar layout][6].
+
 Other bundle can easily add more block types to your application, for example you can have a look at [PrestaCMSMediaBundle][5]
 which adds special blocks to render medias.
 
@@ -234,3 +239,4 @@ And some translation for the admin interface : *PrestaCMSCoreBundle.en.yml*
 [3]: https://github.com/prestaconcept/PrestaCMSCoreBundle/blob/master/Block/BaseBlockService.php
 [4]: /presta-cms-core/developer-guide/models.html#content
 [5]: /presta-cms-media
+[6]: http://sandbox.prestacms.com/demo/left-sidebar
