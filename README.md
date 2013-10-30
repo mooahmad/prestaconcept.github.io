@@ -27,8 +27,9 @@ or just launch the following command :
 
 We provide a Makefile for common operation.
 
-So just run "make build" to regenerate the HTML pages automatically when you make changes to Markdown source files.
-and then open [localhost:4000](http://localhost:4000/) in your browser.
+So just run "make build" to launch the server.
+HTML pages will be regenerate automatically when you make changes to Markdown source files.
+And then open [localhost:4000](http://localhost:4000/) in your browser.
 
 If you need to modify the less files, you will need to install node-less and yui-compressor
 
