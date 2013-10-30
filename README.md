@@ -16,9 +16,14 @@ If you need help you can [post a message on our google group](https://groups.goo
 
 This code is using [Jekyll](http://jekyllrb.com/) as this is a ruby project,
 make sure you have Ruby and RubyGems installed.
+If not, launch this command :
 
-Next follow the [installation guide](http://jekyllrb.com/docs/installation/) to install Jekyll
+    sudo apt-get install ruby-full libyaml-ruby libzlib-ruby rubygems
 
+Next, follow the [installation guide](http://jekyllrb.com/docs/installation/) to install Jekyll
+or just launch the following command :
+
+    sudo gem install jekyll
 
 We provide a Makefile for common operation.
 
