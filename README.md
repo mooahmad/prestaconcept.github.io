@@ -16,14 +16,20 @@ If you need help you can [post a message on our google group](https://groups.goo
 
 This code is using [Jekyll](http://jekyllrb.com/) as this is a ruby project,
 make sure you have Ruby and RubyGems installed.
+If not, launch this command :
 
-Next follow the [installation guide](http://jekyllrb.com/docs/installation/) to install Jekyll
+    sudo apt-get install ruby-full libyaml-ruby libzlib-ruby rubygems
 
+Next, follow the [installation guide](http://jekyllrb.com/docs/installation/) to install Jekyll
+or just launch the following command :
+
+    sudo gem install jekyll
 
 We provide a Makefile for common operation.
 
-So just run "make build" to regenerate the HTML pages automatically when you make changes to Markdown source files.
-and then open [localhost:4000](http://localhost:4000/) in your browser.
+So just run "make build" to launch the server.
+HTML pages will be regenerate automatically when you make changes to Markdown source files.
+And then open [localhost:4000](http://localhost:4000/) in your browser.
 
 If you need to modify the less files, you will need to install node-less and yui-compressor
 
