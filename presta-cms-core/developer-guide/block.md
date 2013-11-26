@@ -15,6 +15,36 @@ Block system is based on [CMFBlockBundle][1] which extends [SonataBlockBundle][2
 Before going further, we suggest you read the [SonataBlockBundle][2] documentation which explain a lot of useful things.
 
 
+## Configuration
+
+By default, you can add every type of block you want in a page without any specific configuration.
+
+### Exclude a block from choice list
+
+However, for some reason, if you want to restrict the choice of adding blocks in your page, this is possible like follows:
+
+{% highlight yaml %}
+presta_cms_core:
+    ...
+    blocks:
+        - excluded:
+            - presta_cms.block.ajax
+{% endhighlight %}
+
+### Force some blocks to display in choice list
+
+Maybe, on the contrary, if you want to force the display of **only** one (or several) block to add in the page, you can do it in this way:
+
+{% highlight yaml %}
+presta_cms_core:
+    ...
+    blocks:
+        - accepted:
+            - presta_cms.block.ajax
+            - presta_cms.block.sitemap
+{% endhighlight %}
+
+
 ## Block types
 
 PrestaCMSCore handle basic block types :
