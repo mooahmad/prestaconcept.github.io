@@ -76,6 +76,14 @@ This template code should look like this :
 {% endraw %}
 {% endhighlight %}
 
+Now you just need to configure Sonata Admin to point to your new layout like this :
+
+{% highlight yaml %}
+sonata_admin:
+    templates:
+        layout:  ApplicationSonataAdminBundle::layout.html.twig
+{% endhighlight %}
+
 ### Try PrestaSonataAdminExtendedBundle
 
 Navigation is just one of our utils for SonataAdmin, maybe you should [try our Admin extended bundle](https://github.com/prestaconcept/PrestaSonataAdminExtendedBundle).
