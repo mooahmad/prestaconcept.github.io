@@ -279,6 +279,31 @@ File : /src/Presta/BlogBundle/Resources/config/block.xml
 </container>
 {% endhighlight %}
 
+If you want to create a model block, you only have to set his parent as "presta_cms.block.model.base"
+
+It automatically set the admin pool, which is required on a model block.
+
+{% highlight xml %}
+<container xmlns="http://symfony.com/schema/dic/services"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <parameters>
+        <!-- Parameters -->
+        <parameter key="presta_cms.block.list.class">Presta\CMSMediaBundle\Block\ListBlockService</parameter>
+    </parameters>
+
+    <!-- Services -->
+
+    <services>
+        <service id="presta_cms.block.list" class="%presta_cms.block.list.class%" parent="presta_cms.block.parent.base">
+            <tag name="sonata.block"/>
+            <tag name="presta_cms.block"/>
+        </service>
+    </services>
+</container>
+{% endhighlight %}
+
 And some translation for the admin interface : *PrestaCMSCoreBundle.en.yml*
 
 {% highlight yaml %}
