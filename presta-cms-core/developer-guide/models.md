@@ -128,12 +128,10 @@ As block will be rendered in the administration website, we don't want have mult
 Usually this lost administrator easily so we just remove the real links in admin mode.
 
 
-
 ## Declaration of a model block
 
-If you want to create a model block, you only have to set his parent as "presta_cms.block.model.base"
-
-It automatically set the admin pool, which is required on a model block.
+Model blocks declaration only differs on the parent attribute.
+Parent should be set to "presta_cms.block.model.base" which set the admin pool.
 
 {% highlight xml %}
 <container xmlns="http://symfony.com/schema/dic/services"
@@ -141,11 +139,8 @@ It automatically set the admin pool, which is required on a model block.
        xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
 
     <parameters>
-        <!-- Parameters -->
         <parameter key="presta_cms.block.list.class">Presta\CMSMediaBundle\Block\ListBlockService</parameter>
     </parameters>
-
-    <!-- Services -->
 
     <services>
         <service id="presta_cms.block.list" class="%presta_cms.block.list.class%" parent="presta_cms.block.parent.base">
