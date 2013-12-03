@@ -46,6 +46,37 @@ presta_cms_core:
                 - presta_cms.block.sitemap
 {% endhighlight %}
 
+### Add configuration for specific zone or container
+
+Also, you can configuration a behavior for a specific zone for example.
+
+{% highlight yaml %}
+presta_cms_core:
+    ...
+    blocks:
+        global:
+            accepted:
+                - presta_cms.block.ajax
+                - presta_cms.block.sitemap
+        content:
+            excluded:
+                - presta_cms.block.simple
+{% endhighlight %}
+
+Here, we excluded the simple block from blocks choice list just for the zone named "content". All others zones will use the "global" configuration. If no "global" configuration is found, no restriction will be applied on the blocks. Same thing is possible with container blocks, if you use their id.
+
+{% highlight yaml %}
+presta_cms_core:
+    ...
+    blocks:
+        global:
+            accepted:
+                - presta_cms.block.ajax
+                - presta_cms.block.sitemap
+        websitesandboxpagehomecontentcontainercol1:
+            excluded:
+                - presta_cms.block.simple
+{% endhighlight %}
 
 ## Block types
 
