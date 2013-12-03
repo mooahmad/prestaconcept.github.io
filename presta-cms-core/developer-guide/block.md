@@ -27,8 +27,9 @@ However, for some reason, if you want to restrict the choice of adding blocks in
 presta_cms_core:
     ...
     blocks:
-        - excluded:
-            - presta_cms.block.ajax
+        global:
+            excluded:
+                - presta_cms.block.ajax
 {% endhighlight %}
 
 ### Force some blocks to display in choice list
@@ -39,9 +40,10 @@ Maybe, on the contrary, if you want to force the display of **only** one (or sev
 presta_cms_core:
     ...
     blocks:
-        - accepted:
-            - presta_cms.block.ajax
-            - presta_cms.block.sitemap
+        global:
+            accepted:
+                - presta_cms.block.ajax
+                - presta_cms.block.sitemap
 {% endhighlight %}
 
 
