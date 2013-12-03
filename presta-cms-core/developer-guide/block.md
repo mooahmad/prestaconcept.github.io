@@ -236,7 +236,7 @@ Every template should extends the default one which adds default structure and i
 
 Now our block is nearly over, we just need to register the new service and to add a special tag for PrestaCMS.
 
-File : /src/Presta/BlogBundle/Resources/config/services.yml
+File : /src/Presta/BlogBundle/Resources/config/block.yml
 
 {% highlight yaml %}
 services:
@@ -264,11 +264,8 @@ File : /src/Presta/BlogBundle/Resources/config/block.xml
        xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
 
     <parameters>
-        <!-- Parameters -->
         <parameter key="presta_cms.block.list.class">Presta\CMSMediaBundle\Block\ListBlockService</parameter>
     </parameters>
-
-    <!-- Services -->
 
     <services>
         <service id="presta_cms.block.list" class="%presta_cms.block.list.class%" parent="presta_cms.block.base">
