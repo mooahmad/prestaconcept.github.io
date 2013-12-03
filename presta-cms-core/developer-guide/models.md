@@ -127,6 +127,30 @@ As block will be rendered in the administration website, we don't want have mult
 
 Usually this lost administrator easily so we just remove the real links in admin mode.
 
+
+## Declaration of a model block
+
+Model blocks declaration only differs on the parent attribute.
+Parent should be set to "presta_cms.block.model.base" which set the admin pool.
+
+{% highlight xml %}
+<container xmlns="http://symfony.com/schema/dic/services"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <parameters>
+        <parameter key="presta_cms.block.list.class">Presta\CMSMediaBundle\Block\ListBlockService</parameter>
+    </parameters>
+
+    <services>
+        <service id="presta_cms.block.list" class="%presta_cms.block.list.class%" parent="presta_cms.block.parent.base">
+            <tag name="sonata.block"/>
+            <tag name="presta_cms.block"/>
+        </service>
+    </services>
+</container>
+{% endhighlight %}
+
 ---
 Congratulation, now you're mastering block system.
 
