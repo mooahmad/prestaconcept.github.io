@@ -27,8 +27,9 @@ However, for some reason, if you want to restrict the choice of adding blocks in
 presta_cms_core:
     ...
     blocks:
-        - excluded:
-            - presta_cms.block.ajax
+        global:
+            excluded:
+                - presta_cms.block.ajax
 {% endhighlight %}
 
 ### Force some blocks to display in choice list
@@ -39,11 +40,45 @@ Maybe, on the contrary, if you want to force the display of **only** one (or sev
 presta_cms_core:
     ...
     blocks:
-        - accepted:
-            - presta_cms.block.ajax
-            - presta_cms.block.sitemap
+        global:
+            accepted:
+                - presta_cms.block.ajax
+                - presta_cms.block.sitemap
 {% endhighlight %}
 
+### Add configuration for specific zone or container
+
+Also, you can configuration a behavior for a specific zone for example.
+
+{% highlight yaml %}
+presta_cms_core:
+    ...
+    blocks:
+        global:
+            accepted:
+                - presta_cms.block.ajax
+                - presta_cms.block.sitemap
+        content:
+            excluded:
+                - presta_cms.block.simple
+{% endhighlight %}
+
+Here, we excluded the simple block from blocks choice list just for the zone named "content". All others zones will use the "global" configuration. If no "global" configuration is found, no restriction will be applied on the blocks.
+
+The same thing is possible with the container block, if you use their type.
+
+{% highlight yaml %}
+presta_cms_core:
+    ...
+    blocks:
+        global:
+            accepted:
+                - presta_cms.block.ajax
+                - presta_cms.block.sitemap
+        presta_cms.block.container:
+            excluded:
+                - presta_cms.block.simple
+{% endhighlight %}
 
 ## Block types
 
