@@ -63,7 +63,9 @@ presta_cms_core:
                 - presta_cms.block.simple
 {% endhighlight %}
 
-Here, we excluded the simple block from blocks choice list just for the zone named "content". All others zones will use the "global" configuration. If no "global" configuration is found, no restriction will be applied on the blocks. Same thing is possible with container blocks, if you use their id.
+Here, we excluded the simple block from blocks choice list just for the zone named "content". All others zones will use the "global" configuration. If no "global" configuration is found, no restriction will be applied on the blocks.
+
+The same thing is possible with the container block, if you use their type.
 
 {% highlight yaml %}
 presta_cms_core:
@@ -73,7 +75,7 @@ presta_cms_core:
             accepted:
                 - presta_cms.block.ajax
                 - presta_cms.block.sitemap
-        websitesandboxpagehomecontentcontainercol1:
+        presta_cms.block.container:
             excluded:
                 - presta_cms.block.simple
 {% endhighlight %}
