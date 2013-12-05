@@ -126,9 +126,9 @@ Add your new service declaration with page type tag :
 Now, you just need to use your author data in you template.
 
 ---
-At the end of this section you already now a lot of way to customize your project with PrestaCMS.
+Now you know all about CMS pages handle by the CMF but sometime you need custom actions.
 
-&rarr; But there is even more, let's continue with [Extending PrestaCMS][2].
+&rarr; Let's continue with [Custom controller][2].
 
 [1]: https://github.com/prestaconcept/PrestaCMSCoreBundle/blob/master/Model/Page/PageTypeInterface.php
-[2]: /presta-cms-core/developer-guide/extending.html#content
+[2]: /presta-cms-core/developer-guide/custom-controller.html#content
