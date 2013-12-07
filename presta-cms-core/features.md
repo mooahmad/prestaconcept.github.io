@@ -42,7 +42,7 @@ Many features are available like :
 
 [Page administration demonstration][10]
 
-## Multilangue
+## Multilingual
 
 Translations are directly handled by PHPCR : each nodes can have multiple translations.
 
