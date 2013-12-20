@@ -49,7 +49,7 @@ Require ``presta/cms-social-bundle`` to your composer.json file:
 Register the bundles in ``app/AppKernel.php``
 
 {% highlight php %}
-
+<?php
 // app/AppKernel.php
 public function registerBundles()
 {
