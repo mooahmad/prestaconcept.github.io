@@ -16,15 +16,38 @@ layout: default
             <div class="span3 bs-docs-sidebar" data-spy="affix" data-offset-top="210" data-offset-bottom="270">
                 <ul class="nav nav-list bs-docs-sidenav affix">
                     {% if page.navigation %}
-                        {% for item in page.navigation %}
-                        <li {% if page.navigation_active == item.link %}class="active"{% endif %}>
-                        {% if (page.navigation_mode == 'anchor') %}
-                            <a href="#{{ item.link }}" ><i class="icon-chevron-right"></i> {{ item.title }}</a>
-                        {% else %}
-                            <a href="./{{ item.link }}#content" ><i class="icon-chevron-right"></i> {{ item.title }}</a>
+                        {% if (page.navigation_format == 'section' %}
+                            {% for section in page.navigation %}
+                            <li>
+                                {% if (page.navigation_mode == 'anchor') %}
+                                    <a href="#{{ section.link }}" ><i class="icon-chevron-right"></i> {{ section.title }}</a>
+                                {% else %}
+                                    <a href="./{{ section.link }}#content" ><i class="icon-chevron-right"></i> {{ section.title }}</a>
+                                {% endif %}
+                                <ul class="nav">
+                                {% for item in section.children %}
+                                    <li {% if page.navigation_active == item.link %}class="active"{% endif %}>
+                                    {% if (page.navigation_mode == 'anchor') %}
+                                        <a href="#{{ item.link }}" ><i class="icon-chevron-right"></i> {{ item.title }}</a>
+                                    {% else %}
+                                        <a href="./{{ item.link }}#content" ><i class="icon-chevron-right"></i> {{ item.title }}</a>
+                                    {% endif %}
+                                    </li>
+                                {% endfor %}
+                                </ul>
+                            </li>
+                            {% endfor %}
+                        {%else %}
+                            {% for item in page.navigation %}
+                            <li {% if page.navigation_active == item.link %}class="active"{% endif %}>
+                            {% if (page.navigation_mode == 'anchor') %}
+                                <a href="#{{ item.link }}" ><i class="icon-chevron-right"></i> {{ item.title }}</a>
+                            {% else %}
+                                <a href="./{{ item.link }}#content" ><i class="icon-chevron-right"></i> {{ item.title }}</a>
+                            {% endif %}
+                            </li>
+                            {% endfor %}
                         {% endif %}
-                        </li>
-                        {% endfor %}
                     {% endif %}
                 </ul>
             </div>
