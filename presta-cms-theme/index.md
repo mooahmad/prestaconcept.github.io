@@ -1,6 +1,8 @@
 ---
-layout: presta-cms-theme-default
-title: PrestaCMSMediaBundle Documentation
+layout: sidebar
+title: PrestaCMSThemeBundle
+subtitle: This bundle adds starter themes in PrestaCMS
+navigation_mode: anchor
 navigation:
     - { link: "overview", title: "Overview" }
     - { link: "creative", title: "Creative" }
