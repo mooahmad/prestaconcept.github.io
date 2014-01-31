@@ -1,5 +1,5 @@
 ---
-layout: presta-cms-core-developer-guide
+layout: presta-cms-core
 navigation_active: custom-controller.html
 
 ---

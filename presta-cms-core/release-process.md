@@ -1,7 +1,7 @@
 ---
-layout: presta-cms-core-documentation
-title: PrestaCMS Realease process
-navigation_active: release-process.html
+layout: presta-cms-core
+subtitle: Realease process
+navigation_active: release-process.htmll
 ---
 
 # PrestaCMS Realease process

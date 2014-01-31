@@ -1,5 +1,5 @@
 ---
-layout: presta-cms-core-theming-guide
+layout: presta-cms-core
 
 ---
 

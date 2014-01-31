@@ -1,5 +1,5 @@
 ---
-layout: presta-cms-core-documentation
+layout: presta-cms-core
 title: PrestaCMS How to get help and support
 navigation_active: help-support.html
 ---

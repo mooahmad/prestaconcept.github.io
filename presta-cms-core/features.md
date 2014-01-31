@@ -1,5 +1,5 @@
 ---
-layout: presta-cms-core-documentation
+layout: presta-cms-core
 title: Prestaconcept github page
 navigation_active: features.html
 ---

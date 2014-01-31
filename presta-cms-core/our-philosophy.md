@@ -1,6 +1,6 @@
 ---
-layout: presta-cms-core-documentation
-title: Prestaconcept github page
+layout: presta-cms-core
+subtitle: Our philosophy
 navigation_active: our-philosophy.html
 ---
 

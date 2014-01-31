@@ -1,6 +1,6 @@
 ---
-layout: presta-cms-core-documentation
-title: Prestaconcept github page
+layout: presta-cms-core
+subtitle: Overview
 navigation_active: index.html
 ---
 

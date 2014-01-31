@@ -1,5 +1,5 @@
 ---
-layout: presta-cms-core-user-guide
+layout: presta-cms-core
 navigation_active: getting-started.html
 
 ---

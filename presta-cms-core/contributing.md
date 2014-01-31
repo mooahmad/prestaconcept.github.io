@@ -1,5 +1,5 @@
 ---
-layout: presta-cms-core-documentation
+layout: presta-cms-core
 title: PrestaCMS How to contribute to the project
 navigation_active: contributing.html
 ---

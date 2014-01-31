@@ -22,7 +22,7 @@ layout: default
                                 {% if (page.navigation_mode == 'anchor') %}
                                     <a href="#{{ section.link }}" ><i class="icon-chevron-right"></i> {{ section.title }}</a>
                                 {% else %}
-                                    <a href="./{{ section.link }}#content" ><i class="icon-chevron-right"></i> {{ section.title }}</a>
+                                    <a href="{{ section.link }}#content" ><i class="icon-chevron-right"></i> {{ section.title }}</a>
                                 {% endif %}
                                 <ul class="nav">
                                 {% for item in section.children %}
@@ -30,7 +30,7 @@ layout: default
                                     {% if (page.navigation_mode == 'anchor') %}
                                         <a href="#{{ item.link }}" ><i class="icon-chevron-right"></i> {{ item.title }}</a>
                                     {% else %}
-                                        <a href="./{{ item.link }}#content" ><i class="icon-chevron-right"></i> {{ item.title }}</a>
+                                        <a href="{{ item.link }}#content" ><i class="icon-chevron-right"></i> {{ item.title }}</a>
                                     {% endif %}
                                     </li>
                                 {% endfor %}
@@ -43,7 +43,7 @@ layout: default
                             {% if (page.navigation_mode == 'anchor') %}
                                 <a href="#{{ item.link }}" ><i class="icon-chevron-right"></i> {{ item.title }}</a>
                             {% else %}
-                                <a href="./{{ item.link }}#content" ><i class="icon-chevron-right"></i> {{ item.title }}</a>
+                                <a href="{{ item.link }}#content" ><i class="icon-chevron-right"></i> {{ item.title }}</a>
                             {% endif %}
                             </li>
                             {% endfor %}

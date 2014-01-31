@@ -1,5 +1,5 @@
 ---
-layout: presta-cms-core-documentation
+layout: presta-cms-core
 title: PrestaCMS technologies used
 navigation_active: technologies.html
 ---
