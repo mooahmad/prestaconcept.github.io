@@ -1,7 +1,7 @@
 ---
 layout: presta-cms-core
 subtitle: Overview
-navigation_active: index.html
+navigation_active: /presta-cms-core/index.html
 ---
 
 [![Build Status](https://secure.travis-ci.org/prestaconcept/PrestaCMSCoreBundle.png?branch=master)](http://travis-ci.org/prestaconcept/PrestaCMSCoreBundle)
