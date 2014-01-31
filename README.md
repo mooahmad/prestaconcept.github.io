@@ -1,15 +1,17 @@
-prestaconcept.github.io
+Prestaconcept.github.io
 ========================
 
 PrestaConcept open source bundle documentation. [prestaconcept.github.io](http://prestaconcept.github.io/)
 
 This is a list of all PrestaConcept open source projects and there documentation.
 
-## Need help with a bundle
+## Issue tracker ##
 
-If you find an issue bundle, please use the corresponding Github repository to open an issue.
+:clipboard: Issues are managed in [prestaconcept/open-source-management](https://github.com/prestaconcept/open-source-management) to centralize our open source activity.
 
-If you need help you can [post a message on our google group](https://groups.google.com/forum/?hl=fr&fromgroups#!forum/prestacms-devs)
+## Ask for help ##
+
+:speech_balloon: If you need help about this project you can [post a message on our google group][3]
 
 
 ## How to edit the site
@@ -56,6 +58,7 @@ Thanks to
 
 Released under the MIT License
 
+[3]: https://groups.google.com/forum/?hl=fr&fromgroups#!forum/prestacms-devs
 
 [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/prestaconcept/prestaconcept.github.io/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 
