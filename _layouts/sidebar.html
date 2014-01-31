@@ -4,8 +4,8 @@ layout: default
 
 <div id="hook-outer">
     <div id="subheader" class="container">
-        <h1>PrestaCMSContactBundle</h1>
-        <p class="lead">Integrates contact form in PrestaCMS</p>
+        <h1>{{ page.title }}</h1>
+        <p class="lead">{{ page.subtitle }}</p>
         <p><strong></strong></p>
     </div>
 </div>
@@ -18,7 +18,11 @@ layout: default
                     {% if page.navigation %}
                         {% for item in page.navigation %}
                         <li {% if page.navigation_active == item.link %}class="active"{% endif %}>
+                        {% if (page.navigation_mode == 'anchor') %}
                             <a href="#{{ item.link }}" ><i class="icon-chevron-right"></i> {{ item.title }}</a>
+                        {% else %}
+                            <a href="./{{ item.link }}#content" ><i class="icon-chevron-right"></i> {{ item.title }}</a>
+                        {% endif %}
                         </li>
                         {% endfor %}
                     {% endif %}
