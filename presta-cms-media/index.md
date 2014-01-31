@@ -1,6 +1,8 @@
 ---
-layout: presta-cms-media-default
-title: PrestaCMSMediaBundle Documentation
+layout: sidebar
+title: PrestaCMSMediaBundle
+subtitle: Integrates Sonata Media in PrestaCMS
+navigation_mode: anchor
 navigation:
     - { link: "overview", title: "Overview" }
     - { link: "media_and_media_advanced", title: "Media" }
