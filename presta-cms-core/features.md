@@ -1,7 +1,8 @@
 ---
 layout: presta-cms-core
 title: Prestaconcept github page
-navigation_active: features.html
+section_active: overview
+navigation_active: features
 ---
 
 # Features

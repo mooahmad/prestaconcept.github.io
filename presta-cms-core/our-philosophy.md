@@ -1,7 +1,8 @@
 ---
 layout: presta-cms-core
 subtitle: Our philosophy
-navigation_active: our-philosophy.html
+section_active: overview
+navigation_active: our-philosophy
 ---
 
 # Our philosophy

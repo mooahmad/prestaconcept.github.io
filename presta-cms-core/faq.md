@@ -1,7 +1,8 @@
 ---
 layout: presta-cms-core
 title: PrestaCMS FAQ
-navigation_active: faq.html
+section_active: overview
+navigation_active: faq
 ---
 
 # FAQ

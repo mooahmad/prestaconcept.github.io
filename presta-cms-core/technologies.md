@@ -1,7 +1,8 @@
 ---
 layout: presta-cms-core
 title: PrestaCMS technologies used
-navigation_active: technologies.html
+section_active: overview
+navigation_active: technologies
 ---
 
 # Technologies used

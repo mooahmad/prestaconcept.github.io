@@ -17,7 +17,7 @@ layout: default
                 <ul class="nav">
                     {% if (page.navigation_format == 'section' %}
                         {% for section in page.navigation %}
-                        <li {% if page.navigation_active == section.link %}class="active"{% endif %}>
+                        <li {% if page.section_active == section.id %}class="active"{% endif %}>
                             {% if (page.navigation_mode == 'anchor') %}
                                 <a href="#{{ section.link }}" ><i class="icon-chevron-right"></i> {{ section.title }}</a>
                             {% else %}
@@ -25,7 +25,7 @@ layout: default
                             {% endif %}
                             <ul class="nav">
                                 {% for item in section.children %}
-                                    <li {% if page.navigation_active == item.link %}class="active"{% endif %}>
+                                    <li {% if page.navigation_active == item.id %}class="active"{% endif %}>
                                     {% if (page.navigation_mode == 'anchor') %}
                                         <a href="#{{ item.link }}" >{{ item.title }}</a>
                                     {% else %}
@@ -38,7 +38,7 @@ layout: default
                         {% endfor %}
                     {%else %}
                         {% for item in page.navigation %}
-                            <li {% if page.navigation_active == item.link %}class="active"{% endif %}>
+                            <li {% if page.navigation_active == item.id %}class="active"{% endif %}>
                             {% if (page.navigation_mode == 'anchor') %}
                                 <a href="#{{ item.link }}" > {{ item.title }}</a>
                             {% else %}

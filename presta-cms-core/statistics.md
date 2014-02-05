@@ -1,7 +1,8 @@
 ---
 layout: presta-cms-core
 title: PrestaCMS Statistics
-navigation_active: statistics.html
+section_active: overview
+navigation_active: statistics
 ---
 
 # Statistics

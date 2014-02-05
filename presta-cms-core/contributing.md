@@ -1,7 +1,8 @@
 ---
 layout: presta-cms-core
 title: PrestaCMS How to contribute to the project
-navigation_active: contributing.html
+section_active: overview
+navigation_active: contributing
 ---
 
 # How to contribute to the project
