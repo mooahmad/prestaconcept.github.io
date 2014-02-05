@@ -3,10 +3,8 @@ layout: presta-cms-core
 title: PrestaCMS Statistics
 section_active: overview
 navigation_active: statistics
+
 ---
-
-# Statistics
-
 
 ## Travis
 

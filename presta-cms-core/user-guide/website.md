@@ -1,5 +1,9 @@
 ---
 layout: presta-cms-core
-navigation_active: website.html
+section_active: user-guide
+navigation_active: website
 
 ---
+
+## User Guide will be ready for 1.0.0 release
+

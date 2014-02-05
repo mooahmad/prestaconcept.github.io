@@ -1,10 +1,11 @@
 ---
 layout: presta-cms-core
-navigation_active: docs.html
+title: PrestaCMS Docs
+subtitle: Usefull documentations and links
+section_active: developer-guide
+navigation_active: docs
 
 ---
-
-# Usefull documentations and links
 
 
 ## Symfony2

@@ -1,11 +1,10 @@
 ---
 layout: presta-cms-core
 title: PrestaCMS How to contribute to the project
+subtitle: because everyone can help
 section_active: overview
 navigation_active: contributing
 ---
-
-# How to contribute to the project
 
 PrestaCMS is released as an open source project and every contributions are welcome and appreciated.
 

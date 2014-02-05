@@ -48,9 +48,9 @@ The advanced media adds a title, a content and handle a layout parameter which a
 
 Here is an example with Creative theme :
 
-<p class="center" markdown="1">
+<div class="screenshot" markdown="1">
 ![Media advanced](/assets/presta-cms-media/block-media.jpg)
-</p>
+</div>
 
 ## Gallery and Gallery advanced
 
@@ -58,9 +58,9 @@ The same thing for rendering galleries
 
 Here is an example with Creative theme :
 
-<p class="center" markdown="1">
+<div class="screenshot" markdown="1">
 ![Gallery advanced](/assets/presta-cms-media/block-gallery.jpg)
-</p>
+</div>
 
 ## Carousel
 
@@ -68,9 +68,9 @@ Carousel block allows you to add carousel based on a Sonata gallery. It contains
 
 Here is an example with Creative theme :
 
-<p class="center" markdown="1">
+<div class="screenshot" markdown="1">
 ![Carousel](/assets/presta-cms-media/block-carousel.jpg)
-</p>
+</div>
 
 ## Customize it for your project needs
 

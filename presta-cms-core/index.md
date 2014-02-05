@@ -1,5 +1,6 @@
 ---
 layout: presta-cms-core
+title: PrestaCMS
 subtitle: Overview
 section_active: overview
 navigation_active: overview
@@ -12,8 +13,6 @@ navigation_active: overview
 [![SensioLabsInsight](https://insight.sensiolabs.com/projects/6576869b-bb02-4c6f-85ad-eac142d03b85/big.png)](https://insight.sensiolabs.com/projects/6576869b-bb02-4c6f-85ad-eac142d03b85)
 [![knpbundles.com](http://knpbundles.com/prestaconcept/PrestaCMSCoreBundle/badge)](http://knpbundles.com/prestaconcept/PrestaCMSCoreBundle)
 
-
-# Overview
 
 PrestaCMSCore is a [Symfony2][1] Bundle based on [SymfonyCMF][2] and [Sonata-Project][3]
 

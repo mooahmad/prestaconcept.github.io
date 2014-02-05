@@ -1,12 +1,9 @@
 ---
 layout: presta-cms-core
-title: Prestaconcept github page
+title: PrestaCMS Features
 section_active: overview
 navigation_active: features
 ---
-
-# Features
-
 
 ## Multiple websites
 

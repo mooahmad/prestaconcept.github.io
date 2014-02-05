@@ -1,11 +1,11 @@
 ---
 layout: presta-cms-core
+title: PrestaCMS
 subtitle: Our philosophy
 section_active: overview
 navigation_active: our-philosophy
----
 
-# Our philosophy
+---
 
 PrestaCMS has been done by professionals for professionals web developers.
 

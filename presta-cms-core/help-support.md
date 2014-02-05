@@ -5,9 +5,6 @@ section_active: overview
 navigation_active: help-support
 ---
 
-# How to get help and support
-
-
 ## Need help to understand the code
 
 First take a look at the documentation. We will do our best to improve it as PrestaCMS features grows.

@@ -1,9 +1,10 @@
 ---
 layout: presta-cms-core
+title: PrestaCMS Developer guide
+subtitle: Because it's easier with a doc
+section_active: developer-guide
 
 ---
-
-# Developer guide
 
 Welcome on PrestaCMS developer guide.
 

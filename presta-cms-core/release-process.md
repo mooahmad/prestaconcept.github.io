@@ -1,11 +1,11 @@
 ---
 layout: presta-cms-core
+title: PrestaCMS
 subtitle: Realease process
 section_active: overview
 navigation_active: release-process
----
 
-# PrestaCMS Realease process
+---
 
 
 As PrestaCMS is based on SymfonyCMF which has already a really [great release process][1], we will take it as

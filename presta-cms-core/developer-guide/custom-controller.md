@@ -1,10 +1,11 @@
 ---
 layout: presta-cms-core
-navigation_active: custom-controller.html
+title: PrestaCMS Custom controllers
+subtitle: Easily customize your site
+section_active: developer-guide
+navigation_active: custom-controller
 
 ---
-
-# Custom controllers
 
 ## Overview
 

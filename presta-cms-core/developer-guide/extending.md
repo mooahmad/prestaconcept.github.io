@@ -1,11 +1,11 @@
 ---
 layout: presta-cms-core
-navigation_active: extending.html
+title: Extending PrestaCMS
+subtitle: because we need something different
+section_active: developer-guide
+navigation_active: extending
 
 ---
-
-# Extending PrestaCMS
-
 
 ## Overview
 
