@@ -46,13 +46,9 @@
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Our Bundles <b class="caret"></b></a>
                             <ul class="dropdown-menu">
-                                <li><a href="#">PrestaSitemapBundle</a></li>
-                                <li class="divider"></li>
-                                <li><a href="#">PrestaCMSCoreBundle</a></li>
-                                <li><a href="#">PrestaCMSThemeBasicBundle</a></li>
-                                <li><a href="#">PrestaCMSMediaBundle</a></li>
-                                <li><a href="#">PrestaCMSContactBundle</a></li>
-                                <li><a href="#">PrestaCMSSocialBundle</a></li>
+                                {% for bundle in site.data.bundles %}
+                                <li><a href="{{ bundle.doc-link }}">{{ bundle.name }}</a></li>
+                                {% endfor %}
                             </ul>
                         </li>
                         <li class=""><a href="http://www.prestaconcept.net">Contact US</a></li>
