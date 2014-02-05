@@ -6,7 +6,7 @@ setTimeout(function () {
             top: function () {
                 var sidebarMargin  = parseInt($sidebar.css('margin-top'), 10);
                 var carouselHeight  = $('.carousel').height();
-console.log(sidebarMargin);
+
                 return (this.top = carouselHeight + sidebarMargin);
             }
             , bottom: function () {
@@ -20,8 +20,8 @@ console.log(sidebarMargin);
 $('body').scrollspy({
     target: '.sidebar',
     offset: parseInt($('.sidebar').css('margin-top'), 10)
-})
+});
 
 $window.on('load', function () {
     $body.scrollspy('refresh')
-})
+});
