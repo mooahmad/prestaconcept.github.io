@@ -7,6 +7,30 @@ h1, h2, h3, h4, h5, h6,
   font-family:          @font-family-title;
 }
 
+// Common
+// ---------------------------------------
+.brand {
+  background:         url('@{url-img-layout}prestaconcept-logo.png') no-repeat center left;
+  background-size:    contain;
+  display:            inline-block;
+  height:             @brand-height;
+  overflow:           hidden;
+  text-indent:        -5000px;
+  width:              @brand-width;
+}
+
+.screenshot {
+  text-align: center;
+
+  img {
+    margin: 10px auto;
+    background: @gray-lighter;
+    padding: 5px;
+    border: 1px solid @gray-light;
+    .box-shadow(0 13px 5px -10px @gray);
+  }
+}
+
 // Navbar
 // ---------------------------------------
 
@@ -24,15 +48,7 @@ h1, h2, h3, h4, h5, h6,
   }
 
   .navbar-brand {
-    @brand-width:       358px;
-
-    background:         url('@{url-img-layout}prestaconcept-logo.png') no-repeat center left;
-    background-size:    contain;
-    display:            inline-block;
     height:             @navbar-height;
-    overflow:           hidden;
-    text-indent:        -5000px;
-    width:              @brand-width;
 
     @media (max-width: (@brand-width + 60px)) {
       width:            80%;
@@ -159,5 +175,97 @@ h1, h2, h3, h4, h5, h6,
   h1, h2 {
     margin-top:         -@navbar-height;
     padding-top:        @navbar-height;
+  }
+}
+
+// Footer
+// ---------------------------------------
+footer {
+  background:           url('@{url-img-layout}body-bg.png');
+  margin-top:           4*@padding-large-vertical;
+
+  h2 {
+    color:              #fff;
+    font-weight:        normal;
+    font-size:          floor(@font-size-base * 2.9); // ~40px
+    text-align:         center;
+    text-shadow:        0px 1px 5px #000000;
+  }
+
+  .hire-us {
+    #gradient > .vertical(@dark-green, @green);
+    padding-bottom:     2*@padding-large-vertical;
+    text-align:         center;
+
+    .btn {
+      font-family:      @font-family-title;
+      font-size:        floor(@font-size-base * 2.5); // 35px;
+      line-height:      floor(@font-size-base * 2.5);
+      padding:          15px 50px;
+
+      i {
+        vertical-align: top;
+      }
+    }
+  }
+
+  .outer {
+    background-color:   @purple;
+    text-align:         center;
+
+    h2 {
+      font-size:        floor(@font-size-base * 3.6); // ~50px
+      padding:          @padding-small-horizontal 0;
+    }
+  }
+
+  .contact {
+    color:              @purple;
+    font-weight:        bold;
+    padding:            4*@padding-large-vertical 0;
+
+    #footer-map {
+      border:           5px solid @gray-light;
+      margin:           0 auto;
+    }
+
+    .contact-elements {
+      margin-top:           8*@padding-large-vertical;
+
+      .brand {
+        @media (max-width: (@brand-width + 2*@padding-xs-horizontal)) {
+          width:            80%;
+        }
+      }
+    }
+
+    ul {
+      list-style-type:      none;
+      margin-top:           2*@padding-large-vertical;
+
+      li {
+        line-height:        floor(@font-size-base * 1.6); // ~22px;
+        margin-bottom:      @padding-large-vertical;
+
+        .glyphicon {
+          font-size:        floor(@font-size-base * 1.6); // ~22px
+          margin-right:     @padding-base-horizontal;
+          vertical-align:   top;
+        }
+      }
+    }
+
+    @media (max-width: @screen-xs-max) {
+      .contact-elements {
+        margin-top:         2*@padding-large-vertical;
+      }
+    }
+  }
+
+  .copyright .container {
+    border-top:             1px solid @gray-border;
+    color:                  @purple;
+    padding:                @padding-large-vertical @padding-large-horizontal @padding-large-vertical 0;
+    text-align:             right;
   }
 }

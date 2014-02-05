@@ -5306,6 +5306,26 @@ h6,
 .h6 {
   font-family: 'Reenie Beanie', 'Open Sans', Helvetica, Arial, sans-serif;
 }
+.brand {
+  background: url('/assets/theme/img/layout/prestaconcept-logo.png') no-repeat center left;
+  background-size: contain;
+  display: inline-block;
+  height: 56px;
+  overflow: hidden;
+  text-indent: -5000px;
+  width: 358px;
+}
+.screenshot {
+  text-align: center;
+}
+.screenshot img {
+  margin: 10px auto;
+  background: #eeeeee;
+  padding: 5px;
+  border: 1px solid #999999;
+  -webkit-box-shadow: 0 13px 5px -10px #555555;
+  box-shadow: 0 13px 5px -10px #555555;
+}
 .navbar-presta-top {
   background-image: url('/assets/theme/img/layout/header-bg.png');
   font-family: "Arial Narrow", 'Open Sans', Arial, sans-serif;
@@ -5317,13 +5337,7 @@ h6,
   }
 }
 .navbar-presta-top .navbar-brand {
-  background: url('/assets/theme/img/layout/prestaconcept-logo.png') no-repeat center left;
-  background-size: contain;
-  display: inline-block;
   height: 90px;
-  overflow: hidden;
-  text-indent: -5000px;
-  width: 358px;
 }
 @media (max-width: 418px) {
   .navbar-presta-top .navbar-brand {
@@ -5434,6 +5448,83 @@ h6,
   margin-top: -90px;
   padding-top: 90px;
 }
+footer {
+  background: url('/assets/theme/img/layout/body-bg.png');
+  margin-top: 40px;
+}
+footer h2 {
+  color: #fff;
+  font-weight: normal;
+  font-size: 40px;
+  text-align: center;
+  text-shadow: 0px 1px 5px #000000;
+}
+footer .hire-us {
+  background-image: -webkit-linear-gradient(top, #666600 0%, #999900 100%);
+  background-image: linear-gradient(to bottom, #666600 0%, #999900 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff666600', endColorstr='#ff999900', GradientType=0);
+  padding-bottom: 20px;
+  text-align: center;
+}
+footer .hire-us .btn {
+  font-family: 'Reenie Beanie', 'Open Sans', Helvetica, Arial, sans-serif;
+  font-size: 35px;
+  line-height: 35px;
+  padding: 15px 50px;
+}
+footer .hire-us .btn i {
+  vertical-align: top;
+}
+footer .outer {
+  background-color: #633757;
+  text-align: center;
+}
+footer .outer h2 {
+  font-size: 50px;
+  padding: 10px 0;
+}
+footer .contact {
+  color: #633757;
+  font-weight: bold;
+  padding: 40px 0;
+}
+footer .contact #footer-map {
+  border: 5px solid #999999;
+  margin: 0 auto;
+}
+footer .contact .contact-elements {
+  margin-top: 80px;
+}
+@media (max-width: 368px) {
+  footer .contact .contact-elements .brand {
+    width: 80%;
+  }
+}
+footer .contact ul {
+  list-style-type: none;
+  margin-top: 20px;
+}
+footer .contact ul li {
+  line-height: 22px;
+  margin-bottom: 10px;
+}
+footer .contact ul li .glyphicon {
+  font-size: 22px;
+  margin-right: 12px;
+  vertical-align: top;
+}
+@media (max-width: 767px) {
+  footer .contact .contact-elements {
+    margin-top: 20px;
+  }
+}
+footer .copyright .container {
+  border-top: 1px solid #bdb6ba;
+  color: #633757;
+  padding: 10px 16px 10px 0;
+  text-align: right;
+}
 /* Bundles page
 ------------------------------------------------------------ */
 .fork-us-outer {
@@ -5453,7 +5544,7 @@ h6,
   border: 5px solid #999999;
   padding: 5px 25px;
   margin-bottom: 20px;
-  min-height: 310px;
+  min-height: 330px;
 }
 .bundle-container h3 {
   border-bottom: 1px solid #999999;
@@ -5502,4 +5593,19 @@ h6,
   color: #555;
   border-bottom: none;
   text-align: center;
+}
+/* Code highlight
+------------------------------------------------------------ */
+pre {
+  counter-reset: line-numbering;
+  border: solid 1px #d9d9d9;
+  border-radius: 0;
+  background: #fff;
+  padding: 0.7em;
+  line-height: 1.3em;
+  margin-bottom: 30px;
+  white-space: pre;
+  overflow-x: auto;
+  word-break: inherit;
+  word-wrap: inherit;
 }
