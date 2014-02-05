@@ -1,10 +1,11 @@
 ---
-layout: presta-cms-core-developer-guide
-navigation_active: page.html
+layout: presta-cms-core
+title: PrestaCMS Page type
+subtitle: help standardize your content
+section_active: developer-guide
+navigation_active: page
 
 ---
-
-# Page type
 
 ## Overview
 

@@ -1,7 +1,9 @@
 ---
-layout: presta-cms-core-documentation
-title: Prestaconcept github page
-navigation_active: index.html
+layout: presta-cms-core
+title: PrestaCMS
+subtitle: Overview
+section_active: overview
+navigation_active: overview
 ---
 
 [![Build Status](https://secure.travis-ci.org/prestaconcept/PrestaCMSCoreBundle.png?branch=master)](http://travis-ci.org/prestaconcept/PrestaCMSCoreBundle)
@@ -11,8 +13,6 @@ navigation_active: index.html
 [![SensioLabsInsight](https://insight.sensiolabs.com/projects/6576869b-bb02-4c6f-85ad-eac142d03b85/big.png)](https://insight.sensiolabs.com/projects/6576869b-bb02-4c6f-85ad-eac142d03b85)
 [![knpbundles.com](http://knpbundles.com/prestaconcept/PrestaCMSCoreBundle/badge)](http://knpbundles.com/prestaconcept/PrestaCMSCoreBundle)
 
-
-# Overview
 
 PrestaCMSCore is a [Symfony2][1] Bundle based on [SymfonyCMF][2] and [Sonata-Project][3]
 

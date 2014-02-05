@@ -1,6 +1,8 @@
 ---
-layout: presta-sonata-navigation
-title: PrestaSonataNavigationBundle Documentation
+layout: sidebar
+title: PrestaSonataNavigationBundle
+subtitle: This bundle allow you to manage your Sonata Admin navigation
+navigation_mode: anchor
 navigation:
     - { link: "overview", title: "Overview" }
     - { link: "installation", title: "Installation" }

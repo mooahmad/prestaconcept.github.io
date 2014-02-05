@@ -1,11 +1,11 @@
 ---
-layout: presta-cms-core-developer-guide
-navigation_active: installation.html
+layout: presta-cms-core
+title: How to install PrestaCMS
+subtitle: everything should be fine
+section_active: developer-guide
+navigation_active: installation
 
 ---
-
-# How to install PrestaCMS
-
 
 ## First step
 

@@ -1,10 +1,11 @@
 ---
-layout: presta-cms-core-documentation
+layout: presta-cms-core
 title: PrestaCMS FAQ
-navigation_active: faq.html
+subtitle: because there is some Frequently asked question
+section_active: overview
+navigation_active: faq
 ---
 
-# FAQ
 
 We are waiting for questions to fill this page.
 

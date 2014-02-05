@@ -1,6 +1,8 @@
 ---
-layout: presta-cms-contact-default
-title: PrestaCMSSocialBundle Documentation
+layout: sidebar
+title: PrestaCMSSocialBundle
+subtitle: Integrates social blocks (Twitter, Facebook...) in PrestaCMS
+navigation_mode: anchor
 navigation:
     - { link: "overview", title: "Overview" }
     - { link: "installation", title: "Installation" }

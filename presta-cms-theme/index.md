@@ -1,6 +1,8 @@
 ---
-layout: presta-cms-theme-default
-title: PrestaCMSMediaBundle Documentation
+layout: sidebar
+title: PrestaCMSThemeBundle
+subtitle: This bundle adds starter themes in PrestaCMS
+navigation_mode: anchor
 navigation:
     - { link: "overview", title: "Overview" }
     - { link: "creative", title: "Creative" }
@@ -40,9 +42,9 @@ This bundles provides the following themes :
 
 Creative theme is based on [Twitter Bootstrap][1].
 
-<p class="center" markdown="1">
+<div class="screenshot" markdown="1">
 ![Creative](/assets/presta-cms-theme/creative-screenshot.jpg)
-</p>
+</div>
 
 If you want a live demonstration, you can find it working on [PrestaCMS Sandbox][2]
 

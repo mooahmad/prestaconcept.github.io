@@ -1,5 +1,5 @@
 ai:
-	lessc assets/less/styles.less > assets/css/styles.css
+	lessc assets/theme/less/main.less > assets/theme/css/main.css
 
 build:
 	jekyll serve --watch

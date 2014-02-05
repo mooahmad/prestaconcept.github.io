@@ -1,6 +1,8 @@
 ---
-layout: presta-cms-contact-default
-title: PrestaCMSContactBundle Documentation
+layout: sidebar
+title: PrestaCMSContactBundle
+subtitle: Integrates contact form in PrestaCMS
+navigation_mode: anchor
 navigation:
     - { link: "overview", title: "Overview" }
     - { link: "form", title: "Form" }

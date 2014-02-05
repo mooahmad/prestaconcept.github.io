@@ -1,11 +1,11 @@
 ---
-layout: presta-cms-core-documentation
+layout: presta-cms-core
 title: PrestaCMS technologies used
-navigation_active: technologies.html
+subtitle: because there are greats
+section_active: overview
+navigation_active: technologies
+
 ---
-
-# Technologies used
-
 
 ## Symfony2
 

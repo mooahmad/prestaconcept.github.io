@@ -1,11 +1,11 @@
 ---
-layout: presta-cms-core-developer-guide
-navigation_active: getting-started.html
+layout: presta-cms-core
+title: PrestaCMS Getting started
+subtitle: Understanding key concepts
+section_active: developer-guide
+navigation_active: getting-started
 
 ---
-
-# Getting started with PrestaCMS
-
 
 ## Understanding key concepts
 

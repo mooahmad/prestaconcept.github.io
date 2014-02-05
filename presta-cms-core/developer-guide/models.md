@@ -1,12 +1,11 @@
 ---
-layout: presta-cms-core-developer-guide
-navigation_active: models.html
+layout: presta-cms-core
+title: PrestaCMS Advanced block
+subtitle: Working with models
+section_active: developer-guide
+navigation_active: models
 
 ---
-
-
-# Advanced block - Working with models
-
 
 ## Overview
 

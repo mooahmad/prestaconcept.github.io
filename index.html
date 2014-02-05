@@ -2,6 +2,47 @@
 layout: default
 title: Prestaconcept github page
 ---
+<div class="carousel-full-container">
+    <div id="carousel-example-generic" class="carousel slide container" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <img src="/assets/theme/img/layout/prestaconcept-header.png" alt="php symfony javascript html5 css3">
+                <div class="carousel-caption">
+                    <h2>PrestaConcept - Symfony2 Experts</h2>
+                </div>
+            </div>
+            <div class="item">
+                <img src="/assets/theme/img/layout/prestaconcept-header.png" alt="php symfony javascript html5 css3">
+                <div class="carousel-caption">
+                    <h2>PrestaConcept - Symfony2 Experts who need to work on carousel</h2>
+                </div>
+            </div>
+            <div class="item">
+                <img src="/assets/theme/img/layout/prestaconcept-header.png" alt="php symfony javascript html5 css3">
+                <div class="carousel-caption">
+                    <h2>PrestaConcept - Symfony2 Experts</h2>
+                </div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+    </div>
+</div>
+
 <div id="hook-outer">
     <div id="hook" class="container">
         <h1>PrestaConcept - Symfony2 Experts</h1>
@@ -16,250 +57,55 @@ title: Prestaconcept github page
         </h1>
 
         <div class="row">
-            <div class="span6">
+            {% for bundle in site.data.bundles %}
+                {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
+                {% if thecycle == 'odd' %}
+                    </div><div class=row">
+                {% endif %}
+            <div class="col-md-6">
                 <div class="bundle-container">
                     <h3>
-                        PrestaSitemapBundle
-                        <a href="https://github.com/prestaconcept/PrestaSitemapBundle" class="btn btn-small download-link"><i class="icon-github"></i>&nbsp;Download</a>
+                        {{ bundle.name }}
                     </h3>
 
                     <div class="links">
-                        <a class="travis-link" href="http://travis-ci.org/prestaconcept/PrestaSitemapBundle">
-                            <img src="https://secure.travis-ci.org/prestaconcept/PrestaSitemapBundle.png" />
+                        <a class="travis-link" href="http://travis-ci.org/prestaconcept/{{ bundle.name }}">
+                            <img src="https://secure.travis-ci.org/prestaconcept/{{ bundle.name }}.png" />
                         </a>
-
-                        <iframe src="http://ghbtns.com/github-btn.html?user=prestaconcept&repo=PrestaSitemapBundle&type=watch&count=true"
+                        <iframe src="http://ghbtns.com/github-btn.html?user=prestaconcept&repo={{ bundle.name }}&type=watch&count=true"
                                 allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe>
 
-                        <iframe src="http://ghbtns.com/github-btn.html?user=prestaconcept&repo=PrestaSitemapBundle&type=fork&count=true"
+                        <iframe src="http://ghbtns.com/github-btn.html?user=prestaconcept&repo={{ bundle.name }}&type=fork&count=true"
                                 allowtransparency="true" frameborder="0" scrolling="0" width="95" height="20"></iframe>
                         <br/>
-                        <a href="https://packagist.org/packages/presta/sitemap-bundle">
-                            <img src="https://poser.pugx.org/presta/sitemap-bundle/downloads.png" />
+                        <a href="https://packagist.org/packages/{{ bundle.packagist }}">
+                            <img src="https://poser.pugx.org/{{ bundle.packagist }}/downloads.png" />
                         </a>
-                        <a href="https://packagist.org/packages/presta/sitemap-bundle">
-                            <img src="https://poser.pugx.org/presta/sitemap-bundle/v/stable.png" />
-                        </a>
-                    </div>
-                    <div class="description">
-                        <p>A symfony 2 bundle that provides tools to build a rich application sitemap.</p>
-                        <p>The main goals are : simple, no databases, various namespace (eg. google image), respect constraints etc.</p>
-                    </div>
-                    <div class="knpbundles-badge">
-                        <a href="http://knpbundles.com/prestaconcept/PrestaSitemapBundle">
-                            <img src="http://knpbundles.com/prestaconcept/PrestaSitemapBundle/badge" />
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="span6">
-                <div class="bundle-container">
-                    <h3>
-                        PrestaCMSCoreBundle
-                        <a href="https://github.com/prestaconcept/PrestaCMSCoreBundle" class="btn btn-small download-link"><i class="icon-github"></i>&nbsp;Download</a>
-                    </h3>
-
-                    <div class="links">
-                        <a class="travis-link" href="http://travis-ci.org/prestaconcept/PrestaCMSCoreBundle">
-                            <img src="https://secure.travis-ci.org/prestaconcept/PrestaCMSCoreBundle.png" />
-                        </a>
-
-                        <iframe src="http://ghbtns.com/github-btn.html?user=prestaconcept&repo=PrestaCMSCoreBundle&type=watch&count=true"
-                                allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe>
-
-                        <iframe src="http://ghbtns.com/github-btn.html?user=prestaconcept&repo=PrestaCMSCoreBundle&type=fork&count=true"
-                                allowtransparency="true" frameborder="0" scrolling="0" width="95" height="20"></iframe>
-                        <br/>
-                        <a href="https://scrutinizer-ci.com/g/prestaconcept/PrestaCMSCoreBundle/">
-                            <img src="https://scrutinizer-ci.com/g/prestaconcept/PrestaCMSCoreBundle/badges/quality-score.png?s=e8a6a531cba293704ef33e10027f2e1396165e79" />
-                        </a>
-                        <a href="https://packagist.org/packages/presta/cms-core-bundle">
-                            <img src="https://poser.pugx.org/presta/cms-core-bundle/downloads.png" />
-                        </a>
-                        <a href="https://packagist.org/packages/presta/cms-core-bundle">
-                            <img src="https://poser.pugx.org/presta/cms-core-bundle/v/stable.png" />
+                        <a href="https://packagist.org/packages/{{ bundle.packagist }}">
+                            <img src="https://poser.pugx.org/{{ bundle.packagist }}/v/stable.png" />
                         </a>
                     </div>
                     <div class="description">
-                        <p>This is the core of our CMS base on Symfony CMF</p>
-                        <p>It handle multiple website, theme and page edition.</p>
+                        {{ bundle.description }}
                     </div>
                     <div class="knpbundles-badge">
-                        <a href="http://knpbundles.com/prestaconcept/PrestaCMSCoreBundle">
-                            <img src="http://knpbundles.com/prestaconcept/PrestaCMSCoreBundle/badge">
+                        <a href="http://knpbundles.com/prestaconcept/{{ bundle.name }}">
+                            <img src="http://knpbundles.com/prestaconcept/{{ bundle.name }}/badge-short" />
                         </a>
-                        <img src="https://insight.sensiolabs.com/projects/6576869b-bb02-4c6f-85ad-eac142d03b85/big.png" />
+                        <img src="{{ bundle.insight }}" />
                     </div>
+
                     <div class="bottoms-links">
-                        <a href="/presta-cms-core">Read the documentation</a>
+                        <a href="{{ bundle.doc-link }}" class="btn btn-default">
+                            <span class="glyphicon glyphicon-book"></span>&nbsp;Read the documentation
+                        </a>
+                        <a href="https://github.com/prestaconcept/{{ bundle.name }}" class="btn btn-default">
+                            <span class="glyphicon glyphicon-download"></span>&nbsp;Download
+                        </a>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="span6">
-                <div class="bundle-container">
-                    <h3>
-                        PrestaCMSThemeBasicBundle
-                        <a href="https://github.com/prestaconcept/PrestaCMSThemeBasicBundle" class="btn btn-small download-link"><i class="icon-github"></i>&nbsp;Download</a>
-                    </h3>
-
-                    <div class="links">
-                        <a class="travis-link" href="http://travis-ci.org/prestaconcept/PrestaCMSThemeBasicBundle">
-                            <img src="https://secure.travis-ci.org/prestaconcept/PrestaCMSThemeBasicBundle.png" />
-                        </a>
-
-                        <iframe src="http://ghbtns.com/github-btn.html?user=prestaconcept&repo=PrestaCMSThemeBasicBundle&type=watch&count=true"
-                                allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe>
-
-                        <iframe src="http://ghbtns.com/github-btn.html?user=prestaconcept&repo=PrestaCMSThemeBasicBundle&type=fork&count=true"
-                                allowtransparency="true" frameborder="0" scrolling="0" width="95" height="20"></iframe>
-                        <br/>
-                        <a href="https://packagist.org/packages/presta/cms-theme-basic-bundle">
-                            <img src="https://poser.pugx.org/presta/cms-theme-basic-bundle/downloads.png" />
-                        </a>
-                        <a href="https://packagist.org/packages/presta/cms-theme-basic-bundle">
-                            <img src="https://poser.pugx.org/presta/cms-theme-basic-bundle/v/stable.png" />
-                        </a>
-                    </div>
-                    <div class="description">
-                        <p>This bundle provides basic themes which can be used by PrestaCMS</p>
-                        <p>The first theme is called Creative, it's based on Twitter Bootstrap.</p>
-                    </div>
-                    <div class="knpbundles-badge">
-                        <a href="http://knpbundles.com/prestaconcept/PrestaCMSThemeBasicBundle">
-                            <img src="http://knpbundles.com/prestaconcept/PrestaCMSThemeBasicBundle/badge">
-                        </a>
-                        <img src="https://insight.sensiolabs.com/projects/56721a5e-dca2-431f-bd1a-df53eca583d6/big.png" />
-                    </div>
-                    <div class="bottoms-links">
-                        <a href="/presta-cms-theme">Read the documentation</a>
-                    </div>
-                </div>
-            </div>
-            <div class="span6">
-                <div class="bundle-container">
-                    <h3>
-                        PrestaCMSMediaBundle
-                        <a href="https://github.com/prestaconcept/PrestaCMSMediaBundle" class="btn btn-small download-link"><i class="icon-github"></i>&nbsp;Download</a>
-                    </h3>
-
-                    <div class="links">
-                        <a class="travis-link" href="http://travis-ci.org/prestaconcept/PrestaCMSMediaBundle">
-                            <img src="https://secure.travis-ci.org/prestaconcept/PrestaCMSMediaBundle.png" />
-                        </a>
-
-                        <iframe src="http://ghbtns.com/github-btn.html?user=prestaconcept&repo=PrestaCMSMediaBundle&type=watch&count=true"
-                                allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe>
-
-                        <iframe src="http://ghbtns.com/github-btn.html?user=prestaconcept&repo=PrestaCMSMediaBundle&type=fork&count=true"
-                                allowtransparency="true" frameborder="0" scrolling="0" width="95" height="20"></iframe>
-                        <br/>
-                        <a href="https://packagist.org/packages/presta/cms-media-bundle">
-                            <img src="https://poser.pugx.org/presta/cms-media-bundle/downloads.png" />
-                        </a>
-                        <a href="https://packagist.org/packages/presta/cms-media-bundle">
-                            <img src="https://poser.pugx.org/presta/cms-media-bundle/v/stable.png" />
-                        </a>
-                    </div>
-                    <div class="description">
-                        <p>This bundle adds medias and galleries integration into PrestaCMS</p>
-                        <p>Medias are handle with SonataMediaBundle</p>
-                    </div>
-                    <div class="knpbundles-badge">
-                        <a href="http://knpbundles.com/prestaconcept/PrestaCMSMediaBundle">
-                            <img src="http://knpbundles.com/prestaconcept/PrestaCMSMediaBundle/badge">
-                        </a>
-                        <img src="https://insight.sensiolabs.com/projects/d4e48cf2-8182-4eae-a7aa-f2c370cffb55/big.png" />
-                    </div>
-                    <div class="bottoms-links">
-                        <a href="/presta-cms-media">Read the documentation</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="span6">
-                <div class="bundle-container">
-                    <h3>
-                        PrestaCMSContactBundle
-                        <a href="https://github.com/prestaconcept/PrestaCMSContactBundle" class="btn btn-small download-link"><i class="icon-github"></i>&nbsp;Download</a>
-                    </h3>
-                    <div class="links">
-                        <a class="travis-link" href="http://travis-ci.org/prestaconcept/PrestaCMSContactBundle">
-                            <img src="https://secure.travis-ci.org/prestaconcept/PrestaCMSContactBundle.png" />
-                        </a>
-
-                        <iframe src="http://ghbtns.com/github-btn.html?user=prestaconcept&repo=PrestaCMSContactBundle&type=watch&count=true"
-                                allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe>
-
-                        <iframe src="http://ghbtns.com/github-btn.html?user=prestaconcept&repo=PrestaCMSContactBundle&type=fork&count=true"
-                                allowtransparency="true" frameborder="0" scrolling="0" width="95" height="20"></iframe>
-                        <br/>
-                        <a href="https://packagist.org/packages/presta/cms-contact-bundle">
-                            <img src="https://poser.pugx.org/presta/cms-contact-bundle/downloads.png" />
-                        </a>
-                        <a href="https://packagist.org/packages/presta/cms-contact-bundle">
-                            <img src="https://poser.pugx.org/presta/cms-contact-bundle/v/stable.png" />
-                        </a>
-                    </div>
-                    <div class="description">
-                        <p>This bundle adds a contact form to your CMS.</p>
-                        <p>Contacts and messages are saved and administrated with Sonata.</p>
-                        <p>You can implement your own strategy to fit your needs.</p>
-                        <p>Multi-database layer ready</p>
-                    </div>
-                    <div class="knpbundles-badge">
-                        <a href="http://knpbundles.com/prestaconcept/PrestaCMSContactBundle">
-                            <img src="http://knpbundles.com/prestaconcept/PrestaCMSContactBundle/badge">
-                        </a>
-                        <img src="https://insight.sensiolabs.com/projects/e35671f4-a083-4780-b435-c85b9ce3c56c/big.png" />
-                    </div>
-                    <div class="bottoms-links">
-                        <a href="/presta-cms-contact">Read the documentation</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="span6">
-                <div class="bundle-container">
-                    <h3>
-                        PrestaCMSSocialBundle
-                        <a href="https://github.com/prestaconcept/PrestaCMSSocialBundle" class="btn btn-small download-link"><i class="icon-github"></i>&nbsp;Download</a>
-                    </h3>
-                    <div class="links">
-                        <a class="travis-link" href="http://travis-ci.org/prestaconcept/PrestaCMSSocialBundle">
-                            <img src="https://secure.travis-ci.org/prestaconcept/PrestaCMSSocialBundle.png" />
-                        </a>
-                        <iframe src="http://ghbtns.com/github-btn.html?user=prestaconcept&repo=PrestaCMSSocialBundle&type=watch&count=true"
-                                allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe>
-
-                        <iframe src="http://ghbtns.com/github-btn.html?user=prestaconcept&repo=PrestaCMSSocialBundle&type=fork&count=true"
-                                allowtransparency="true" frameborder="0" scrolling="0" width="95" height="20"></iframe>
-                        <br />
-                        <a href="https://packagist.org/packages/presta/cms-social-bundle">
-                            <img src="https://poser.pugx.org/presta/cms-social-bundle/downloads.png" />
-                        </a>
-                        <a href="https://packagist.org/packages/presta/cms-social-bundle">
-                            <img src="https://poser.pugx.org/presta/cms-social-bundle/v/stable.png" />
-                        </a>
-                    </div>
-                    <div class="description">
-                        <p>
-                            This bundle provides useful blocks to render latest tweet, follower count from twitter and fan count from facebook page
-                        </p>
-                    </div>
-                    <div class="knpbundles-badge">
-                        <a href="http://knpbundles.com/prestaconcept/PrestaCMSSocialBundle">
-                            <img src="http://knpbundles.com/prestaconcept/PrestaCMSSocialBundle/badge">
-                        </a>
-                        <img src="https://insight.sensiolabs.com/projects/c6c99c8b-0706-4b09-a7c4-f21d165cb7c3/big.png" />
-                    </div>
-                    <div class="bottoms-links">
-                        <a href="/presta-cms-social">Read the documentation</a>
-                    </div>
-                </div>
-            </div>
+            {% endfor %}
         </div>
     </div>
 </div>
@@ -272,7 +118,7 @@ title: Prestaconcept github page
             <li>...</li>
             <li>Github is the best place for that</li>
         </ul>
-        <a id="hire-us-link" href="https://github.com/prestaconcept" class="btn">
+        <a id="hire-us-link" href="https://github.com/prestaconcept" class="btn btn-default">
             <i class="icon-github"></i>&nbsp;Fork us on Github
         </a>
     </div>
@@ -280,16 +126,16 @@ title: Prestaconcept github page
 
 <div class="content-outer">
     <div class="content container">
-        <h1>Bundles under development</h1>
+        <h1>We are working on</h1>
         <div class="row">
-            <div class="span6">
+            <div class="col-md-6">
                 <div class="bundle-container coming-soon">
-                    <h3>Google Analytics .... Coming Soon</h3>
+                    <h3>Admin version 1.0.0 .... Coming Soon</h3>
                 </div>
             </div>
-            <div class="span6">
+            <div class="col-md-6">
                 <div class="bundle-container coming-soon">
-                    <h3>CMS Social ... Coming Soon</h3>
+                    <h3>New deployment process Jenkins + capifony ... Coming Soon</h3>
                 </div>
             </div>
         </div>

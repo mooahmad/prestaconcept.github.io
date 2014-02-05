@@ -1,11 +1,9 @@
 ---
-layout: presta-cms-core-documentation
+layout: presta-cms-core
 title: PrestaCMS How to get help and support
-navigation_active: help-support.html
+section_active: overview
+navigation_active: help-support
 ---
-
-# How to get help and support
-
 
 ## Need help to understand the code
 
