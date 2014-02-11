@@ -13,16 +13,18 @@ showcases:
 
 <div>
 {% for item in page.showcases %}
-    <div class="showcase span3">
-        <img src="/assets/showcase/{{ item.id }}.jpg">
-        <a class="mask" href="{{ item.link }}" >
-            <h2>{{ item.title }}</h2>
-            {% if (item.description) %}
-                <p>{{ item.description }}</p>
-            {% endif %}
-            <p class="info">View project</p>
-        </a>
-        <span>{{ item.title }}</span>
+    <div class="col-md-4 col-xs-6 col-xxs-showcase-12">
+        <div class="screenshot screenshot-extended showcase">
+            <img src="/assets/showcase/{{ item.id }}.jpg">
+            <a class="mask" href="{{ item.link }}" >
+                <h2>{{ item.title }}</h2>
+                {% if (item.description) %}
+                    <p>{{ item.description }}</p>
+                {% endif %}
+                <p class="info">View project</p>
+            </a>
+            <span>{{ item.title }}</span>
+        </div>
     </div>
 {% endfor %}
 </div>
