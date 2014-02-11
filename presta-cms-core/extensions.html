@@ -4,24 +4,10 @@ title: PrestaCMS extensions
 subtitle: share your work
 section_active: overview
 navigation_active: extensions
-
-extensions:
-    - {
-        id: "prestacmsthemebasicbundle",
-        link: "prestaconcept/PrestaCMSThemeBasicBundle",
-        title: "PrestaCMSThemeBasic Bundle",
-        description: "Adds basic themes"
-    }
-    - {
-        id: "prestacmsmediabundle",
-        link: "prestaconcept/PrestaCMSMediaBundle",
-        title: "PrestaCMSMediaBundle",
-        description: "This bundle provides media blocks for the PrestaCMS"
-    }
 ---
 
 <div>
-    {% for item in page.extensions %}
+    {% for item in site.data.extensions %}
     <div class="col-sm-6 col-xxs-extension-12">
         <div class="screenshot screenshot-extended extension">
             <img src="/assets/extension/{{ item.id }}.jpg">

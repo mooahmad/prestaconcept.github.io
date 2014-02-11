@@ -1,0 +1,9 @@
+- id: "prestacmsthemebasicbundle"
+  link: "prestaconcept/PrestaCMSThemeBasicBundle"
+  title: "PrestaCMSThemeBasic Bundle"
+  description: "Adds basic themes"
+
+- id: "prestacmsmediabundle"
+  link: "prestaconcept/PrestaCMSMediaBundle"
+  title: "PrestaCMSMediaBundle"
+  description: "This bundle provides media blocks for the PrestaCMS"
