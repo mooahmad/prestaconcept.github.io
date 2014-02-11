@@ -5,9 +5,11 @@ PrestaConcept open source bundle documentation. [prestaconcept.github.io](http:/
 
 This is a list of all PrestaConcept open source projects and there documentation.
 
+
 ## Issue tracker ##
 
 :clipboard: Issues are managed in [prestaconcept/open-source-management](https://github.com/prestaconcept/open-source-management) to centralize our open source activity.
+
 
 ## Ask for help ##
 
@@ -26,6 +28,9 @@ Next, follow the [installation guide](http://jekyllrb.com/docs/installation/) to
 or just launch the following command :
 
     sudo gem install jekyll
+
+For Windows users (Thanks to @madhur) : [Running Jekyll on Windows](http://www.madhur.co.in/blog/2011/09/01/runningjekyllwindows.html)
+or [Building portable Jekyll for Windows](http://www.madhur.co.in/blog/2013/07/20/buildportablejekyll.html)
 
 We provide a Makefile for common operation.
 
