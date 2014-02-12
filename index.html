@@ -2,143 +2,141 @@
 layout: default
 title: Prestaconcept github page
 ---
-<div class="carousel-full-container">
-    <div id="carousel-example-generic" class="carousel slide container" data-ride="carousel">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-        </ol>
+<div id="homepage">
+    <div class="carousel-full-container">
+        <div id="carousel-example-generic" class="carousel slide container" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            </ol>
 
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner">
-            <div class="item active">
-                <img src="/assets/theme/img/layout/prestaconcept-header.png" alt="php symfony javascript html5 css3">
-                <div class="carousel-caption">
-                    <h2>PrestaConcept - Symfony2 Experts</h2>
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="/assets/theme/img/layout/prestaconcept-header.png" alt="php symfony javascript html5 css3">
+                    <div class="carousel-caption">
+                        <h2>PrestaConcept - Symfony2 Experts</h2>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="/assets/theme/img/layout/prestaconcept-header.png" alt="php symfony javascript html5 css3">
+                    <div class="carousel-caption">
+                        <h2>PrestaConcept - Symfony2 Experts who need to work on carousel</h2>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="/assets/theme/img/layout/prestaconcept-header.png" alt="php symfony javascript html5 css3">
+                    <div class="carousel-caption">
+                        <h2>PrestaConcept - Symfony2 Experts</h2>
+                    </div>
                 </div>
             </div>
-            <div class="item">
-                <img src="/assets/theme/img/layout/prestaconcept-header.png" alt="php symfony javascript html5 css3">
-                <div class="carousel-caption">
-                    <h2>PrestaConcept - Symfony2 Experts who need to work on carousel</h2>
-                </div>
-            </div>
-            <div class="item">
-                <img src="/assets/theme/img/layout/prestaconcept-header.png" alt="php symfony javascript html5 css3">
-                <div class="carousel-caption">
-                    <h2>PrestaConcept - Symfony2 Experts</h2>
-                </div>
-            </div>
+
+            <!-- Controls -->
+            <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
         </div>
-
-        <!-- Controls -->
-        <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left"></span>
-        </a>
-        <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right"></span>
-        </a>
     </div>
-</div>
 
-<div id="hook-outer">
-    <div id="hook" class="container">
-        <h1>PrestaConcept - Symfony2 Experts</h1>
-    </div>
-</div>
-<div class="content-outer">
-    <div class="content container">
+    <div class="container">
         <h1>
-            Our Symfony2 Bundles
+            PrestaConcept - Symfony2 Experts
             <iframe src="http://ghbtns.com/github-btn.html?user=prestaconcept&type=follow&count=true"
                     allowtransparency="true" frameborder="0" scrolling="0" width="165" height="20"></iframe>
         </h1>
-
-        <div class="row">
-            {% for bundle in site.data.bundles %}
-                {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
-                {% if thecycle == 'odd' %}
-                    </div><div class=row">
-                {% endif %}
-            <div class="col-md-6">
-                <div class="bundle-container">
-                    <h3>
-                        {{ bundle.name }}
-                    </h3>
-
-                    <div class="links">
-                        <a class="travis-link" href="http://travis-ci.org/prestaconcept/{{ bundle.name }}">
-                            <img src="https://secure.travis-ci.org/prestaconcept/{{ bundle.name }}.png" />
-                        </a>
-                        <iframe src="http://ghbtns.com/github-btn.html?user=prestaconcept&repo={{ bundle.name }}&type=watch&count=true"
-                                allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe>
-
-                        <iframe src="http://ghbtns.com/github-btn.html?user=prestaconcept&repo={{ bundle.name }}&type=fork&count=true"
-                                allowtransparency="true" frameborder="0" scrolling="0" width="95" height="20"></iframe>
-                        <br/>
-                        <a href="https://packagist.org/packages/{{ bundle.packagist }}">
-                            <img src="https://poser.pugx.org/{{ bundle.packagist }}/downloads.png" />
-                        </a>
-                        <a href="https://packagist.org/packages/{{ bundle.packagist }}">
-                            <img src="https://poser.pugx.org/{{ bundle.packagist }}/v/stable.png" />
-                        </a>
-                    </div>
-                    <div class="description">
-                        {{ bundle.description }}
-                    </div>
-                    <div class="knpbundles-badge">
-                        <a href="http://knpbundles.com/prestaconcept/{{ bundle.name }}">
-                            <img src="http://knpbundles.com/prestaconcept/{{ bundle.name }}/badge-short" />
-                        </a>
-                        <img src="{{ bundle.insight }}" />
-                    </div>
-
-                    <div class="bottoms-links">
-                        <a href="{{ bundle.doc-link }}" class="btn btn-default">
-                            <span class="glyphicon glyphicon-book"></span>&nbsp;Read the documentation
-                        </a>
-                        <a href="https://github.com/prestaconcept/{{ bundle.name }}" class="btn btn-default">
-                            <span class="glyphicon glyphicon-download"></span>&nbsp;Download
-                        </a>
-                    </div>
-                </div>
-            </div>
-            {% endfor %}
-        </div>
     </div>
-</div>
 
-<div class="fork-us-outer">
-    <div class="container">
-        <h2>Help us on Github</h2>
-        <ul>
-            <li>open issues, ask for help, ask for new features, submit PR</li>
-            <li>...</li>
-            <li>Github is the best place for that</li>
-        </ul>
-        <a id="hire-us-link" href="https://github.com/prestaconcept" class="btn btn-default">
-            <i class="icon-github"></i>&nbsp;Fork us on Github
-        </a>
-    </div>
-</div>
+    {% for section in site.data.section_bundle %}
+    <div class="section-container {{ section.id }}">
+        <div class="container">
+            <h2>{{ section.name }}</h2>
+            <div class="row">
+                {% assign section_id = section.id %}
+                {% for bundle in site.data[section_id] %}
+                    <div class="col-sm-6">
+                        <div class="bundle-container">
+                            <h3>
+                                {{ bundle.name }}
+                            </h3>
 
-<div class="content-outer">
-    <div class="content container">
-        <h1>We are working on</h1>
-        <div class="row">
-            <div class="col-md-6">
-                <div class="bundle-container coming-soon">
-                    <h3>Admin version 1.0.0 .... Coming Soon</h3>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="bundle-container coming-soon">
-                    <h3>New deployment process Jenkins + capifony ... Coming Soon</h3>
-                </div>
+                            <div class="links">
+                                <a class="travis-link" href="http://travis-ci.org/prestaconcept/{{ bundle.name }}">
+                                    <img src="https://secure.travis-ci.org/prestaconcept/{{ bundle.name }}.png" />
+                                </a>
+                                <iframe src="http://ghbtns.com/github-btn.html?user=prestaconcept&repo={{ bundle.name }}&type=watch&count=true"
+                                        allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe>
+
+                                <iframe src="http://ghbtns.com/github-btn.html?user=prestaconcept&repo={{ bundle.name }}&type=fork&count=true"
+                                        allowtransparency="true" frameborder="0" scrolling="0" width="95" height="20"></iframe>
+                                <br/>
+                                <a href="https://packagist.org/packages/{{ bundle.packagist }}">
+                                    <img src="https://poser.pugx.org/{{ bundle.packagist }}/downloads.png" />
+                                </a>
+                                <a href="https://packagist.org/packages/{{ bundle.packagist }}">
+                                    <img src="https://poser.pugx.org/{{ bundle.packagist }}/v/stable.png" />
+                                </a>
+                            </div>
+                            <div class="description">
+                                {{ bundle.description }}
+                            </div>
+                            <div class="knpbundles-badge">
+                                <a href="http://knpbundles.com/prestaconcept/{{ bundle.name }}">
+                                    <img src="http://knpbundles.com/prestaconcept/{{ bundle.name }}/badge-short" />
+                                </a>
+                                <img src="{{ bundle.insight }}" />
+                            </div>
+
+                            <div class="bottoms-links">
+                                <a href="{{ bundle.doc-link }}" class="btn btn-default">
+                                    <span class="glyphicon glyphicon-book"></span>&nbsp;Read the documentation
+                                </a>
+                                <a href="https://github.com/prestaconcept/{{ bundle.name }}" class="btn btn-default">
+                                    <span class="glyphicon glyphicon-download"></span>&nbsp;Download
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
             </div>
         </div>
     </div>
-</div>
+    {% endfor %}
 
+    <div class="fork-us">
+        <div class="container">
+            <h2>Help us on Github</h2>
+            <p class="description">
+                open issues, ask for help, ask for new features, submit PR<br />
+                ...<br />
+                Github is the best place for that
+            </p>
+            <a id="hire-us-link" href="https://github.com/prestaconcept" class="btn btn-default">
+                <i class="icon-github"></i>&nbsp;Fork us on Github
+            </a>
+        </div>
+    </div>
+
+    <div class="coming-soon">
+        <div class="container">
+            <h2>We are working on</h2>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="bundle-container coming-soon">
+                        <h3>Admin version 1.0.0 .... Coming Soon</h3>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="bundle-container coming-soon">
+                        <h3>New deployment process Jenkins + capifony ... Coming Soon</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

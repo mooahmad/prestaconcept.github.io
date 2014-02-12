@@ -46,8 +46,14 @@
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Our Bundles <b class="caret"></b></a>
                             <ul class="dropdown-menu">
-                                {% for bundle in site.data.bundles %}
-                                <li><a href="{{ bundle.doc-link }}">{{ bundle.name }}</a></li>
+                                {% for section in site.data.section_bundle %}
+                                    {% assign section_id = section.id %}
+                                    {% unless forloop.first %}
+                                        <li class="divider"></li>
+                                    {% endunless %}
+                                    {% for bundle in site.data[section_id] %}
+                                        <li><a href="{{ bundle.doc-link }}">{{ bundle.name }}</a></li>
+                                    {% endfor %}
                                 {% endfor %}
                             </ul>
                         </li>
