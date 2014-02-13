@@ -28,7 +28,7 @@ It is release as an open source project under MIT Licence so feel free to use it
 
 The source code can be found on [Github][7].
 
-# Demonstration
+## Demonstration
 
 A demonstration website is available : [PrestaCMS Sandbox][8] - [administration][9]
 
@@ -36,7 +36,7 @@ Feel free to test it, database is refreshed every day.
 
 Source code of the demonstration is also [available on Github][10]
 
-# Requirements
+## Requirements
 
 This require Symfony version 2.2 or upper and SymfonyCMF 1.0.0 or upper.
 

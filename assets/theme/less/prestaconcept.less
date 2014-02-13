@@ -15,11 +15,11 @@ h2, h3, h4, h5, h6,
 }
 
 h2, .h2 {
-  color:                @pink;
+  color:                @purple;
 }
 
 h3, .h3 {
-  color:                @green;
+  color:                @pink;
 }
 
 // Common
@@ -226,7 +226,7 @@ h3, .h3 {
     top:                0;
 
     h2 {
-      color:            #fff;
+      color:            #fff !important;
       font-family:      @font-family-title;
       font-size:        floor(@font-size-base * 3.6); // ~50px
       margin:           0;
@@ -304,9 +304,20 @@ h3, .h3 {
 // Main Content
 // ---------------------------------------
 .section {
-  h1, h2 {
+  h1 {
     margin-top:         -@navbar-height;
     padding-top:        @navbar-height;
+  }
+
+  h2 {
+    border-bottom:      1px solid @purple;
+    margin-top:         -@navbar-height;
+    padding-top:        @navbar-height;
+    padding-bottom:     5px;
+  }
+
+  p+h2 {
+    padding-top:        @navbar-height+20px;
   }
 }
 
