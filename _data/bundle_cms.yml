@@ -3,7 +3,7 @@
   insight: https://insight.sensiolabs.com/projects/99f33266-2a10-4182-97b8-37c3a30824ec/small.png
   doc-link: https://github.com/prestaconcept/PrestaCMSCKEditorBundle/blob/master/README.md
   description: |
-    Intégrates CKEditor in PrestaCMS with SonataMedia and page links.
+    Integrates CKEditor in PrestaCMS with SonataMedia and page links.
 
 - name: PrestaCMSContactBundle
   packagist: presta/cms-contact-bundle
