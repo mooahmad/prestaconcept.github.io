@@ -330,7 +330,7 @@ h1,
 }
 h2,
 .h2 {
-  font-size: 30px;
+  font-size: 28px;
 }
 h3,
 .h3 {
@@ -5292,18 +5292,31 @@ body {
   padding-top: 90px;
 }
 h1,
+.h1 {
+  color: #8a426d;
+  font-family: 'Reenie Beanie', 'Open Sans', Helvetica, Arial, sans-serif;
+}
 h2,
 h3,
 h4,
 h5,
 h6,
-.h1,
 .h2,
 .h3,
 .h4,
 .h5,
 .h6 {
-  font-family: 'Reenie Beanie', 'Open Sans', Helvetica, Arial, sans-serif;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+h2,
+.h2 {
+  color: #de036e;
+}
+h3,
+.h3 {
+  color: #999900;
 }
 .brand {
   background: url('/assets/theme/img/layout/prestaconcept-logo.png') no-repeat center left;
@@ -5494,6 +5507,8 @@ h6,
   top: 0;
 }
 .carousel-full-container .carousel-caption h2 {
+  color: #fff;
+  font-family: 'Reenie Beanie', 'Open Sans', Helvetica, Arial, sans-serif;
   font-size: 50px;
   margin: 0;
 }
@@ -5570,6 +5585,7 @@ footer {
 }
 footer h2 {
   color: #fff;
+  font-family: 'Reenie Beanie', 'Open Sans', Helvetica, Arial, sans-serif;
   font-weight: normal;
   font-size: 40px;
   text-align: center;
@@ -5672,26 +5688,27 @@ footer .copyright .container {
 .bundle-container {
   -webkit-box-shadow: 0 13px 5px -10px #555555;
   box-shadow: 0 13px 5px -10px #555555;
+  background-color: #fff;
   border: 1px solid #999999;
   margin-bottom: 20px;
   min-height: 305px;
 }
 @media (max-width: 991px) {
   .bundle-container {
-    min-height: 375px;
+    min-height: 385px;
   }
 }
 @media (max-width: 767px) {
   .bundle-container {
-    min-height: 250px;
+    min-height: 0;
   }
 }
 .bundle-container h3 {
-  background-color: #eeeeee;
+  background-color: #8a426d;
   border-bottom: 1px solid #999999;
-  color: #8a426d;
+  color: white;
   margin-top: 0;
-  padding: 5px 25px;
+  padding: 5px 20px;
   word-break: break-all;
 }
 .bundle-container > div {
@@ -5703,6 +5720,7 @@ footer .copyright .container {
 }
 .bundle-container .links > * {
   margin-right: 15px;
+  vertical-align: bottom;
 }
 .bundle-container .links a.travis-link img {
   vertical-align: top;
@@ -5725,16 +5743,27 @@ footer .copyright .container {
 }
 .bundle-container.coming-soon {
   background-color: #eeeeee;
-  min-height: 80px;
+  min-height: 0px;
+  padding: 15px;
 }
-.bundle-container.coming-soon h3 {
+@media (min-width: 768px) {
+  .bundle-container.coming-soon {
+    min-height: 92px;
+  }
+}
+@media (min-width: 1200px) {
+  .bundle-container.coming-soon {
+    min-height: 0;
+  }
+}
+.bundle-container.coming-soon h4 {
   border-bottom: none;
   text-align: center;
   word-break: normal;
 }
 @media (min-width: 1200px) {
-  .bundle-container.coming-soon h3 {
-    margin-top: 20px;
+  .bundle-container.coming-soon h4 {
+    margin-top: 10px;
   }
 }
 .bundle_utils {

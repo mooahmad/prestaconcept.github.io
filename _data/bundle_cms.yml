@@ -1,3 +1,11 @@
+- name: PrestaCMSCoreBundle
+  packagist: presta/cms-core-bundle
+  insight: https://insight.sensiolabs.com/projects/6576869b-bb02-4c6f-85ad-eac142d03b85/small.png
+  doc-link: /presta-cms-core/index.html
+  description: |
+    This is the core of our CMS base on Symfony CMF.
+    It handle multiple website, theme and page edition.
+
 - name: PrestaCMSCKEditorBundle
   packagist: presta/cms-ckeditor-bundle
   insight: https://insight.sensiolabs.com/projects/99f33266-2a10-4182-97b8-37c3a30824ec/small.png
@@ -14,14 +22,6 @@
     Contacts and messages are saved and administrated with Sonata.
     You can implement your own strategy to fit your needs.
     Multi-database layer ready
-
-- name: PrestaCMSCoreBundle
-  packagist: presta/cms-core-bundle
-  insight: https://insight.sensiolabs.com/projects/6576869b-bb02-4c6f-85ad-eac142d03b85/small.png
-  doc-link: /presta-cms-core/index.html
-  description: |
-    This is the core of our CMS base on Symfony CMF.
-    It handle multiple website, theme and page edition.
 
 - name: PrestaCMSFAQBundle
   packagist: presta/cms-faq-bundle

@@ -2,9 +2,24 @@ body {
   padding-top:          @navbar-height;
 }
 
-h1, h2, h3, h4, h5, h6,
-.h1, .h2, .h3, .h4, .h5, .h6 {
+h1, .h1 {
+  color:                @purple;
   font-family:          @font-family-title;
+}
+
+h2, h3, h4, h5, h6,
+.h2, .h3, .h4, .h5, .h6 {
+  font-family:          @font-family-title-alt;
+  font-weight:          300;
+  font-style:           italic;
+}
+
+h2, .h2 {
+  color:                @pink;
+}
+
+h3, .h3 {
+  color:                @green;
 }
 
 // Common
@@ -211,6 +226,8 @@ h1, h2, h3, h4, h5, h6,
     top:                0;
 
     h2 {
+      color:            #fff;
+      font-family:      @font-family-title;
       font-size:        floor(@font-size-base * 3.6); // ~50px
       margin:           0;
 
@@ -301,6 +318,7 @@ footer {
 
   h2 {
     color:              #fff;
+    font-family:        @font-family-title;
     font-weight:        normal;
     font-size:          floor(@font-size-base * 2.9); // ~40px
     text-align:         center;

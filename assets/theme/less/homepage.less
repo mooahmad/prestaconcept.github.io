@@ -7,19 +7,19 @@
   min-height:         305px;
 
   @media (max-width: @screen-sm-max) {
-    min-height:       375px;
+    min-height:       385px;
   }
 
   @media (max-width: @screen-xs-max) {
-    min-height:       250px;
+    min-height:       0;
   }
 
   h3 {
-    background-color: @gray-lighter;
+    background-color: @purple;
     border-bottom:    1px solid @gray-light;
-    color:            @purple;
+    color:            white;
     margin-top:       0;
-    padding:          5px 25px;
+    padding:          5px 20px;
     word-break:       break-all;
   }
 
@@ -33,6 +33,7 @@
 
     > * {
       margin-right:   15px;
+      vertical-align: bottom;
     }
 
     a.travis-link img {
@@ -62,15 +63,24 @@
 
   &.coming-soon {
     background-color: @gray-lighter;
-    min-height:       80px;
+    min-height:       0px;
+    padding:          15px;
 
-    h3 {
+    @media (min-width: @screen-sm-min) {
+      min-height:     92px;
+    }
+
+    @media (min-width: @screen-lg-min) {
+      min-height:     0;
+    }
+
+    h4 {
       border-bottom:  none;
       text-align:     center;
       word-break:     normal;
       
       @media (min-width: @screen-lg-min) {
-        margin-top:   20px;
+        margin-top:   10px;
       }
     }
   }

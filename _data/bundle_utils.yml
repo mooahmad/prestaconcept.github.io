@@ -1,10 +1,3 @@
-- name: PrestaComposerPublicBundle
-  packagist: presta/composer-public-bundle
-  insight: https://insight.sensiolabs.com/projects/fc4b4416-def6-428c-b873-5fd1f5a9ad39/small.png
-  doc-link: https://github.com/prestaconcept/PrestaComposerPublicBundle/blob/master/README.md
-  description: |
-    A symfony 2 bundle that provides a simple way to include public 3rd-party libraries (javascripts, css, pictures ...) into your projects and keep its up-to-date.
-
 - name: PrestaSitemapBundle
   packagist: presta/sitemap-bundle
   insight: https://insight.sensiolabs.com/projects/ad664e80-f44e-49df-bd28-fa03ca48aca6/small.png
@@ -12,3 +5,10 @@
   description: |
     A symfony 2 bundle that provides tools to build a rich application sitemap.
     The main goals are : simple, no databases, various namespace (eg. google image), respect constraints etc.
+
+- name: PrestaComposerPublicBundle
+  packagist: presta/composer-public-bundle
+  insight: https://insight.sensiolabs.com/projects/fc4b4416-def6-428c-b873-5fd1f5a9ad39/small.png
+  doc-link: https://github.com/prestaconcept/PrestaComposerPublicBundle/blob/master/README.md
+  description: |
+    A symfony 2 bundle that provides a simple way to include public 3rd-party libraries (javascripts, css, pictures ...) into your projects and keep its up-to-date.
