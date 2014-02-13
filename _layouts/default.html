@@ -25,6 +25,7 @@
     <!--<link href="{{ BASE_PATH }}{{ site.JB.rss_path }}" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">-->
 
     <link href='http://fonts.googleapis.com/css?family=Reenie+Beanie|Open+Sans:300italic,400,300' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,300' rel='stylesheet' type='text/css'>
 </head>
 
     <body>
@@ -46,8 +47,14 @@
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Our Bundles <b class="caret"></b></a>
                             <ul class="dropdown-menu">
-                                {% for bundle in site.data.bundles %}
-                                <li><a href="{{ bundle.doc-link }}">{{ bundle.name }}</a></li>
+                                {% for section in site.data.section_bundle %}
+                                    {% assign section_id = section.id %}
+                                    {% unless forloop.first %}
+                                        <li class="divider"></li>
+                                    {% endunless %}
+                                    {% for bundle in site.data[section_id] %}
+                                        <li><a href="{{ bundle.doc-link }}">{{ bundle.name }}</a></li>
+                                    {% endfor %}
                                 {% endfor %}
                             </ul>
                         </li>

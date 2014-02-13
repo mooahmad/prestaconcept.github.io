@@ -1,0 +1,71 @@
+- name: PrestaCMSCoreBundle
+  packagist: presta/cms-core-bundle
+  insight: https://insight.sensiolabs.com/projects/6576869b-bb02-4c6f-85ad-eac142d03b85/small.png
+  doc-link: /presta-cms-core/index.html
+  description: |
+    This is the core of our CMS base on Symfony CMF.
+    It handle multiple website, theme and page edition.
+
+- name: PrestaCMSCKEditorBundle
+  packagist: presta/cms-ckeditor-bundle
+  insight: https://insight.sensiolabs.com/projects/99f33266-2a10-4182-97b8-37c3a30824ec/small.png
+  doc-link: https://github.com/prestaconcept/PrestaCMSCKEditorBundle/blob/master/README.md
+  description: |
+    Integrates CKEditor in PrestaCMS with SonataMedia and page links.
+
+- name: PrestaCMSContactBundle
+  packagist: presta/cms-contact-bundle
+  insight: https://insight.sensiolabs.com/projects/e35671f4-a083-4780-b435-c85b9ce3c56c/small.png
+  doc-link: /presta-cms-contact/index.html
+  description: |
+    This bundle adds a contact form to your CMS.
+    Contacts and messages are saved and administrated with Sonata.
+    You can implement your own strategy to fit your needs.
+    Multi-database layer ready
+
+- name: PrestaCMSFAQBundle
+  packagist: presta/cms-faq-bundle
+  insight: https://insight.sensiolabs.com/projects/6134dce1-ab4b-4f93-9630-afeb67462516/small.png
+  doc-link: https://github.com/prestaconcept/PrestaCMSFAQBundle/blob/master/README.md
+  description: |
+    Adds FAQ in PrestaCMS.
+    FAQ are structured by category and administrated with SonataAdmin.
+
+- name: PrestaCMSMediaBundle
+  packagist: presta/cms-media-bundle
+  insight: https://insight.sensiolabs.com/projects/d4e48cf2-8182-4eae-a7aa-f2c370cffb55/small.png
+  doc-link: /presta-cms-media/index.html
+  description: |
+    This bundle adds medias and galleries integration into PrestaCMS
+    Medias are handle with SonataMediaBundle
+
+- name: PrestaCMSSitemapBridgeBundle
+  packagist: presta/cms-user-bundle
+  insight: https://insight.sensiolabs.com/projects/fa3389b6-5133-4090-9be5-f060ab6376ef/small.png
+  doc-link: https://github.com/prestaconcept/PrestaCMSSitemapBridgeBundle/blob/master/README.md
+  description: |
+    Add PrestaCMSCore pages into PrestaSitemap.
+
+- name: PrestaCMSSocialBundle
+  packagist: presta/cms-social-bundle
+  insight: https://insight.sensiolabs.com/projects/c6c99c8b-0706-4b09-a7c4-f21d165cb7c3/small.png
+  doc-link: /presta-cms-social/index.html
+  description: |
+    This bundle provides useful blocks to render latest tweet, follower count from twitter and fan count from facebook page
+
+- name: PrestaCMSThemeBasicBundle
+  packagist: presta/cms-theme-basic-bundle
+  insight: https://insight.sensiolabs.com/projects/56721a5e-dca2-431f-bd1a-df53eca583d6/small.png
+  doc-link: /presta-cms-theme/index.html
+  description: |
+    This bundle provides basic themes which can be used by PrestaCMS
+    The first theme is called Creative, it's based on Twitter Bootstrap.
+
+- name: PrestaCMSUserBundle
+  packagist: presta/cms-user-bundle
+  insight: https://insight.sensiolabs.com/projects/7834b609-01ce-429b-8365-b9510663d127/small.png
+  doc-link: https://github.com/prestaconcept/PrestaCMSUserBundle/blob/master/README.md
+  description: |
+    Handle your front users with PrestaCMS.
+
+
