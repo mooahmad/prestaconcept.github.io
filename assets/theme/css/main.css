@@ -5312,11 +5312,11 @@ h6,
 }
 h2,
 .h2 {
-  color: #de036e;
+  color: #8a426d;
 }
 h3,
 .h3 {
-  color: #999900;
+  color: #de036e;
 }
 .brand {
   background: url('/assets/theme/img/layout/prestaconcept-logo.png') no-repeat center left;
@@ -5507,7 +5507,7 @@ h3,
   top: 0;
 }
 .carousel-full-container .carousel-caption h2 {
-  color: #fff;
+  color: #fff !important;
   font-family: 'Reenie Beanie', 'Open Sans', Helvetica, Arial, sans-serif;
   font-size: 50px;
   margin: 0;
@@ -5574,10 +5574,18 @@ h3,
     width: 263px;
   }
 }
-.section h1,
-.section h2 {
+.section h1 {
   margin-top: -90px;
   padding-top: 90px;
+}
+.section h2 {
+  border-bottom: 1px solid #8a426d;
+  margin-top: -90px;
+  padding-top: 90px;
+  padding-bottom: 5px;
+}
+.section p + h2 {
+  padding-top: 110px;
 }
 footer {
   background: url('/assets/theme/img/layout/body-bg.png');
@@ -5684,6 +5692,9 @@ footer .copyright .container {
   .extension {
     width: 95%;
   }
+}
+#homepage h2 {
+  color: #de036e;
 }
 .bundle-container {
   -webkit-box-shadow: 0 13px 5px -10px #555555;
