@@ -62,7 +62,7 @@ This is an example of callout use :
 ```
 <div class="callout warning|info|tips">
     <h4>Title</h4>
-    Yout text
+    Your text
 </div>
 ```
 

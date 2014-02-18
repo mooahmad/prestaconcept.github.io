@@ -22,6 +22,6 @@ $('body').scrollspy({
     offset: parseInt($('.sidebar').css('margin-top'), 10)
 });
 
-$window.on('load', function () {
-    $body.scrollspy('refresh')
+$('window').on('load', function () {
+    $('body').scrollspy('refresh')
 });
