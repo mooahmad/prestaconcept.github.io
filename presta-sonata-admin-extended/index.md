@@ -59,7 +59,7 @@ class AppKernel extends Kernel
     php app/console sonata:easy-extends:generate SonataUserBundle
     php app/console sonata:easy-extends:generate SonataMediaBundle
 
--> Update 'PrestaSonataAdminExtendedBundle' to extends 'ApplicationSonataAdminBundle'
+-> Update 'ApplicationSonataAdminBundle' to extends 'PrestaSonataAdminExtendedBundle'
 
 {% highlight php %}
 <?php
