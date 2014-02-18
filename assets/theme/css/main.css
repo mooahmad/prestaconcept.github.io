@@ -5456,6 +5456,35 @@ h3,
 .screenshot-extended:hover span {
   opacity: 0;
 }
+.callout {
+  background-color: #eeeeee;
+  border-left-style: solid;
+  border-left-width: 3px;
+  margin-bottom: 15px;
+  padding: 15px;
+}
+.callout h4 {
+  font-weight: 600;
+  margin-top: 0;
+}
+.callout.warning {
+  border-color: #f8c818;
+}
+.callout.warning h4 {
+  color: #f8c818;
+}
+.callout.info {
+  border-color: #48b7db;
+}
+.callout.info h4 {
+  color: #48b7db;
+}
+.callout.tips {
+  border-color: #6fa537;
+}
+.callout.tips h4 {
+  color: #6fa537;
+}
 .navbar-presta-top {
   background-image: url('/assets/theme/img/layout/header-bg.png');
   font-family: "Arial Narrow", 'Open Sans', Arial, sans-serif;

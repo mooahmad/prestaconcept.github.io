@@ -46,6 +46,25 @@ And here is the command to rebuild styles.css :
 
     make ai
 
+## Styles
+
+### Callout
+Callout is special area used to highlight some text.
+
+3 colours are available :
+
+  - warning (orange)
+  - info (blue)
+  - tips (green)
+
+This is an example of callout use :
+
+```
+<div class="callout warning|info|tips">
+<h4>Title</h4>
+Yout text
+</div>
+```
 
 ## Contributing
 
