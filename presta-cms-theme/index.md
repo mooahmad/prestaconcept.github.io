@@ -4,15 +4,11 @@ title: PrestaCMSThemeBundle
 subtitle: This bundle adds starter themes in PrestaCMS
 navigation_mode: anchor
 navigation:
-    - { link: "overview", title: "Overview" }
-    - { link: "creative", title: "Creative" }
-    - { link: "more_theme", title: "More theme" }
-
+    - { id: "overview", link: "overview", title: "Overview" }
+    - { id: "creative", link: "creative", title: "Creative" }
+    - { id: "more_theme", link: "more_theme", title: "More theme" }
+navigation_active: overview
 ---
-
-
-# PrestaCMSThemeBundle Documentation
-
 
 [![Build Status](https://secure.travis-ci.org/prestaconcept/PrestaCMSThemeBasicBundle.png)](http://travis-ci.org/prestaconcept/PrestaCMSThemeBasicBundle)
 [![Total Downloads](https://poser.pugx.org/presta/cms-theme-basic-bundle/downloads.png)](https://packagist.org/packages/presta/cms-theme-basic-bundle)

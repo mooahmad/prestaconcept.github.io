@@ -4,14 +4,12 @@ title: PrestaSonataNavigationBundle
 subtitle: This bundle allow you to manage your Sonata Admin navigation
 navigation_mode: anchor
 navigation:
-    - { link: "overview", title: "Overview" }
-    - { link: "installation", title: "Installation" }
-    - { link: "add_new_menu_entry", title: "Add new menu entry" }
-    - { link: "how_to_get_help_and_support", title: "Help and support" }
-
+    - { id: "overview", link: "overview", title: "Overview" }
+    - { id: "installation", link: "installation", title: "Installation" }
+    - { id: "add_new_menu_entry", link: "add_new_menu_entry", title: "Add new menu entry" }
+    - { id: "how_to_get_help_and_support", link: "how_to_get_help_and_support", title: "Help and support" }
+navigation_active: overview
 ---
-
-#PrestaSonataNavigationBundle
 
 [![Build Status](https://secure.travis-ci.org/prestaconcept/PrestaSonataNavigationBundle.png?branch=master)](http://travis-ci.org/prestaconcept/PrestaSonataNavigationBundle)
 [![Scrutinizer Quality Score](https://scrutinizer-ci.com/g/prestaconcept/PrestaSonataNavigationBundle/badges/quality-score.png?s=00888f95880ed208af842bfd35eece9b993c0d62)](https://scrutinizer-ci.com/g/prestaconcept/PrestaSonataNavigationBundle/)
