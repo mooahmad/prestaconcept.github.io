@@ -170,11 +170,27 @@ app/console  presta:composer-public
 {% endraw %}
 {% endhighlight %}
 
-# How to get help and support
+
+## Example
+
+[PrestaCMSCKEditorBundle][3] use PrestaComposerPublicBundle to integrate CKEditor in PrestaCMS with SonataMedia and page links.
+
+For a ready to use demonstration of those bundle you should check the [prestacms-sandox available on github][5].
+
+Sandbox is also deployed for a live demonstration :
+
+-   [Frontend site][6]
+-   [Administration Site][7]
+
+## How to get help and support
 
 If you need help on one of our bundle, please register to our [google group][4] and ask you question.
 You can open issues on github too.
 
 [1]: https://packagist.org/
 [2]: http://getcomposer.org/doc/05-repositories.md#package-2
+[3]: https://github.com/prestaconcept/PrestaCMSCKEditorBundle
 [4]: https://groups.google.com/forum/?hl=fr&fromgroups#!forum/prestacms-devs
+[5]: https://github.com/prestaconcept/prestacms-sandbox
+[6]: http://sandbox.prestacms.com/
+[7]: http://sandbox.prestacms.com/admin
