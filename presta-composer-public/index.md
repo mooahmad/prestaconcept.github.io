@@ -4,14 +4,12 @@ title: PrestaComposerPublicBundle
 subtitle: This bundle provides a simple way to include public 3rd-party libraries
 navigation_mode: anchor
 navigation:
-    - { link: "overview", title: "Overview" }
-    - { link: "installation", title: "Installation" }
-    - { link: "usage", title: "Usage" }
-    - { link: "how_to_get_help_and_support", title: "Help and support" }
-
+    - { id: "overview", link: "overview", title: "Overview" }
+    - { id: "installation", link: "installation", title: "Installation" }
+    - { id: "usage", link: "usage", title: "Usage" }
+    - { id: "how_to_get_help_and_support", link: "how_to_get_help_and_support", title: "Help and support" }
+navigation_active: overview
 ---
-
-#PrestaComposerPublicBundle
 
 [![Build Status](https://travis-ci.org/prestaconcept/PrestaComposerPublicBundle.png)](https://travis-ci.org/prestaconcept/PrestaComposerPublicBundle)
 [![Scrutinizer Quality Score](https://scrutinizer-ci.com/g/prestaconcept/PrestaComposerPublicBundle/badges/quality-score.png?s=c9cd4805f46ef250b1310143ad8d955814513268)](https://scrutinizer-ci.com/g/prestaconcept/PrestaComposerPublicBundle/)

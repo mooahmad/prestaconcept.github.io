@@ -4,18 +4,15 @@ title: PrestaCMSMediaBundle
 subtitle: Integrates Sonata Media in PrestaCMS
 navigation_mode: anchor
 navigation:
-    - { link: "overview", title: "Overview" }
-    - { link: "media_and_media_advanced", title: "Media" }
-    - { link: "gallery_and_gallery_advanced", title: "Gallery" }
-    - { link: "carousel", title: "Carousel" }
-    - { link: "customize_it_for_your_project_need", title: "Customize" }
-    - { link: "ask_for_help", title: "Help & Support" }
-    - { link: "how_to_contribute", title: "Contribute" }
-
+    - { id: "overview", link: "overview", title: "Overview" }
+    - { id: "media_and_media_advanced", link: "media_and_media_advanced", title: "Media" }
+    - { id: "gallery_and_gallery_advanced", link: "gallery_and_gallery_advanced", title: "Gallery" }
+    - { id: "carousel", link: "carousel", title: "Carousel" }
+    - { id: "customize_it_for_your_project_need", link: "customize_it_for_your_project_need", title: "Customize" }
+    - { id: "ask_for_help", link: "ask_for_help", title: "Help & Support" }
+    - { id: "how_to_contribute", link: "how_to_contribute", title: "Contribute" }
+navigation_active: overview
 ---
-
-
-# PrestaCMSMediaBundle Documentation
 
 [![Build Status](https://secure.travis-ci.org/prestaconcept/PrestaCMSMediaBundle.png)](http://travis-ci.org/prestaconcept/PrestaCMSMediaBundle)
 [![Total Downloads](https://poser.pugx.org/presta/cms-media-bundle/downloads.png)](https://packagist.org/packages/presta/cms-media-bundle)

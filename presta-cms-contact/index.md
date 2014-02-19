@@ -4,16 +4,14 @@ title: PrestaCMSContactBundle
 subtitle: Integrates contact form in PrestaCMS
 navigation_mode: anchor
 navigation:
-    - { link: "overview", title: "Overview" }
-    - { link: "form", title: "Form" }
-    - { link: "strategy", title: "Strategy" }
-    - { link: "customize_it_for_your_project_need", title: "Customize" }
-    - { link: "ask_for_help", title: "Help & Support" }
-    - { link: "how_to_contribute", title: "Contribute" }
-
+    - { id: "overview", link: "overview", title: "Overview" }
+    - { id: "form", link: "form", title: "Form" }
+    - { id: "strategy", link: "strategy", title: "Strategy" }
+    - { id: "customize_it_for_your_project_need", link: "customize_it_for_your_project_need", title: "Customize" }
+    - { id: "ask_for_help", link: "ask_for_help", title: "Help & Support" }
+    - { id: "how_to_contribute", link: "how_to_contribute", title: "Contribute" }
+navigation_active: overview
 ---
-
-# PrestaCMSContactBundle Documentation
 
 [![Build Status](https://secure.travis-ci.org/prestaconcept/PrestaCMSContactBundle.png?branch=master)](http://travis-ci.org/prestaconcept/PrestaCMSContactBundle)
 [![Scrutinizer Quality Score](https://scrutinizer-ci.com/g/prestaconcept/PrestaCMSContactBundle/badges/quality-score.png?s=96c69229732e1e8856461bd649df4452d415e803)](https://scrutinizer-ci.com/g/prestaconcept/PrestaCMSContactBundle/)

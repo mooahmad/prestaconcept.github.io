@@ -4,15 +4,14 @@ title: PrestaCMSSocialBundle
 subtitle: Integrates social blocks (Twitter, Facebook...) in PrestaCMS
 navigation_mode: anchor
 navigation:
-    - { link: "overview", title: "Overview" }
-    - { link: "installation", title: "Installation" }
-    - { link: "usage", title: "Usage" }
-    - { link: "ask_for_help", title: "Help & Support" }
-    - { link: "how_to_contribute", title: "Contribute" }
-
+    - { id: "overview", link: "overview", title: "Overview" }
+    - { id: "installation", link: "installation", title: "Installation" }
+    - { id: "usage", link: "usage", title: "Usage" }
+    - { id: "ask_for_help", link: "ask_for_help", title: "Help & Support" }
+    - { id: "how_to_contribute", link: "how_to_contribute", title: "Contribute" }
+navigation_active: overview
 ---
 
-# PrestaCMSSocialBundle Documentation
 [![Build Status](https://secure.travis-ci.org/prestaconcept/PrestaCMSSocialBundle.png?branch=master)](http://travis-ci.org/prestaconcept/PrestaCMSSocialBundle)
 [![Scrutinizer Quality Score](https://scrutinizer-ci.com/g/prestaconcept/PrestaCMSSocialBundle/badges/quality-score.png?s=a5721c174fead4cb642be18f44965d15d024333c)](https://scrutinizer-ci.com/g/prestaconcept/PrestaCMSSocialBundle/)
 [![Latest Stable Version](https://poser.pugx.org/presta/cms-social-bundle/v/stable.png)](https://packagist.org/packages/presta/cms-social-bundle)
