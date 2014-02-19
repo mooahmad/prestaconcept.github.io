@@ -5327,6 +5327,16 @@ h3,
   text-indent: -5000px;
   width: 358px;
 }
+#hook-outer {
+  background: #8a426d;
+  margin-bottom: 25px;
+}
+#hook-outer h1 {
+  color: white;
+}
+#hook-outer h1 small {
+  color: #ffaed6;
+}
 .screenshot {
   text-align: center;
 }
