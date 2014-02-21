@@ -44,12 +44,20 @@ Append the following commands to post install/update's section of `composer.json
 {% highlight json %}
 "scripts": {
     "post-install-cmd": [
-        ...,
-        "Presta\\ComposerPublicBundle\\Composer\\ScriptHandler::ComposerPublic"
+        "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters",
+        "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::buildBootstrap",
+        "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::clearCache",
+        "Presta\\ComposerPublicBundle\\Composer\\ScriptHandler::ComposerPublic",
+        "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installAssets",
+        "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installRequirementsFile"
     ],
     "post-update-cmd": [
-        ...,
-        "Presta\\ComposerPublicBundle\\Composer\\ScriptHandler::ComposerPublic"
+        "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters",
+        "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::buildBootstrap",
+        "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::clearCache",
+        "Presta\\ComposerPublicBundle\\Composer\\ScriptHandler::ComposerPublic",
+        "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installAssets",
+        "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installRequirementsFile"
     ]
 },
 {% endhighlight %}
