@@ -75,7 +75,7 @@ If you need special CKeditor configuration, just [override bundle template](http
 
 ## Example
 
-[PrestaCMSCKEditorBundle][3] use PrestaComposerPublicBundle to integrate CKEditor in PrestaCMS with SonataMedia and page links.
+[PrestaCMSCKEditorBundle][3] use [PrestaComposerPublicBundle][8] to integrate CKEditor in PrestaCMS with SonataMedia and page links.
 
 For a ready to use demonstration of those bundle you should check the [prestacms-sandbox available on github][5].
 
