@@ -25,7 +25,7 @@ navigation_active: overview
 
 PrestaCMSContactBundle adds contact form in [PrestaCMS][1].
 
-For a ready to use demonstration of PrestaCMS you should check the [prestacms-sandox available on github][2].
+For a ready to use demonstration of PrestaCMS you should check the [prestacms-sandbox available on github][2].
 A basic contact form is available on the "About" page.
 
 This bundle is multiple database layer ready.

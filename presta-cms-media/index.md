@@ -25,7 +25,7 @@ navigation_active: overview
 
 PrestaCMSMediaBundle integrates Sonata Media in [PrestaCMS][1].
 
-For a ready to use demonstration of PrestaCMS, you should check the [prestacms-sandox available on github][7].
+For a ready to use demonstration of PrestaCMS, you should check the [prestacms-sandbox available on github][7].
 
 This bundles adds the following block type to your project :
 
