@@ -8,10 +8,10 @@
 
 - name: PrestaCMSCKEditorBundle
   packagist: presta/cms-ckeditor-bundle
-  insight: https://insight.sensiolabs.com/projects/99f33266-2a10-4182-97b8-37c3a30824ec/small.png
-  doc-link: https://github.com/prestaconcept/PrestaCMSCKEditorBundle/blob/master/README.md
+  insight: https://insight.sensiolabs.com/projects/354dd545-c7b9-4823-bcb9-46cb4ccfea0d/small.png
+  doc-link: /presta-cms-ckeditor/index.html
   description: |
-    Integrates CKEditor in PrestaCMS with SonataMedia and page links.
+    Integrates CKEditor in PrestaCMS with SonataMedia and internal page links.
 
 - name: PrestaCMSContactBundle
   packagist: presta/cms-contact-bundle
