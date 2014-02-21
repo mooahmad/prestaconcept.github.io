@@ -26,7 +26,7 @@ The goal of this bundle is to integrate [CKEditor][1] in PrestaCMS with SonataMe
 ## Requirements
 
 PrestaCMSCKEditorBundle require :
--   [PrestaComposerPublicBundle](https://github.com/prestaconcept/PrestaComposerPublicBundle) ([documentation](../presta-composer-public/)) to provide [CKEditor][1] integration.
+-   [PrestaComposerPublicBundle][8] ([documentation](../presta-composer-public/)) to provide [CKEditor][1] integration.
 -   [CoopTilleulsCKEditorSonataMediaBundle][2] ([documentation][2]) that override default media integration.
 
 
@@ -63,9 +63,9 @@ Now, PrestaCMS block edit looks like :
 ![PrestaCMSCKEditorBundle preview](/assets/presta-cms-ckeditor/preview.png)
 </div>
 
-Left red area button provide internal links to prestaCMS pages.
+Left red highlighted button provides internal links to PrestaCMS pages.
 
-Right one is media integration, overrided by [CoopTilleulsCKEditorSonataMediaBundle][2] to add [SonataMediaBundle](http://sonata-project.org/bundles/media/master/doc/index.html) integration.
+Right one is media integration, overrided by [CoopTilleulsCKEditorSonataMediaBundle][2] to add [SonataMediaBundle](https://github.com/sonata-project/SonataMediaBundle) integration.
 
 
 ## Extending
@@ -97,3 +97,4 @@ You can open issues on github too.
 [5]: https://github.com/prestaconcept/prestacms-sandbox
 [6]: http://sandbox.prestacms.com/
 [7]: http://sandbox.prestacms.com/admin
+[8]: https://github.com/prestaconcept/PrestaComposerPublicBundle
