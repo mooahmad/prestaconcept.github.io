@@ -5341,6 +5341,9 @@ h3,
   text-align: center;
 }
 .screenshot img {
+  display: block;
+  max-width: 100%;
+  height: auto;
   -webkit-box-shadow: 0 13px 5px -10px #555555;
   box-shadow: 0 13px 5px -10px #555555;
   margin: 10px auto;
@@ -5623,7 +5626,8 @@ h3,
   padding-top: 90px;
   padding-bottom: 5px;
 }
-.section p + h2 {
+.section p + h2,
+.section ul + h2 {
   padding-top: 110px;
 }
 footer {
