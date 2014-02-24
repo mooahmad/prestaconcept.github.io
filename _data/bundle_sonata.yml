@@ -8,7 +8,7 @@
 - name: PrestaSonataGedmoDoctrineExtensionsBundle
   packagist: presta/sonata-gedmo-doctrine-extensions-bundle
   insight: https://insight.sensiolabs.com/projects/8136ca7e-8bfc-415e-b82d-f7cfe49b2b47/small.png
-  doc-link: https://github.com/prestaconcept/PrestaSonataGedmoDoctrineExtensionsBundle/blob/master/README.md
+  doc-link: /presta-gedmo-doctrine-extensions/index.html
   description: |
     Gedmo integration in Sonata Admin : Translatable...
 
