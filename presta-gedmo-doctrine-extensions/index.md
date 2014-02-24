@@ -19,7 +19,6 @@ navigation:
 [![knpbundles.com](http://knpbundles.com/prestaconcept/PrestaSonataGedmoDoctrineExtensionsBundle/badge)](http://knpbundles.com/prestaconcept/PrestaSonataGedmoDoctrineExtensionsBundle)
 
 
-
 ## Overview
 
 This bundle integrates [Gedmo Doctrine Extensions][1] for Sonata Admin.
@@ -87,21 +86,21 @@ class FAQCategory extends AbstractTranslatable implements TranslatableInterface
      * @Gedmo\Translatable
      * @ORM\Column(name="title", type="string", length=255, nullable=true)
      */
-    private $title;
+    protected $title;
 
     /**
      * @var boolean $enabled
      *
      * @ORM\Column(name="enabled", type="boolean", nullable=false)
      */
-    private $enabled = false;
+    protected $enabled = false;
 
     /**
      * @var integer $position
      *
      * @ORM\Column(name="position", type="integer", length=2, nullable=true)
      */
-    private $position;
+    protected $position;
 
     /**
      * @var ArrayCollection
