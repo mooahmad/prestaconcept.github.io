@@ -23,7 +23,7 @@ navigation:
 
 This bundle integrates [Gedmo Doctrine Extensions][1] for Sonata Admin.
 
-It allow you to define multiple locales for you entities and provide a locale switcher in every forms.
+It allows you to define multiple locales for your entities and provides a locale switcher in every forms.
 
 <div class="screenshot" markdown="1">
 ![PrestaSonataGedmoDoctrineExtensionsBundle-Translation](/assets/presta-gedmo-doctrine-extensions/presta-gedmo-doctrine-extensions-translation.jpg)
@@ -155,9 +155,9 @@ class Translation extends AbstractTranslation
 
 The last thing is to configure the locales to display in your locale switcher.
 
-This bundle use two parameters :
+This bundle uses two parameters :
 
-- locales : array of available locales for translation ie your frontend locales
+- locales : array of available locales for translation; i.e., your frontend locales
 - default_locale : which locale to set by default ?
 
 So your configuration can look like this :
