@@ -37,6 +37,28 @@ This bundles adds the following block type to your project :
 
 Feel free to use it, extend it or take it as an example for your own block.
 
+## Installation ##
+
+### Get the bundle
+
+    php composer.phar require presta/presta/cms-media-bundle:dev-master --no-update
+    php composer.phar update presta/presta/cms-media-bundle
+
+### Update your AppKernel to register the bundle
+
+{% highlight php %}
+<?php
+// app/AppKernel.php
+public function registerBundles()
+{
+    return array(
+        // ...
+        new Presta\CMSMediaBundle\PrestaCMSMediaBundle(),
+        // ...
+    );
+}
+{% endhighlight %}
+
 ## Media and Media advanced
 
 This block allows you to add a sonata media.
