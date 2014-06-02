@@ -83,7 +83,7 @@ class PageTypeAuthorCMSPage extends PageTypeCMSPage implements PageTypeInterface
      */
     public function getEditTabs()
     {
-        return array_merge(parent::getEditTabs(), array('author' => 'author');
+        return array_merge(parent::getEditTabs(), array('author' => 'author'));
     }
 
     /**
