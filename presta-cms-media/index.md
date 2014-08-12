@@ -7,7 +7,7 @@ navigation:
     - { id: "overview", link: "overview", title: "Overview" }
     - { id: "media_and_media_advanced", link: "media_and_media_advanced", title: "Media" }
     - { id: "gallery_and_gallery_advanced", link: "gallery_and_gallery_advanced", title: "Gallery" }
-    - { id: "carousel", link: "carousel", title: "Carousel" }
+    - { id: "carousel_and_carousel_advanced", link: "carousel_and_carousel_advanced", title: "Carousel" }
     - { id: "customize_it_for_your_project_need", link: "customize_it_for_your_project_need", title: "Customize" }
     - { id: "ask_for_help", link: "ask_for_help", title: "Help & Support" }
     - { id: "how_to_contribute", link: "how_to_contribute", title: "Contribute" }
@@ -34,6 +34,7 @@ This bundles adds the following block type to your project :
 -   Gallery Simple
 -   Gallery Advanced
 -   Carousel
+-   Carousel Advanced
 
 Feel free to use it, extend it or take it as an example for your own block.
 
@@ -81,9 +82,11 @@ Here is an example with Creative theme :
 ![Gallery advanced](/assets/presta-cms-media/block-gallery.jpg)
 </div>
 
-## Carousel
+## Carousel and Carousel Advanced
 
 Carousel block allows you to add carousel based on a Sonata gallery. It contains three types of format : full, medium and small to be easily integrated in any kind of container.
+
+Carousel Advanced works with Carousel entity and provide CRUD to manage it.
 
 Here is an example with Creative theme :
 
@@ -111,13 +114,14 @@ If you need to add settings or functionalities, create your own application bund
 Then either you need it as a new block and you should register it as a block service or you just want it to override the default block and you should
 add a parameter for the corresponding block class.
 
-Have a look at the [services.yml][6] file for a full list of parameters :
+Have a look at the [block.xml][6] file for a full list of parameters :
 
--   Carousel : %presta_cms.block.carousel.class%
--   Media : %presta_cms.block.media.class%
--   Media Advanced : %presta_cms.block.media_advanced.class%
--   Gallery : %presta_cms.block.gallery.class%
--   Gallery Advanced : %presta_cms.block.gallery_advanced.class%
+-   Carousel: %presta_cms.block.carousel.class%
+-   Carousel Advanced: %presta_cms.block.carousel_advanced.class%
+-   Media: %presta_cms.block.media.class%
+-   Media Advanced: %presta_cms.block.media_advanced.class%
+-   Gallery: %presta_cms.block.gallery.class%
+-   Gallery Advanced: %presta_cms.block.gallery_advanced.class%
 
 ## Ask for help ##
 
@@ -137,5 +141,5 @@ If you want to make advanced rendering maybe the best way to do that is to build
 [3]: https://groups.google.com/forum/?hl=fr&fromgroups#!forum/prestacms-devs
 [4]: http://sonata-project.org/bundles/media/master/doc/reference/installation.html
 [5]: http://symfony.com/doc/2.0/book/templating.html#overriding-bundle-templates
-[6]: https://github.com/prestaconcept/PrestaCMSMediaBundle/blob/master/Resources/config/services.yml
+[6]: https://github.com/prestaconcept/PrestaCMSMediaBundle/blob/master/Resources/config/block.xml
 [7]: http://sandbox.prestacms.fr/medias/media
