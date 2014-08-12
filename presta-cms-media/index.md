@@ -7,7 +7,7 @@ navigation:
     - { id: "overview", link: "overview", title: "Overview" }
     - { id: "media_and_media_advanced", link: "media_and_media_advanced", title: "Media" }
     - { id: "gallery_and_gallery_advanced", link: "gallery_and_gallery_advanced", title: "Gallery" }
-    - { id: "carousel_and_media_advanced", link: "carousel_and_media_advanced", title: "Carousel" }
+    - { id: "carousel_and_carousel_advanced", link: "carousel_and_carousel_advanced", title: "Carousel" }
     - { id: "customize_it_for_your_project_need", link: "customize_it_for_your_project_need", title: "Customize" }
     - { id: "ask_for_help", link: "ask_for_help", title: "Help & Support" }
     - { id: "how_to_contribute", link: "how_to_contribute", title: "Contribute" }
